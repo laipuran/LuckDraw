@@ -1,9 +1,11 @@
 # Luck-draw
+### Built on Visual Studio 2019
+### C++ Console Application
 
-## Used to choose some student on the class, I think it is easy to use!
+Used to choose some student on the class, I think it is easy to use!
 
-Only has Chinese edition.
+- Only has Chinese edition.
+- And there are many tools for class, too!
+- The defalt number of the students is 55.
 
-And there are many tools for class, too!
-
-The defalt number of the students is 55.
+[The URL of This Website](github.com/laipuran/Luck-Draw)
