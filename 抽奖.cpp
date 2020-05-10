@@ -19,9 +19,6 @@
 
 using namespace std;
 
-void instructions();
-void show();
-
 const string PASSWORD = "070714";
 int a, j, k, i, r, ct = 0;
 int arr[55] = {};
@@ -39,51 +36,64 @@ int getrand(int a, int b) {
 void show() {
 	system("cls");
 	system("color F1");
-	cout << setw(50) << "抽奖程序" << setw(55) << "Copyright by 赖朴然 [Version 2.0]" << endl;
-	cout << setw(60) << "重启程序请输入-1，关闭程序请输入0。" << endl;
+	cout << "                              抽奖程序     Copyright by 赖朴然 [Version 1.5]" << endl;
+	cout << "                              重启程序请输入“-1”，关闭程序请输入“0”。" << endl;
+	cout << "                              输入-100获取帮助。" << endl;
 	cout << "请输入人数：";
 }
 
-void instructions() {
-	cout << setw(60) << "使用说明";
-	cout << "重启程序请输入-1，关闭程序请输入0。" << endl;
-	cout << "输入一个小于班级人数的数字，将输出一些随机数。" << endl;
-	cout << "输入记事本模式以进入记事本模式，此时你可以输入文本，按Enter键确定。" << endl;
-	cout << "输入打开记事本以查看记事本的内容。" << endl;
-	cout << "\n\n\n还有彩蛋等你来试！\n\n\n";
-	system("pause");
+void instructions(int x) {
+	if (x == 0) {
+		ofstream out;
+		out.open("README.txt");
+		out << "抽奖程序     Copyright by 赖朴然 [Vsersion 1.5]" << endl;
+		out << "使用说明" << endl;
+		out << "重启程序请输入-1，关闭程序请输入0。" << endl;
+		out << "输入一个小于班级人数的数字，将输出一些随机数。" << endl;
+		out << "输入“记事本模式”以进入记事本模式。" << endl;
+		out << "输入打开记事本以查看记事本的内容。" << endl;
+		out << "还有彩蛋等你来试！";
+	}
+	else if (x == 1) {
+		cout << "抽奖程序     Copyright by 赖朴然 [Vsersion 1.5]" << endl;
+		cout << "使用说明" << endl;
+		cout << "重启程序请输入-1，关闭程序请输入0。" << endl;
+		cout << "输入一个小于班级人数的数字，将输出一些随机数。" << endl;
+		cout << "输入“记事本模式”以进入记事本模式。" << endl;
+		cout << "输入打开记事本以查看记事本的内容。" << endl;
+		cout << "\n\n\n还有彩蛋等你来试！\n\n\n";
+		system("pause");
+	}
 }
 
 int main()
 {
 	system("cls");
 	show();
+	instructions(0);
 	for (i = 54; i >= 0; i--)arr[i] = 0;
 	a = i = j = r = k = ct = 0;
 	cin >> in;
 	cout << endl;
 	if (in == "打开记事本") {
 		ifstream in;
-		in.open("NotePad.lpr");
-		if (!in) {
+		in.open("记事本.bin", ios::binary);
+		if (in.fail()) {
 			cout << "打开失败！" << endl;
 			main();
 		}
-		while (in >> m)in >> m;
-		cout << m << endl;
+		while (!in.eof())
+			in >> n;
+		cout << n << endl;
 		in.close();
 		main();
 	}
 	else if (in == "记事本模式") {
 		system("cls");
 		ofstream out;
+		out.open("记事本.bin", ios::binary);
 		system("color F4");
 		cout << setw(70) << "记事本模式" << endl;
-		out.open("记事本.lpr");
-		if (!out) {
-			cout << "打开失败！" << endl;
-			main();
-		}
 		cin >> n;
 		out << n;
 		out.close();
@@ -100,7 +110,7 @@ int main()
 		cin >> in;
 		system("cls");
 		show();
-		cout << endl << "中奖号码是" << in << "号" << endl;
+		cout << endl << setw(20) << "中奖号码是" << in << "号" << endl;
 		system("pause");
 		main();
 	}
@@ -118,10 +128,17 @@ int main()
 	}
 	else if (i == 0) {
 		return 0;
+		return 0;
+		return 0;
 	}
 	else if (i == -1) {
 		system("start 抽奖.exe");
 		return 1;
+	}
+	else if (i == -100) {
+		system("cls");
+		instructions(1);
+		main();
 	}
 	else if (i > 55 || i < 1) {
 		cout << "人数不在范围内！！！" << endl;
@@ -131,7 +148,8 @@ int main()
 	}
 	else if (i == 55) {
 		cout << endl << endl << "以下为抽到的幸运观众：" << endl << endl;
-		for (int z = 1; z <= 55; z++)cout << "中奖号码是" << z << "号" << endl;
+		for (int z = 1; z <= 55; z++)
+			cout << setw(50) << "中奖号码是" << z << "号" << endl;
 		system("pause");
 		main();
 	}
@@ -154,7 +172,7 @@ int main()
 			}
 			arr[j] = a;
 			j++;
-			Sleep((int)r * a);
+			Sleep((int)r * a / 10);
 		}
 		cout << endl << endl << "以下为抽到的幸运观众：" << endl << endl;
 		sort(arr, arr + i);
@@ -162,7 +180,7 @@ int main()
 		system("pause");
 		main();
 	}
-	else {
+	else if (i >= 23) {
 		cout << "以下为测试数据，不用看" << endl;
 		while (j < 55 - i) {
 			r = getrand(55, 1000);
@@ -182,7 +200,7 @@ int main()
 			}
 			arr[j] = a;
 			j++;
-			Sleep((int)r* a);
+			Sleep((int)r * a / 10);
 		}
 		cout << endl << endl << "以下为抽到的幸运观众：" << endl << endl;
 		sort(arr, arr + i);
@@ -206,4 +224,6 @@ int main()
 		system("pause");
 		main();
 	}
+	cout << "你说什么？" << endl;
+	system("pause");
 }
