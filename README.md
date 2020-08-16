@@ -8,4 +8,4 @@ Used to choose some student on the class, I think it is easy to use!
 - And there are many useful tools for class, too!
 - The defalt number of the students is 55.
 
-[The URL of This Website](github.com/laipuran/Luck-Draw)
+[The URL of This Website](https://github.com/laipuran/Luck-Draw)
