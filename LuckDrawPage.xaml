@@ -10,7 +10,7 @@
 
 
     <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
-        <Grid>
+        <Grid Margin="20,20,20,20">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"></RowDefinition>
                 <RowDefinition Height="1*"></RowDefinition>
@@ -19,7 +19,7 @@
             
             <TextBlock FontSize="48">抽奖</TextBlock>
             
-            <StackPanel Grid.Row="1" Margin="20,20,0,0">
+            <StackPanel Grid.Row="1">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock FontSize="24">抽取人数：</TextBlock>
                     <TextBox x:Name="NumberBox" Margin="20,0,0,0" MinWidth="100" PlaceholderText="抽取人数：1，2，5……"></TextBox>
@@ -28,9 +28,9 @@
                 <TextBlock x:Name="ResultTextBlock" FontSize="24"></TextBlock>
             </StackPanel>
             
-            <StackPanel Grid.Row="2">
-                <HyperlinkButton NavigateUri="https://github.com/laipuran/LuckDraw/">获取帮助</HyperlinkButton>
-            </StackPanel>
+            <RelativePanel Grid.Row="2">
+                <HyperlinkButton RelativePanel.AlignRightWithPanel="True" NavigateUri="https://github.com/laipuran/LuckDraw/" FontSize="12">获取帮助</HyperlinkButton>
+            </RelativePanel>
         </Grid>
     </ScrollViewer>
 

@@ -29,8 +29,10 @@ namespace LuckDraw
         private void GetNumber_Click(object sender, RoutedEventArgs e)
         {
             NumberBox.IsReadOnly = true;
+            GetNumber.IsEnabled = false;
             int number = Int32.Parse(NumberBox.Text);
 
+            GetNumber.IsEnabled = true;
             NumberBox.IsReadOnly = false;
         }
     }
