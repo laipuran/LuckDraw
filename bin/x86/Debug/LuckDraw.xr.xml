@@ -55,6 +55,10 @@
       <RootProperty Name="Children" />
       <RootProperty Name="Orientation" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.HyperlinkButton">
+      <RootProperty Name="NavigateUri" />
+      <RootProperty Name="Content" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Margin" />
       <RootProperty Name="MinWidth" />

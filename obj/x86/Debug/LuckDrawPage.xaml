@@ -14,8 +14,11 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"></RowDefinition>
                 <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
             </Grid.RowDefinitions>
+            
             <TextBlock FontSize="48">抽奖</TextBlock>
+            
             <StackPanel Grid.Row="1" Margin="20,20,0,0">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock FontSize="24">抽取人数：</TextBlock>
@@ -23,6 +26,10 @@
                     <Button x:ConnectionId='4' x:Name="GetNumber" Margin="20,0,0,0"                        >抽取</Button>
                 </StackPanel>
                 <TextBlock x:ConnectionId='2' x:Name="ResultTextBlock" FontSize="24"></TextBlock>
+            </StackPanel>
+            
+            <StackPanel Grid.Row="2">
+                <HyperlinkButton NavigateUri="https://github.com/laipuran/LuckDraw/">获取帮助</HyperlinkButton>
             </StackPanel>
         </Grid>
     </ScrollViewer>
