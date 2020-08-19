@@ -26,11 +26,18 @@ namespace LuckDraw
         {
             this.InitializeComponent();
         }
+        int getrand(int a, int b)
+        {
+            Random r = new Random();
+            int num = r.Next(a, b);
+            return num;
+        }
         private void GetNumber_Click(object sender, RoutedEventArgs e)
         {
             NumberBox.IsReadOnly = true;
             GetNumber.IsEnabled = false;
             int number = Int32.Parse(NumberBox.Text);
+
 
             GetNumber.IsEnabled = true;
             NumberBox.IsReadOnly = false;

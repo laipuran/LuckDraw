@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>5f32e2c8-bda8-4939-b550-5731e04995c7</PackageIdentityName>
-    <PackageIdentityPublisher>CN=Laifuzhou</PackageIdentityPublisher>
+    <PackageIdentityPublisher>CN=PuranLai</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
@@ -66,21 +66,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\LuckDraw.xr.xml">
       <PackagePath>LuckDraw.xr.xml</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\App.xbf">
-      <PackagePath>App.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\DictionaryRes.xbf">
-      <PackagePath>DictionaryRes.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\LuckDrawPage.xbf">
-      <PackagePath>LuckDrawPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\MainPage.xbf">
-      <PackagePath>MainPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\SettingsPage.xbf">
-      <PackagePath>SettingsPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
