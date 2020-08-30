@@ -33,5 +33,10 @@ namespace LuckDraw
             int trans = int.Parse(NumberTextBox.Text);
             App.numberOfPeople = trans;
         }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            NumberTextBox.Text = App.numberOfPeople > 0 ? App.numberOfPeople.ToString() : "55";
+        }
     }
 }

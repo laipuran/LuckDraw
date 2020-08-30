@@ -34,18 +34,18 @@ namespace LuckDraw
         }
         private void GetNumber_Click(object sender, RoutedEventArgs e)
         {
-            NumberTextBox.IsReadOnly = true;
+            NumberComboBox.IsEnabled = false;
             GetNumberButton.IsEnabled = false;
 
-            int number = int.Parse(NumberTextBox.Text);
+            int number = int.Parse(NumberComboBox.Text);
             if (number<=0)
             {
                 ResultTextBlock.Text = "输入值非法！";
                 GetNumberButton.IsEnabled = true;
-                NumberTextBox.IsReadOnly = false;
+                NumberComboBox.IsEnabled = false;
                 return;
             }
-            int max = App.numberOfPeople <= 1 ? App.numberOfPeople : 55;
+            int max = App.numberOfPeople > 1 ? App.numberOfPeople : 55;
 
             int[] array=new int[number];
             for (int i = 0; i < number; i++)
@@ -57,7 +57,7 @@ namespace LuckDraw
             ResultTextBlock.Text = output;
 
             GetNumberButton.IsEnabled = true;
-            NumberTextBox.IsReadOnly = false;
+            NumberComboBox.IsEnabled = true;
         }
     }
 }

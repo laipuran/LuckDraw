@@ -24,10 +24,16 @@
 
         <ScrollViewer Grid.Row="1" Grid.ColumnSpan="2">
             <RelativePanel Margin="0,20,0,0">
-                <TextBlock x:ConnectionId='2' RelativePanel.AlignLeftWithPanel="True" x:Name="TitleTextBlock" FontSize="24">抽取人数：</TextBlock>
-                <TextBox x:ConnectionId='3' RelativePanel.RightOf="TitleTextBlock" RelativePanel.LeftOf="GetNumberButton" x:Name="NumberTextBox" Margin="20,0,0,0" MinWidth="100" PlaceholderText="抽取人数：1，2，5……"></TextBox>
+                <TextBlock x:ConnectionId='2' RelativePanel.AlignLeftWithPanel="True" x:Name="TitleTextBlock" FontSize="20">选择或输入抽取的人数</TextBlock>
+                <ComboBox x:ConnectionId='3' RelativePanel.RightOf="TitleTextBlock" RelativePanel.LeftOf="GetNumberButton" IsEditable="True" x:Name="NumberComboBox" Margin="20,0,0,0" MinWidth="100">
+                    <x:String>1</x:String>
+                    <x:String>2</x:String>
+                    <x:String>3</x:String>
+                    <x:String>5</x:String>
+                    <x:String>10</x:String>
+                </ComboBox>
                 <Button x:ConnectionId='4' RelativePanel.AlignRightWithPanel="True" x:Name="GetNumberButton" Margin="20,0,0,0"                        >抽取</Button>
-                <TextBlock x:ConnectionId='5' x:Name="ResultTextBlock" Margin="0,60,0,0" FontSize="18">被抽中的幸运观众：</TextBlock>
+                <TextBlock x:ConnectionId='5' RelativePanel.Below="TitleTextBlock" x:Name="ResultTextBlock" Margin="0,20,0,0" FontSize="18">被抽中的幸运观众：</TextBlock>
             </RelativePanel>
         </ScrollViewer>
 
