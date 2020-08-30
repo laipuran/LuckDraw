@@ -6,33 +6,35 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource SystemControlAcrylicWindowBrush}">
 
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
 
-    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"></RowDefinition>
-                <RowDefinition Height="1*"></RowDefinition>
-                <RowDefinition Height="Auto"></RowDefinition>
-            </Grid.RowDefinitions>
-            
-            <TextBlock FontSize="48">抽奖</TextBlock>
-            
-            <StackPanel Grid.Row="1">
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock FontSize="24">抽取人数：</TextBlock>
-                    <TextBox x:ConnectionId='3' x:Name="NumberBox" Margin="20,0,0,0" MinWidth="100" PlaceholderText="抽取人数：1，2，5……"></TextBox>
-                    <Button x:ConnectionId='4' x:Name="GetNumber" Margin="20,0,0,0"                        >抽取</Button>
-                </StackPanel>
-                <TextBlock x:ConnectionId='2' x:Name="ResultTextBlock" FontSize="24"></TextBlock>
-            </StackPanel>
-            
-            <RelativePanel Grid.Row="2">
-                <HyperlinkButton RelativePanel.AlignRightWithPanel="True" NavigateUri="https://github.com/laipuran/LuckDraw/" FontSize="12">获取帮助</HyperlinkButton>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock FontSize="48">抽奖</TextBlock>
+
+        <ScrollViewer Grid.Row="1" Grid.ColumnSpan="2">
+            <RelativePanel Margin="0,20,0,0">
+                <TextBlock x:ConnectionId='2' RelativePanel.AlignLeftWithPanel="True" x:Name="TitleTextBlock" FontSize="24">抽取人数：</TextBlock>
+                <TextBox x:ConnectionId='3' RelativePanel.RightOf="TitleTextBlock" RelativePanel.LeftOf="GetNumberButton" x:Name="NumberTextBox" Margin="20,0,0,0" MinWidth="100" PlaceholderText="抽取人数：1，2，5……"></TextBox>
+                <Button x:ConnectionId='4' RelativePanel.AlignRightWithPanel="True" x:Name="GetNumberButton" Margin="20,0,0,0"                        >抽取</Button>
+                <TextBlock x:ConnectionId='5' x:Name="ResultTextBlock" Margin="0,60,0,0" FontSize="18">被抽中的幸运观众：</TextBlock>
             </RelativePanel>
-        </Grid>
-    </ScrollViewer>
+        </ScrollViewer>
+
+        <RelativePanel Grid.Row="2" Grid.Column="1">
+            <HyperlinkButton RelativePanel.AlignRightWithPanel="True" NavigateUri="https://github.com/laipuran/LuckDraw/" FontSize="15">获取帮助</HyperlinkButton>
+        </RelativePanel>
+    </Grid>
 
 </Page>
 

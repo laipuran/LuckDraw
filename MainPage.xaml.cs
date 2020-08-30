@@ -25,7 +25,6 @@ namespace LuckDraw
         public MainPage()
         {
             this.InitializeComponent();
-            LuckDrawListBoxItem.IsSelected = true;
             FrameOfMainPage.Navigate(typeof(LuckDrawPage));
         }
 
@@ -40,7 +39,6 @@ namespace LuckDraw
                 FrameOfMainPage.Navigate(typeof(SettingsPage));
             }
         }
-
         private void HamburgerButton_Click(object sender, RoutedEventArgs e)
         {
             SplitViewOfMainPage.IsPaneOpen = !SplitViewOfMainPage.IsPaneOpen;

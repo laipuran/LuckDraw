@@ -7,7 +7,7 @@
 
   有关程序包清单文件的详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=241727
  -->
-  <Identity Name="5f32e2c8-bda8-4939-b550-5731e04995c7" Publisher="CN=PuranLai" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <Identity Name="5f32e2c8-bda8-4939-b550-5731e04995c7" Publisher="CN=PuranLai" Version="1.0.1.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="5f32e2c8-bda8-4939-b550-5731e04995c7" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>LuckDraw</DisplayName>

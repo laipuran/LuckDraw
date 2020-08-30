@@ -26,7 +26,7 @@ namespace LuckDraw
         {
             this.InitializeComponent();
         }
-        int getrand(int a, int b)
+        int getRand(int a, int b)
         {
             Random r = new Random();
             int num = r.Next(a, b);
@@ -34,13 +34,30 @@ namespace LuckDraw
         }
         private void GetNumber_Click(object sender, RoutedEventArgs e)
         {
-            NumberBox.IsReadOnly = true;
-            GetNumber.IsEnabled = false;
-            int number = Int32.Parse(NumberBox.Text);
+            NumberTextBox.IsReadOnly = true;
+            GetNumberButton.IsEnabled = false;
 
+            int number = int.Parse(NumberTextBox.Text);
+            if (number<=0)
+            {
+                ResultTextBlock.Text = "输入值非法！";
+                GetNumberButton.IsEnabled = true;
+                NumberTextBox.IsReadOnly = false;
+                return;
+            }
+            int max = App.numberOfPeople <= 1 ? App.numberOfPeople : 55;
 
-            GetNumber.IsEnabled = true;
-            NumberBox.IsReadOnly = false;
+            int[] array=new int[number];
+            for (int i = 0; i < number; i++)
+            {
+                array[i] = getRand(1, max+1);
+            }
+            string output;
+            output = "被抽中的幸运同学：\n"+string.Join("\n", array);
+            ResultTextBlock.Text = output;
+
+            GetNumberButton.IsEnabled = true;
+            NumberTextBox.IsReadOnly = false;
         }
     }
 }

@@ -55,3 +55,4 @@ C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x64\Debug\qualifiers.txt.intermedia
 C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x64\Debug\ProjectArchitectures.txt
 C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885022160000000.json
+C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x64\Debug\LuckDraw.csprojAssemblyReference.cache

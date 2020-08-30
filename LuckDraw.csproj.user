@@ -4,12 +4,13 @@
     <DeviceId>30f105c9-681e-420b-a277-7c086ead8a4e</DeviceId>
     <UseEmulator>false</UseEmulator>
     <UseSimulator>false</UseSimulator>
+    <BackgroundTaskDebugEngines />
   </PropertyGroup>
   <PropertyGroup>
     <UapAppxPackageBuildMode>SideloadOnly</UapAppxPackageBuildMode>
     <AppxShowAllApps>False</AppxShowAllApps>
     <AppxBuildConfigurationSelection>x86|x64|arm</AppxBuildConfigurationSelection>
-    <PackageOptionalProjectsInIdeBuilds>False</PackageOptionalProjectsInIdeBuilds>
+    <PackageOptionalProjectsInIdeBuilds>True</PackageOptionalProjectsInIdeBuilds>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
     <DeviceId>30f105c9-681e-420b-a277-7c086ead8a4e</DeviceId>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.Data.Json;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -25,6 +26,12 @@ namespace LuckDraw
         public SettingsPage()
         {
             this.InitializeComponent();
+        }
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            int trans = int.Parse(NumberTextBox.Text);
+            App.numberOfPeople = trans;
         }
     }
 }

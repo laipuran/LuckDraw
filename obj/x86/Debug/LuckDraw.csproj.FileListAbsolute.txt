@@ -56,3 +56,4 @@ C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x86\Debug\SettingsPage.g.i.cs
 C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x86\Debug\SettingsPage.g.cs
 C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x86\Debug\SettingsPage.xaml
 C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x86\Debug\SettingsPage.xbf
+C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\Core\ForBundle\AppxManifest.xml

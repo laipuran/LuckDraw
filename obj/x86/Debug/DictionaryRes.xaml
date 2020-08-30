@@ -2,6 +2,8 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:LuckDraw">
+    
+    <!--MainPage-->
     <Style TargetType="Button" x:Key="NavigationButtonStyle">
         <Setter Property="FontSize" Value="36"></Setter>
         <Setter Property="FontFamily" Value="Segoe MDL2 Assets"></Setter>
@@ -14,5 +16,16 @@
         <Setter Property="FontSize" Value="24"></Setter>
         <Setter Property="Margin" Value="20,0,0,0"></Setter>
     </Style>
+    
+    <!--`SettingsPage-->
+    <Style TargetType="TextBox" x:Key="SettingsTextBoxStyle">
+        <Setter Property="FontSize" Value="28"></Setter>
+        <Setter Property="FontWeight" Value="Black"></Setter>
+    </Style>
+    <Style TargetType="TextBlock" x:Key="SettingsTextBlockStyle">
+        <Setter Property="FontSize" Value="28"></Setter>
+        <Setter Property="FontWeight" Value="Black"></Setter>
+    </Style>
+    
 </ResourceDictionary>
 
