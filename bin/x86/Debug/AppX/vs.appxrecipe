@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>D48924654CE370E051C818A02A3C12D35F9966A794934D3F534E813B584F4EB1</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>DAAC0480BFA8F43E02BC5E1D892C78E5208C903E3EA4CC0409310AD76FF89AF6</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>5f32e2c8-bda8-4939-b550-5731e04995c7_1.0.1.0_x86__xf7rpzzw2n8fe</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>5f32e2c8-bda8-4939-b550-5731e04995c7_xf7rpzzw2n8fe!App</RegisteredUserModeAppID>
     <RegisteredPackageID>5f32e2c8-bda8-4939-b550-5731e04995c7</RegisteredPackageID>
@@ -30,13 +30,21 @@
     <AppXManifest Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-08-30T10:44:17.678</Modified>
+      <Modified>2020-08-31T06:47:15.109</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\LuckDraw.exe">
       <PackagePath>entrypoint\LuckDraw.exe</PackagePath>
-      <Modified>2020-08-30T10:44:13.585</Modified>
+      <Modified>2020-08-31T06:47:14.300</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Laifuzhou\.nuget\packages\microsoft.toolkit.uwp.notifications\6.1.1\lib\uap10.0\Microsoft.Toolkit.Uwp.Notifications.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.Notifications.dll</PackagePath>
+      <Modified>2020-08-12T14:29:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Laifuzhou\.nuget\packages\querystring.net\1.0.0\lib\dotnet\QueryString.NETCore.dll">
+      <PackagePath>QueryString.NETCore.dll</PackagePath>
+      <Modified>2015-09-11T05:10:08.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -86,27 +94,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\LuckDraw.xr.xml">
       <PackagePath>LuckDraw.xr.xml</PackagePath>
-      <Modified>2020-08-30T09:44:39.295</Modified>
+      <Modified>2020-08-30T11:00:53.588</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-08-30T10:44:13.131</Modified>
+      <Modified>2020-08-31T06:47:13.915</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\DictionaryRes.xbf">
       <PackagePath>DictionaryRes.xbf</PackagePath>
-      <Modified>2020-08-30T10:44:13.131</Modified>
+      <Modified>2020-08-31T06:47:13.915</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\LuckDrawPage.xbf">
       <PackagePath>LuckDrawPage.xbf</PackagePath>
-      <Modified>2020-08-30T10:44:13.131</Modified>
+      <Modified>2020-08-31T06:47:13.915</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-08-30T10:44:13.131</Modified>
+      <Modified>2020-08-31T06:47:13.916</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\SettingsPage.xbf">
       <PackagePath>SettingsPage.xbf</PackagePath>
-      <Modified>2020-08-30T10:44:13.132</Modified>
+      <Modified>2020-08-31T06:47:13.916</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -114,11 +122,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-08-30T10:44:14.708</Modified>
+      <Modified>2020-08-30T11:47:50.924</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\Core\LuckDraw.exe">
       <PackagePath>LuckDraw.exe</PackagePath>
-      <Modified>2020-08-30T10:44:17.657</Modified>
+      <Modified>2020-08-31T06:47:15.096</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

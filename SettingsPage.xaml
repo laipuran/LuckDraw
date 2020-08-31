@@ -20,7 +20,7 @@
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
             <StackPanel Margin="20,20,20,0">
                 <StackPanel Orientation="Horizontal">
-                    <TextBox Header="请选择抽取的总人数：" Name="NumberTextBox" Width="200"></TextBox>
+                    <TextBox Header="抽取的总人数：" Name="NumberTextBox" Width="200"></TextBox>
                 </StackPanel>
             </StackPanel>
         </ScrollViewer>

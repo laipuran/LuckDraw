@@ -57,3 +57,8 @@ C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x86\Debug\qualifiers.txt.intermedia
 C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885022160000000.json
+C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\Microsoft.Toolkit.Uwp.Notifications.dll
+C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\Microsoft.Toolkit.Uwp.Notifications.pdb
+C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\QueryString.NETCore.dll
+C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\QueryString.NETCore.pdb
+C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x86\Debug\Microsoft.Toolkit.Uwp.Notifications.pri.xml

@@ -25,7 +25,7 @@
         <ScrollViewer Grid.Row="1" Grid.ColumnSpan="2">
             <RelativePanel Margin="0,20,0,0">
                 <TextBlock RelativePanel.AlignLeftWithPanel="True" x:Name="TitleTextBlock" FontSize="20">选择或输入抽取的人数</TextBlock>
-                <ComboBox RelativePanel.RightOf="TitleTextBlock" RelativePanel.LeftOf="GetNumberButton" IsEditable="True" x:Name="NumberComboBox" Margin="20,0,0,0" MinWidth="100">
+                <ComboBox Text="1" RelativePanel.RightOf="TitleTextBlock" RelativePanel.LeftOf="GetNumberButton" IsEditable="True" x:Name="NumberComboBox" Margin="20,0,0,0" MinWidth="100">
                     <x:String>1</x:String>
                     <x:String>2</x:String>
                     <x:String>3</x:String>

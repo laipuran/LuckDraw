@@ -86,6 +86,7 @@
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="Text" />
       <RootProperty Name="IsEditable" />
       <RootProperty Name="Margin" />
       <RootProperty Name="MinWidth" />
