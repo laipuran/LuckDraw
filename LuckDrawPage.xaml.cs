@@ -30,7 +30,7 @@ namespace LuckDraw
         {
             this.InitializeComponent();
         }
-        private int getRand(int a, int b)
+        static public int getRand(int a, int b)
         {
             Random r = new Random();
             int num = r.Next(a, b);

@@ -62,3 +62,8 @@ C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\Microsoft.Toolkit.Uwp.Not
 C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\QueryString.NETCore.dll
 C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\QueryString.NETCore.pdb
 C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x86\Debug\Microsoft.Toolkit.Uwp.Notifications.pri.xml
+C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\RollPage.xbf
+C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x86\Debug\RollPage.g.i.cs
+C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x86\Debug\RollPage.g.cs
+C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x86\Debug\RollPage.xaml
+C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x86\Debug\RollPage.xbf

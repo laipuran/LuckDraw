@@ -52,6 +52,13 @@
                         </StackPanel>
                     </ListBoxItem>
 
+                    <!--<ListBoxItem Name="RollListBoxItem">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Style="{StaticResource NavigationTextBlockStyle}">&#xE12C;</TextBlock>
+                            <TextBlock Style="{StaticResource PaneTextBlockStyle}">转轮</TextBlock>
+                        </StackPanel>
+                    </ListBoxItem>
+                    -->
                     <ListBoxItem Name="SettingsListBoxItem">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Style="{StaticResource NavigationTextBlockStyle}">&#xE115;</TextBlock>

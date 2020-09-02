@@ -15,14 +15,9 @@
             <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1*"></ColumnDefinition>
-            <ColumnDefinition Width="3*"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-
         <TextBlock FontSize="48">抽奖</TextBlock>
 
-        <ScrollViewer Grid.Row="1" Grid.ColumnSpan="2">
+        <ScrollViewer Grid.Row="1">
             <RelativePanel Margin="0,20,0,0">
                 <TextBlock x:ConnectionId='2' RelativePanel.AlignLeftWithPanel="True" x:Name="TitleTextBlock" FontSize="20">选择或输入抽取的人数</TextBlock>
                 <ComboBox x:ConnectionId='3' Text="1" RelativePanel.RightOf="TitleTextBlock" RelativePanel.LeftOf="GetNumberButton" IsEditable="True" x:Name="NumberComboBox" Margin="20,0,0,0" MinWidth="100">
@@ -37,9 +32,7 @@
             </RelativePanel>
         </ScrollViewer>
 
-        <RelativePanel Grid.Row="2" Grid.Column="1">
-            <HyperlinkButton RelativePanel.AlignRightWithPanel="True" NavigateUri="https://github.com/laipuran/LuckDraw/" FontSize="15">获取帮助</HyperlinkButton>
-        </RelativePanel>
+        <HyperlinkButton Grid.Row="2" NavigateUri="https://github.com/laipuran/LuckDraw/" FontSize="15">获取帮助</HyperlinkButton>
     </Grid>
 
 </Page>

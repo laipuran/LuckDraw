@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-08-31T06:47:15.109</Modified>
+      <Modified>2020-09-01T13:48:30.615</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\LuckDraw.exe">
       <PackagePath>entrypoint\LuckDraw.exe</PackagePath>
-      <Modified>2020-08-31T06:47:14.300</Modified>
+      <Modified>2020-09-01T13:48:29.804</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Laifuzhou\.nuget\packages\microsoft.toolkit.uwp.notifications\6.1.1\lib\uap10.0\Microsoft.Toolkit.Uwp.Notifications.dll">
       <PackagePath>Microsoft.Toolkit.Uwp.Notifications.dll</PackagePath>
@@ -94,27 +94,31 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\LuckDraw.xr.xml">
       <PackagePath>LuckDraw.xr.xml</PackagePath>
-      <Modified>2020-08-30T11:00:53.588</Modified>
+      <Modified>2020-09-01T13:32:32.665</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-08-31T06:47:13.915</Modified>
+      <Modified>2020-09-01T13:48:29.602</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\DictionaryRes.xbf">
       <PackagePath>DictionaryRes.xbf</PackagePath>
-      <Modified>2020-08-31T06:47:13.915</Modified>
+      <Modified>2020-09-01T13:48:29.602</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\LuckDrawPage.xbf">
       <PackagePath>LuckDrawPage.xbf</PackagePath>
-      <Modified>2020-08-31T06:47:13.915</Modified>
+      <Modified>2020-09-01T13:48:29.602</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-08-31T06:47:13.916</Modified>
+      <Modified>2020-09-01T13:48:29.603</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\RollPage.xbf">
+      <PackagePath>RollPage.xbf</PackagePath>
+      <Modified>2020-09-01T13:48:29.605</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\SettingsPage.xbf">
       <PackagePath>SettingsPage.xbf</PackagePath>
-      <Modified>2020-08-31T06:47:13.916</Modified>
+      <Modified>2020-09-01T13:48:29.606</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -122,11 +126,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-08-30T11:47:50.924</Modified>
+      <Modified>2020-08-31T07:31:17.662</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\Core\LuckDraw.exe">
       <PackagePath>LuckDraw.exe</PackagePath>
-      <Modified>2020-08-31T06:47:15.096</Modified>
+      <Modified>2020-09-01T13:48:30.580</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

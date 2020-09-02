@@ -30,13 +30,17 @@ namespace LuckDraw
 
         private void ListBoxOfMainPage_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if(LuckDrawListBoxItem.IsSelected)
+            if (LuckDrawListBoxItem.IsSelected)
             {
                 FrameOfMainPage.Navigate(typeof(LuckDrawPage));
             }
-            if(SettingsListBoxItem.IsSelected)
+            else if (SettingsListBoxItem.IsSelected)
             {
                 FrameOfMainPage.Navigate(typeof(SettingsPage));
+            }
+            else if (RollListBoxItem.IsSelected)
+            {
+                FrameOfMainPage.Navigate(typeof(RollPage));
             }
         }
         private void HamburgerButton_Click(object sender, RoutedEventArgs e)

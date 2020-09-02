@@ -85,6 +85,9 @@
     <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\RollPage.xbf">
+      <PackagePath>RollPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\SettingsPage.xbf">
       <PackagePath>SettingsPage.xbf</PackagePath>
     </AppxPackagedFile>
