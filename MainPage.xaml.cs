@@ -38,12 +38,10 @@ namespace LuckDraw
             {
                 FrameOfMainPage.Navigate(typeof(SettingsPage));
             }
-            /*
             else if (RollListBoxItem.IsSelected)
             {
                 FrameOfMainPage.Navigate(typeof(RollPage));
             }
-            */
         }
         private void HamburgerButton_Click(object sender, RoutedEventArgs e)
         {
