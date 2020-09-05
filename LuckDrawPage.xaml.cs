@@ -96,6 +96,33 @@ namespace LuckDraw
                 array[i] = getRand(1, max+1);
             }
 
+            int[] rankedNumbers = new int[number];
+            bool flag = true;
+            for (int i = 0; i < number - 1; i++)
+            {
+                if (array[i] < array[i + 1])
+                {
+                    continue;
+                }
+                else
+                {
+                    flag = false;
+                }
+            }
+            if (flag)
+            {
+                for (int i = number - 1; i > 0; i--)
+                {
+                    for (int j = 0; j < i; j++)
+                    {
+                        if (array[j] > array[j + 1])
+                        {
+                            int
+                        }
+                    }
+                }
+            }
+
             string output, notifications;
             output = "被抽中的幸运同学：\n"+string.Join("\n", array);
             notifications = "被抽中的幸运同学： " + string.Join(" ", array);
