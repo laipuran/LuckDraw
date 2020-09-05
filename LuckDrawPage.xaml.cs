@@ -117,7 +117,10 @@ namespace LuckDraw
                     {
                         if (array[j] > array[j + 1])
                         {
-                            int
+                            int temp;
+                            temp = array[j + 1];
+                            array[j + 1] = array[j];
+                            array[j] = temp;
                         }
                     }
                 }

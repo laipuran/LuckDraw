@@ -23,7 +23,7 @@
         </Grid.RowDefinitions>
 
         <RelativePanel>
-            <Button x:ConnectionId='7'
+            <Button x:ConnectionId='8'
                 Name="HamburgerButton"
                 RelativePanel.AlignLeftWithPanel="True"
                 Style="{StaticResource NavigationButtonStyle}"
@@ -52,14 +52,14 @@
                         </StackPanel>
                     </ListBoxItem>
 
-                    <!--<ListBoxItem Name="RollListBoxItem">
+                    <ListBoxItem x:ConnectionId='5' Name="RollListBoxItem" Visibility="Collapsed">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Style="{StaticResource NavigationTextBlockStyle}">&#xE12C;</TextBlock>
                             <TextBlock Style="{StaticResource PaneTextBlockStyle}">转轮</TextBlock>
                         </StackPanel>
                     </ListBoxItem>
-                    -->
-                    <ListBoxItem x:ConnectionId='5' Name="SettingsListBoxItem">
+                    
+                    <ListBoxItem x:ConnectionId='6' Name="SettingsListBoxItem">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Style="{StaticResource NavigationTextBlockStyle}">&#xE115;</TextBlock>
                             <TextBlock Style="{StaticResource PaneTextBlockStyle}">设置</TextBlock>
@@ -69,7 +69,7 @@
                 </ListBox>
             </SplitView.Pane>
             <SplitView.Content>
-                    <Frame x:ConnectionId='6' Name="FrameOfMainPage" Margin="20,20,0,0"></Frame>
+                    <Frame x:ConnectionId='7' Name="FrameOfMainPage" Margin="20,20,0,0"></Frame>
             </SplitView.Content>
         </SplitView>
 
