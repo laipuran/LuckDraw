@@ -27,6 +27,7 @@ namespace LuckDraw
         {
             this.InitializeComponent();
             FrameOfMainPage.Navigate(typeof(LuckDrawPage));
+            BackButton.Visibility = Visibility.Collapsed;
         }
 
         private void ListBoxOfMainPage_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -34,14 +35,17 @@ namespace LuckDraw
             if (LuckDrawListBoxItem.IsSelected)
             {
                 FrameOfMainPage.Navigate(typeof(LuckDrawPage));
+                BackButton.Visibility = Visibility.Collapsed;
             }
             else if (SettingsListBoxItem.IsSelected)
             {
                 FrameOfMainPage.Navigate(typeof(SettingsPage));
+                BackButton.Visibility = Visibility.Visible;
             }
             else if (RollListBoxItem.IsSelected)
             {
                 FrameOfMainPage.Navigate(typeof(RollPage));
+                BackButton.Visibility = Visibility.Visible;
             }
         }
         private void HamburgerButton_Click(object sender, RoutedEventArgs e)
@@ -49,5 +53,12 @@ namespace LuckDraw
             SplitViewOfMainPage.IsPaneOpen = !SplitViewOfMainPage.IsPaneOpen;
         }
 
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (FrameOfMainPage.CanGoBack)
+            {
+                FrameOfMainPage.GoBack();
+            }
+        }
     }
 }

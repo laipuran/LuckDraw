@@ -62,9 +62,9 @@
       <RootProperty Name="HorizontalScrollBarVisibility" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.HyperlinkButton">
-      <RootProperty Name="NavigateUri" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="Content" />
+      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
       <RootProperty Name="Margin" />
@@ -118,10 +118,17 @@
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Frame">
       <RootProperty Name="Name" />
+      <RootProperty Name="MinHeight" />
+      <RootProperty Name="MinWidth" />
       <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="LuckDraw.MainPage" />
     <RootType FullName="LuckDraw.RollPage" />
     <RootType FullName="LuckDraw.SettingsPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.WebView">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Source" />
+    </RootType>
+    <RootType FullName="LuckDraw.WebPage" />
   </Roots.RootTypes>
 </Roots>

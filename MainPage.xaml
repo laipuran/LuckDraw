@@ -29,6 +29,13 @@
                 Style="{StaticResource NavigationButtonStyle}"
                 Click="HamburgerButton_Click"
                 Content="&#xE700;"></Button>
+            <Button
+                Name="BackButton"
+                RelativePanel.RightOf="HamburgerButton"
+                Style="{StaticResource NavigationButtonStyle}"
+                Click="BackButton_Click"
+                Content="&#xF0D3;"></Button>
+            
         </RelativePanel>
 
         <SplitView
@@ -69,7 +76,7 @@
                 </ListBox>
             </SplitView.Pane>
             <SplitView.Content>
-                    <Frame Name="FrameOfMainPage" Margin="20,20,0,0"></Frame>
+                    <Frame MinHeight="500" MinWidth="800" Name="FrameOfMainPage" Margin="20,20,0,0"></Frame>
             </SplitView.Content>
         </SplitView>
 

@@ -9,7 +9,7 @@
   <Identity
     Name="31869PuranLai.LuckDraw"
     Publisher="CN=7E1D7CD2-F295-49DB-BDCB-DDA4AF0952D2"
-    Version="1.0.0.0" />
+    Version="1.0.1.0" />
 
   <mp:PhoneIdentity PhoneProductId="d248710d-ca07-412f-951f-cec7b6640fd6" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
@@ -39,6 +39,11 @@
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="landscape"/>
+          <uap:Rotation Preference="portrait"/>
+          <uap:Rotation Preference="landscapeFlipped"/>
+          <uap:Rotation Preference="portraitFlipped"/></uap:InitialRotationPreference>
       </uap:VisualElements>
     </Application>
   </Applications>

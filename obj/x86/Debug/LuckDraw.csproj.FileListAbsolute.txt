@@ -67,3 +67,8 @@ C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x86\Debug\RollPage.g.i.cs
 C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x86\Debug\RollPage.g.cs
 C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x86\Debug\RollPage.xaml
 C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x86\Debug\RollPage.xbf
+C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\WebPage.xbf
+C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x86\Debug\WebPage.g.i.cs
+C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x86\Debug\WebPage.g.cs
+C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x86\Debug\WebPage.xaml
+C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x86\Debug\WebPage.xbf

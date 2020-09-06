@@ -29,6 +29,13 @@
                 Style="{StaticResource NavigationButtonStyle}"
                                              
                 Content="&#xE700;"></Button>
+            <Button x:ConnectionId='9'
+                Name="BackButton"
+                RelativePanel.RightOf="HamburgerButton"
+                Style="{StaticResource NavigationButtonStyle}"
+                                        
+                Content="&#xF0D3;"></Button>
+            
         </RelativePanel>
 
         <SplitView x:ConnectionId='2'
@@ -69,7 +76,7 @@
                 </ListBox>
             </SplitView.Pane>
             <SplitView.Content>
-                    <Frame x:ConnectionId='7' Name="FrameOfMainPage" Margin="20,20,0,0"></Frame>
+                    <Frame x:ConnectionId='7' MinHeight="500" MinWidth="800" Name="FrameOfMainPage" Margin="20,20,0,0"></Frame>
             </SplitView.Content>
         </SplitView>
 
