@@ -36,7 +36,7 @@ namespace LuckDraw
             int num = r.Next(a, b);
             return num;
         }
-        private void startRolling()
+        private async void startRolling(object sender, RoutedEventArgs e)
         {
             int max = App.numberOfPeople > 1 ? App.numberOfPeople : 55;
             Random r = new Random();
@@ -45,7 +45,7 @@ namespace LuckDraw
                 int num = r.Next(1, max + 1);
                 string number = num.ToString();
                 NumberTextBlock.Text = number;
-                Thread.Sleep(100);
+                await System.Threading.Tasks.Task.Delay(100);
             }
         }
         private void GetNumberButton_Click(object sender, RoutedEventArgs e)

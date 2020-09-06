@@ -18,7 +18,7 @@
 
         <StackPanel Margin="0,20,0,0" Grid.Row="1" Orientation="Vertical">
             <StackPanel Orientation="Horizontal">
-                <Button FontSize="24" Name="GetNumberButton" Click="GetNumberButton_Click" Content="开始"></Button>
+                <Button FontSize="24" Name="GetNumberButton" Click="startRolling" Content="开始"></Button>
                 <Button FontSize="24" Name="StopButton" Click="StopButton_Click" Content="停止"></Button>
             </StackPanel>
             <TextBlock FontSize="24" Name="NumberTextBlock" Text=""></TextBlock>
