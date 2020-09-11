@@ -27,7 +27,6 @@ namespace LuckDraw
         {
             this.InitializeComponent();
             FrameOfMainPage.Navigate(typeof(LuckDrawPage));
-            BackButton.Visibility = Visibility.Collapsed;
         }
 
         private void ListBoxOfMainPage_SelectionChanged(object sender, SelectionChangedEventArgs e)

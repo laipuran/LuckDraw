@@ -137,10 +137,6 @@ namespace LuckDraw
             NumberComboBox.IsEnabled = true;
         }
 
-        private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(WebPage));
-        }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);

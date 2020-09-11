@@ -34,7 +34,8 @@
                 RelativePanel.RightOf="HamburgerButton"
                 Style="{StaticResource NavigationButtonStyle}"
                 Click="BackButton_Click"
-                Content="&#xF0D3;"></Button>
+                Content="&#xF0D3;"
+                Visibility="Collapsed"></Button>
             
         </RelativePanel>
 

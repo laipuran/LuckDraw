@@ -19,20 +19,20 @@
 
         <ScrollViewer Grid.Row="1">
             <RelativePanel Margin="0,20,0,0">
-                <TextBlock RelativePanel.AlignLeftWithPanel="True" x:Name="TitleTextBlock" FontSize="20">选择或输入抽取的人数</TextBlock>
-                <ComboBox Text="1" RelativePanel.RightOf="TitleTextBlock" RelativePanel.LeftOf="GetNumberButton" IsEditable="True" x:Name="NumberComboBox" Margin="20,0,0,0" MinWidth="100">
+                <TextBlock RelativePanel.AlignLeftWithPanel="True" x:Name="TitleTextBlock" FontSize="32">选择或输入抽取的人数</TextBlock>
+                <ComboBox RelativePanel.RightOf="TitleTextBlock" RelativePanel.LeftOf="GetNumberButton" IsEditable="True" x:Name="NumberComboBox" Margin="20,0,0,0" MinWidth="100" FontSize="32">
                     <x:String>1</x:String>
                     <x:String>2</x:String>
                     <x:String>3</x:String>
                     <x:String>5</x:String>
                     <x:String>10</x:String>
                 </ComboBox>
-                <Button RelativePanel.AlignRightWithPanel="True" x:Name="GetNumberButton" Margin="20,0,0,0" Click="GetNumber_Click">抽取</Button>
-                <TextBlock RelativePanel.Below="TitleTextBlock" x:Name="ResultTextBlock" Margin="0,20,0,0" FontSize="18">被抽中的幸运观众：</TextBlock>
+                <Button RelativePanel.AlignRightWithPanel="True" x:Name="GetNumberButton" Margin="20,0,0,0" Click="GetNumber_Click" FontSize="32">抽取</Button>
+                <TextBlock RelativePanel.Below="TitleTextBlock" x:Name="ResultTextBlock" Margin="0,20,0,0" FontSize="24">被抽中的幸运观众：</TextBlock>
             </RelativePanel>
         </ScrollViewer>
 
-        <HyperlinkButton Grid.Row="2" Click="HyperlinkButton_Click" FontSize="15">获取帮助</HyperlinkButton>
+        <HyperlinkButton Grid.Row="2" NavigateUri="https://github.com/laipuran/LuckDraw" FontSize="15">获取帮助</HyperlinkButton>
     </Grid>
 
 </Page>
