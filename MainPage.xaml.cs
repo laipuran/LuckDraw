@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.Data.Json;
+using Windows.Storage;
 
 // https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x804 上介绍了“空白页”项模板
 
@@ -26,7 +27,11 @@ namespace LuckDraw
         public MainPage()
         {
             this.InitializeComponent();
+            ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            App.numberOfPeople = (int)localSettings.Values["numberOfPeople"];
+            App.doShowToasts = (bool)localSettings.Values["doShowToasts"];
             FrameOfMainPage.Navigate(typeof(LuckDrawPage));
+            TitleTextBlock.Text = "抽奖";
         }
 
         private void ListBoxOfMainPage_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -34,16 +39,19 @@ namespace LuckDraw
             if (LuckDrawListBoxItem.IsSelected)
             {
                 FrameOfMainPage.Navigate(typeof(LuckDrawPage));
+                TitleTextBlock.Text = "抽奖";
                 BackButton.Visibility = Visibility.Collapsed;
-            }
-            else if (SettingsListBoxItem.IsSelected)
-            {
-                FrameOfMainPage.Navigate(typeof(SettingsPage));
-                BackButton.Visibility = Visibility.Visible;
             }
             else if (RollListBoxItem.IsSelected)
             {
                 FrameOfMainPage.Navigate(typeof(RollPage));
+                TitleTextBlock.Text = "转盘";
+                BackButton.Visibility = Visibility.Visible;
+            }
+            else if (SettingsListBoxItem.IsSelected)
+            {
+                FrameOfMainPage.Navigate(typeof(SettingsPage));
+                TitleTextBlock.Text = "设置";
                 BackButton.Visibility = Visibility.Visible;
             }
         }
@@ -57,6 +65,7 @@ namespace LuckDraw
             if (FrameOfMainPage.CanGoBack)
             {
                 FrameOfMainPage.GoBack();
+                LuckDrawListBoxItem.IsSelected = true;
             }
         }
     }

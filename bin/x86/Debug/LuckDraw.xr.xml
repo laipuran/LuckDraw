@@ -8,10 +8,11 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Margin" />
+      <RootProperty Name="FontSize" />
       <RootProperty Name="Content" />
       <RootProperty Name="Name" />
       <RootProperty Name="Style" />
-      <RootProperty Name="FontSize" />
+      <RootProperty Name="Visibility" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
@@ -62,9 +63,9 @@
       <RootProperty Name="HorizontalScrollBarVisibility" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.HyperlinkButton">
+      <RootProperty Name="NavigateUri" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="Content" />
-      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
       <RootProperty Name="Margin" />
@@ -75,16 +76,16 @@
       <RootMethod Name="SetRightOf" />
       <RootMethod Name="GetLeftOf" />
       <RootMethod Name="SetLeftOf" />
-      <RootMethod Name="GetAlignRightWithPanel" />
-      <RootMethod Name="SetAlignRightWithPanel" />
       <RootMethod Name="GetBelow" />
       <RootMethod Name="SetBelow" />
+      <RootMethod Name="GetAlignRightWithPanel" />
+      <RootMethod Name="SetAlignRightWithPanel" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
-      <RootProperty Name="Text" />
       <RootProperty Name="IsEditable" />
       <RootProperty Name="Margin" />
       <RootProperty Name="MinWidth" />
+      <RootProperty Name="FontSize" />
       <RootProperty Name="Items" />
     </RootType>
     <RootType FullName="System.String" />
@@ -114,6 +115,7 @@
       <RootProperty Name="Orientation" />
       <RootProperty Name="Children" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Frame">
@@ -124,11 +126,11 @@
     </RootType>
     <RootType FullName="LuckDraw.MainPage" />
     <RootType FullName="LuckDraw.RollPage" />
-    <RootType FullName="LuckDraw.SettingsPage" />
-    <RootType FullName="Windows.UI.Xaml.Controls.WebView">
+    <RootType FullName="Windows.UI.Xaml.Controls.ToggleSwitch">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Header" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="Source" />
     </RootType>
-    <RootType FullName="LuckDraw.WebPage" />
+    <RootType FullName="LuckDraw.SettingsPage" />
   </Roots.RootTypes>
 </Roots>

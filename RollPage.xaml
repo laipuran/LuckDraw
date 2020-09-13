@@ -14,8 +14,6 @@
             <RowDefinition Height="1*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <TextBlock FontSize="48">转轮</TextBlock>
-
         <StackPanel Margin="0,20,0,0" Grid.Row="1" Orientation="Vertical">
             <StackPanel Orientation="Horizontal">
                 <Button FontSize="24" Name="GetNumberButton" Click="startRolling" Content="开始"></Button>

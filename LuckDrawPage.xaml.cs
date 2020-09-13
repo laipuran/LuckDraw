@@ -88,7 +88,7 @@ namespace LuckDraw
                 NumberComboBox.IsEnabled = true;
                 return;
             }
-            int max = App.numberOfPeople > 1 ? App.numberOfPeople : 55;
+            int max = App.numberOfPeople;
 
             int[] array=new int[number];
             for (int i = 0; i < number; i++)
@@ -107,9 +107,10 @@ namespace LuckDraw
                 else
                 {
                     flag = false;
+                    break;
                 }
             }
-            if (flag)
+            if (!flag)
             {
                 for (int i = number - 1; i > 0; i--)
                 {
@@ -126,12 +127,16 @@ namespace LuckDraw
                 }
             }
 
-            string output, notifications;
+            string output;
             output = "被抽中的幸运同学：\n"+string.Join("\n", array);
-            notifications = "被抽中的幸运同学： " + string.Join(" ", array);
-            ResultTextBlock.Text = output;
+            if (App.doShowToasts)
+            {
+                string notifications;
+                notifications = "被抽中的幸运同学： " + string.Join(" ", array);
+                ResultTextBlock.Text = output;
+                sendNotifications("请查看抽取的学号名单", notifications, 5);
+            }
 
-            sendNotifications("请查看抽取的学号名单", notifications, 5);
 
             GetNumberButton.IsEnabled = true;
             NumberComboBox.IsEnabled = true;

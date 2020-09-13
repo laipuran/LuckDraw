@@ -15,12 +15,11 @@
             <RowDefinition Height="1*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <TextBlock FontSize="48">设置</TextBlock>
-
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
             <StackPanel Margin="20,20,20,0">
-                <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
                     <TextBox Header="抽取的总人数：" Name="NumberTextBox" Width="200"></TextBox>
+                    <ToggleSwitch Header="抽取完毕后是否弹出Toast提示：" Name="ToastToggleSwitch" Margin="0,20,0,0"></ToggleSwitch>
                 </StackPanel>
             </StackPanel>
         </ScrollViewer>

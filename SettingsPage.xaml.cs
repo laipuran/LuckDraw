@@ -6,6 +6,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Data.Json;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -30,13 +31,18 @@ namespace LuckDraw
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            int trans = int.Parse(NumberTextBox.Text);
-            App.numberOfPeople = trans;
+            int number = int.Parse(NumberTextBox.Text);
+            bool showToast = ToastToggleSwitch.IsOn;
+            ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            localSettings.Values["numberOfPeople"] = number;
+            localSettings.Values["doShowToasts"] = showToast;
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
             NumberTextBox.Text = App.numberOfPeople > 0 ? App.numberOfPeople.ToString() : "55";
+            ToastToggleSwitch.IsOn = false;
         }
+
     }
 }

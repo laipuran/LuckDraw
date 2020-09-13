@@ -36,6 +36,12 @@
                 Click="BackButton_Click"
                 Content="&#xF0D3;"
                 Visibility="Collapsed"></Button>
+            <TextBlock
+                Name="TitleTextBlock"
+                RelativePanel.RightOf="BackButton"
+                FontSize="28"
+                FontWeight="Bold"
+                Margin="20,5,0,0"></TextBlock>
             
         </RelativePanel>
 
