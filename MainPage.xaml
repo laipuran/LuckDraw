@@ -87,9 +87,6 @@
             </SplitView.Content>
         </SplitView>
 
-        <RelativePanel Grid.Row="2">
-            
-        </RelativePanel>
 
     </Grid>
 </Page>

@@ -38,6 +38,7 @@
         </ScrollViewer>
 
         <HyperlinkButton Grid.Row="2" NavigateUri="https://github.com/laipuran/LuckDraw" FontSize="15">获取帮助</HyperlinkButton>
+
     </Grid>
 
 </Page>

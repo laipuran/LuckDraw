@@ -31,18 +31,18 @@ namespace LuckDraw
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            int number = int.Parse(NumberTextBox.Text);
-            bool showToast = ToastToggleSwitch.IsOn;
+            App.numberOfPeople = int.Parse(NumberTextBox.Text);
+            App.doShowToasts = ToastToggleSwitch.IsOn;
             ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
-            localSettings.Values["numberOfPeople"] = number;
-            localSettings.Values["doShowToasts"] = showToast;
+            localSettings.Values["numberOfPeople"] = App.numberOfPeople;
+            localSettings.Values["doShowToasts"] = App.doShowToasts;
         }
+
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            NumberTextBox.Text = App.numberOfPeople > 0 ? App.numberOfPeople.ToString() : "55";
-            ToastToggleSwitch.IsOn = false;
+            NumberTextBox.Text = App.numberOfPeople.ToString();
+            ToastToggleSwitch.IsOn = App.doShowToasts;
         }
-
     }
 }

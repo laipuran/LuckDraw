@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.Data.Json;
 using Windows.Storage;
+using Windows.UI.Core.Preview;
 
 // https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x804 上介绍了“空白页”项模板
 
@@ -27,7 +28,27 @@ namespace LuckDraw
         public MainPage()
         {
             this.InitializeComponent();
+
+
             ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            if (localSettings.Values.ContainsKey("numberOfPeople"))
+            {
+                App.numberOfPeople= (int)localSettings.Values["numberOfPeople"];
+            }
+            else
+            {
+                localSettings.Values["numberOfPeople"] = 55;
+            }
+
+            if (localSettings.Values.ContainsKey("doShowToasts"))
+            {
+                App.doShowToasts = (bool)localSettings.Values["doShowToasts"];
+            }
+            else
+            {
+                localSettings.Values["doShowToasts"] = false;
+            }
+
             App.numberOfPeople = (int)localSettings.Values["numberOfPeople"];
             App.doShowToasts = (bool)localSettings.Values["doShowToasts"];
             FrameOfMainPage.Navigate(typeof(LuckDrawPage));

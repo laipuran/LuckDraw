@@ -129,11 +129,12 @@ namespace LuckDraw
 
             string output;
             output = "被抽中的幸运同学：\n"+string.Join("\n", array);
+            ResultTextBlock.Text = output;
+
             if (App.doShowToasts)
             {
                 string notifications;
                 notifications = "被抽中的幸运同学： " + string.Join(" ", array);
-                ResultTextBlock.Text = output;
                 sendNotifications("请查看抽取的学号名单", notifications, 5);
             }
 
@@ -145,7 +146,7 @@ namespace LuckDraw
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-
+            NumberComboBox.Text = "1";
         }
     }
 }
