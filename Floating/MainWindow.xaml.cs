@@ -24,5 +24,10 @@ namespace Floating
         {
             InitializeComponent();
         }
+
+        private void GetNumberButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
