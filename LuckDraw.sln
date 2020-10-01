@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuckDraw", "LuckDrawWindow\LuckDraw.csproj", "{2E3D3797-E7FC-4543-BB04-1EFE0EF61FC8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuckDrawWindow", "LuckDrawWindow\LuckDrawWindow.csproj", "{A228F497-06A0-4C10-8D4F-201EF18E1ADB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Floating", "Floating\Floating.csproj", "{138C56D7-16E0-46E6-B7CE-5A737E8B8EC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2E3D3797-E7FC-4543-BB04-1EFE0EF61FC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2E3D3797-E7FC-4543-BB04-1EFE0EF61FC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2E3D3797-E7FC-4543-BB04-1EFE0EF61FC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2E3D3797-E7FC-4543-BB04-1EFE0EF61FC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A228F497-06A0-4C10-8D4F-201EF18E1ADB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A228F497-06A0-4C10-8D4F-201EF18E1ADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A228F497-06A0-4C10-8D4F-201EF18E1ADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A228F497-06A0-4C10-8D4F-201EF18E1ADB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{138C56D7-16E0-46E6-B7CE-5A737E8B8EC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{138C56D7-16E0-46E6-B7CE-5A737E8B8EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{138C56D7-16E0-46E6-B7CE-5A737E8B8EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{138C56D7-16E0-46E6-B7CE-5A737E8B8EC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
