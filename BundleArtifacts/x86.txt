@@ -1,2 +1,0 @@
-MainPackage=C:\Users\Laifuzhou\source\repos\LuckDraw\bin\x86\Debug\LuckDraw_1.0.4.0_x86_Debug.msix
-SymbolPackage=C:\Users\Laifuzhou\source\repos\LuckDraw\obj\x86\Debug\Symbols\LuckDraw_1.0.4.0_x86_Debug.appxsym
