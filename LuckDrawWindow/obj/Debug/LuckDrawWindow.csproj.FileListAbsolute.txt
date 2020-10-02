@@ -14,3 +14,9 @@ C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\LuckDrawWindow
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\LuckDrawWindow.pdb
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\App.baml
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\LuckDrawWindow.csprojAssemblyReference.cache
+C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\RollPage.g.cs
+C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\RollPage.baml
+C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\LuckDrawPage.g.cs
+C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\SettingsPage.g.cs
+C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\LuckDrawPage.baml
+C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\SettingsPage.baml

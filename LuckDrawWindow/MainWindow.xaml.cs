@@ -46,7 +46,18 @@ namespace LuckDrawWindow
 
         private void ListBoxOfMainWindow_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            if (LuckDrawListBoxItem.IsSelected)
+            {
+                FrameOfMainWindow.Navigate(typeof(LuckDrawPage));
+            }
+            else if (RollListBoxItem.IsSelected)
+            {
+                FrameOfMainWindow.Navigate(typeof(RollPage));
+            }
+            else if (SettingsListBoxItem.IsSelected)
+            {
+                FrameOfMainWindow.Navigate(typeof(SettingsPage));
+            }
         }
     }
 }
