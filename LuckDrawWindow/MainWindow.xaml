@@ -6,7 +6,42 @@
         xmlns:local="clr-namespace:LuckDrawWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Storyboard x:Key="CloseMenu">
+            <DoubleAnimationUsingKeyFrames 
+                Storyboard.TargetProperty="(StackPanel.Width)"
+                Storyboard.TargetName="MenuStackPanel">
+                <EasingDoubleKeyFrame KeyTime="0" Value="200"></EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="70"></EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+
+        <Storyboard x:Key="OpenMenu">
+            <DoubleAnimationUsingKeyFrames
+                Storyboard.TargetProperty="(StackPanel.Width)"
+                Storyboard.TargetName="MenuStackPanel">
+                <EasingDoubleKeyFrame KeyTime="0" Value="70"></EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="200"></EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
         
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="HamburgerButton" Click="HamburgerButton_Click"></Button>
+        </StackPanel>
+
+        <StackPanel x:Name="MenuStackPanel">
+            <ListBox>
+                <ListBoxItem></ListBoxItem>
+                <ListBoxItem></ListBoxItem>
+                <ListBoxItem></ListBoxItem>
+            </ListBox>
+        </StackPanel>
     </Grid>
 </Window>

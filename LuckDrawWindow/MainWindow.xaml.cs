@@ -24,5 +24,10 @@ namespace LuckDrawWindow
         {
             InitializeComponent();
         }
+
+        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
