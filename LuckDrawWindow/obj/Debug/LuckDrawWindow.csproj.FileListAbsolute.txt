@@ -20,3 +20,7 @@ C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\LuckDrawPage.g
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\SettingsPage.g.cs
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\LuckDrawPage.baml
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\SettingsPage.baml
+C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\bin\Debug\LuckDrawWindow.exe.manifest
+C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\bin\Debug\LuckDrawWindow.application
+C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\LuckDrawWindow.exe.manifest
+C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\LuckDrawWindow.application
