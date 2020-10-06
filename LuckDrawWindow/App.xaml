@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:LuckDrawWindow"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+        <!--MainWindow-->
         <Style TargetType="Button" x:Key="NavigationButtonStyle">
             <Setter Property="FontSize" Value="36"></Setter>
             <Setter Property="FontFamily" Value="Segoe MDL2 Assets"></Setter>
@@ -17,13 +18,13 @@
             <Setter Property="Margin" Value="20,0,0,0"></Setter>
         </Style>
 
-        <!--`SettingsPage-->
+        <!--SettingsPage-->
         <Style TargetType="TextBox" x:Key="SettingsTextBoxStyle">
             <Setter Property="FontSize" Value="28"></Setter>
             <Setter Property="FontWeight" Value="Black"></Setter>
         </Style>
         <Style TargetType="TextBlock" x:Key="SettingsTextBlockStyle">
-            <Setter Property="FontSize" Value="28"></Setter>
+            <Setter Property="FontSize" Value="24"></Setter>
             <Setter Property="FontWeight" Value="Black"></Setter>
         </Style>
     </Application.Resources>

@@ -13,5 +13,7 @@ namespace LuckDrawWindow
     /// </summary>
     public partial class App : Application
     {
+        internal static int numberOfPeople;
+        internal static bool doShowToasts;
     }
 }
