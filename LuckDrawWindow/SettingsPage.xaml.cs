@@ -23,6 +23,35 @@ namespace LuckDrawWindow
         public SettingsPage()
         {
             InitializeComponent();
+
+            NumberTextBox.Text = App.numberOfPeople.ToString();
+            ToastToggleButton.IsChecked = App.doShowToasts;
+            if ((bool)ToastToggleButton.IsChecked)
+            {
+                ToastToggleButton.Content = "打开";
+            }
+            else if (!(bool)ToastToggleButton.IsChecked)
+            {
+                ToastToggleButton.Content = "关闭";
+            }
+        }
+
+        private void NumberTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            App.numberOfPeople = int.Parse(NumberTextBox.Text);
+        }
+
+        private void ToastToggleButton_Click(object sender, RoutedEventArgs e)
+        {
+            if ((bool)ToastToggleButton.IsChecked)
+            {
+                ToastToggleButton.Content = "打开";
+            }
+            else if (!(bool)ToastToggleButton.IsChecked)
+            {
+                ToastToggleButton.Content = "关闭";
+            }
+            App.doShowToasts = (bool)ToastToggleButton.IsChecked;
         }
     }
 }
