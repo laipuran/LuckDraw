@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,8 +26,17 @@ namespace LuckDrawWindow
         public MainWindow()
         {
             InitializeComponent();
+
+            App.numberOfPeople = Properties.Settings.Default.numberOfPeople;
+            App.doShowToasts = Properties.Settings.Default.doShowToasts;
+
+            FrameOfMainWindow.NavigationUIVisibility = System.Windows.Navigation.NavigationUIVisibility.Hidden;
             Storyboard closeMenu = (Storyboard)HamburgerButton.FindResource("CloseMenu");
             closeMenu.Begin();
+            BackButton.Visibility = Visibility.Collapsed;
+            LuckDrawListBoxItem.IsSelected = true;
+            TitleTextBlock.Text = "抽奖";
+
         }
         private void HamburgerButton_Click(object sender, RoutedEventArgs e)
         {
@@ -48,16 +58,50 @@ namespace LuckDrawWindow
         {
             if (LuckDrawListBoxItem.IsSelected)
             {
-                FrameOfMainWindow.Navigate(typeof(LuckDrawPage));
+                FrameOfMainWindow.NavigationService.Navigate(new Uri("LuckDrawPage.xaml", UriKind.Relative));
+                BackButton.Visibility = Visibility.Collapsed;
+                TitleTextBlock.Text = "抽奖";
             }
             else if (RollListBoxItem.IsSelected)
             {
-                FrameOfMainWindow.Navigate(typeof(RollPage));
+                FrameOfMainWindow.NavigationService.Navigate(new Uri("RollPage.xaml", UriKind.Relative));
+                BackButton.Visibility = Visibility.Visible;
+                TitleTextBlock.Text = "摇奖";
             }
             else if (SettingsListBoxItem.IsSelected)
             {
-                FrameOfMainWindow.Navigate(typeof(SettingsPage));
+                FrameOfMainWindow.NavigationService.Navigate(new Uri("SettingsPage.xaml", UriKind.Relative));
+                BackButton.Visibility = Visibility.Visible;
+                TitleTextBlock.Text = "设置";
             }
+        }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (FrameOfMainWindow.CanGoBack)
+            {
+                FrameOfMainWindow.GoBack();
+                if (FrameOfMainWindow.Source.ToString() == "LuckDrawPage.xaml")
+                {
+                    LuckDrawListBoxItem.IsSelected = true;
+                }
+                else if (FrameOfMainWindow.Source.ToString() == "RollPage.xaml")
+                {
+                    RollListBoxItem.IsSelected = true;
+                }
+                else if (FrameOfMainWindow.Source.ToString() == "SettingsPage.xaml")
+                {
+                    SettingsListBoxItem.IsSelected = true;
+                }
+            }
+        }
+
+        protected override void OnClosing(CancelEventArgs e)
+        {
+            Properties.Settings.Default.numberOfPeople = App.numberOfPeople;
+            Properties.Settings.Default.doShowToasts = App.doShowToasts;
+            Properties.Settings.Default.Save();
+            base.OnClosing(e);
         }
     }
 }

@@ -24,8 +24,8 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="200"></EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
-
     </Window.Resources>
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
@@ -33,23 +33,35 @@
             <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <StackPanel Orientation="Horizontal">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
             <Button
                 Name="HamburgerButton"
                 Style="{StaticResource NavigationButtonStyle}"
                 Click="HamburgerButton_Click"
                 Height="56"
                 Width="56"
-                Content="&#xE700;"></Button>
+                Content="&#xE700;"/>
+            <Button
+                Name="BackButton"
+                Style="{StaticResource NavigationButtonStyle}"
+                Click="BackButton_Click"
+                Height="56"
+                Width="56"
+                Content="&#xE0A6;"/>
+            <TextBlock
+                Name="TitleTextBlock"
+                FontSize="36"
+                Style="{StaticResource PaneTextBlockStyle}"
+                Height="56"/>
         </StackPanel>
 
         <StackPanel x:Name="MiddleStackPanel" Grid.Row="1" HorizontalAlignment="Left">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"></ColumnDefinition>
-                    <ColumnDefinition Width="1*"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-
+            <StackPanel>
                 <ListBox
                     Grid.Column="0"
                     Name="ListBoxOfMainPage"
@@ -78,9 +90,9 @@
                         </StackPanel>
                     </ListBoxItem>
                 </ListBox>
-
-                <Frame x:Name="FrameOfMainWindow"></Frame>
-            </Grid>
+            </StackPanel>
         </StackPanel>
+        
+        <Frame Margin="20,20,0,0" Grid.Row="1" Grid.Column="1" x:Name="FrameOfMainWindow" Source="LuckDrawPage.xaml"></Frame>
     </Grid>
 </Window>
