@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * From Litrop
+ * https://github.com/Litrop/roll
+ * Thanks very much
+*/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -24,6 +30,7 @@ namespace LuckDrawWindow
         public RollPage()
         {
             InitializeComponent();
+
         }
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -50,16 +57,16 @@ namespace LuckDrawWindow
             {
                 if (isRolling)
                 {
-                    return "Stop rolling";
+                    return "结束抽取";
                 }
                 else
                 {
-                    return "Start rolling";
+                    return "开始抽取";
                 }
             }
         }
 
-        private int endNumber = 99;
+        private int endNumber = App.numberOfPeople;
 
         public int EndNumber
         {
