@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -26,12 +27,6 @@ namespace LuckDrawWindow
 
             ResultTextBlock.Text = Properties.Settings.Default.numbersLastTime;
         }
-        static public int getRand(int a, int b)
-        {
-            Random r = new Random();
-            int num = r.Next(a, b);
-            return num;
-        }
 
         private void GetNumberButton_Click(object sender, RoutedEventArgs e)
         {
@@ -50,38 +45,66 @@ namespace LuckDrawWindow
             int max = App.numberOfPeople;
 
             int[] array = new int[number];
+            int[] check = new int[max];
+            Array.Clear(array, 0, number);
+            Array.Clear(check, 0, max);
+
+            Random r = new Random();
             for (int i = 0; i < number; i++)
             {
-                array[i] = getRand(1, max + 1);
+                int temp = r.Next(1, max + 1);
+                check[temp]++;
+                Thread.Sleep(10);
             }
 
-            int[] rankedNumbers = new int[number];
-            bool flag = true;
-            for (int i = 0; i < number - 1; i++)
+            bool chk = true;
+            while (chk == true)
             {
-                if (array[i] < array[i + 1])
+                for (int i = 0; i < max; i++)
                 {
-                    continue;
+                    if (check[i] > 1)
+                    {
+                        check[i]--;
+                        int temp = r.Next(1, max + 1);
+                        check[temp]++;
+                    }
                 }
-                else
+                for (int i = 0; i < max; i++)
                 {
-                    flag = false;
-                    break;
+                    if (check[i] == 1 || check[i] == 0)
+                    {
+                        if (i == max - 1)
+                        {
+                            chk = false;
+                        }
+                    }
+                    else break;
+                }
+
+            }
+
+            {
+                int temp = 0;
+                for (int i = 0; i < max; i++)
+                {
+                    if (check[i] == 1)
+                    {
+                        array[temp] = i + 1;
+                        temp++;
+                    }
                 }
             }
-            if (!flag)
+
+            for (int i = number - 1; i > 0; i--)
             {
-                for (int i = number - 1; i > 0; i--)
+                for (int j = 0; j < i; j++)
                 {
-                    for (int j = 0; j < i; j++)
+                    if (array[j] > array[j + 1])
                     {
-                        if (array[j] > array[j + 1])
-                        {
-                            int temp;
-                            temp = array[j + 1];
-                            array[j + 1] = array[j];
-                            array[j] = temp;
-                        }
+                        int temp;
+                        temp = array[j + 1];
+                        array[j + 1] = array[j];
+                        array[j] = temp;
                     }
                 }
             }

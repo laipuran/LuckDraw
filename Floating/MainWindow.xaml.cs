@@ -27,7 +27,12 @@ namespace Floating
 
         private void GetNumberButton_Click(object sender, RoutedEventArgs e)
         {
-
+            Random r = new Random();
+            ResultTextBlock.Text = r.Next(1, 55).ToString();
+        }
+        private void Window_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
         }
     }
 }

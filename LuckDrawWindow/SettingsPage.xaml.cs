@@ -38,7 +38,10 @@ namespace LuckDrawWindow
 
         private void NumberTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            App.numberOfPeople = int.Parse(NumberTextBox.Text);
+            if (NumberTextBox.Text != null)
+            {
+                App.numberOfPeople = int.Parse(NumberTextBox.Text);
+            }
         }
 
         private void ToastToggleButton_Click(object sender, RoutedEventArgs e)
