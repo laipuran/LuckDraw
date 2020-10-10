@@ -13,7 +13,7 @@
         Height="80"
         Width="120"
         Topmost="True"
-        MouseLeftButtonDown="Window_MouseLeftButtonDown_1">
+        MouseLeftButtonDown="Window_MouseLeftButtonDown_1" Icon="favicon.ico">
     <Window.Resources>
         <Style x:Key="ButtonStyle" TargetType="{x:Type Button}">
             <Setter Property="Template">
@@ -45,6 +45,6 @@
     </Window.Resources>
     <StackPanel Orientation="Horizontal">
         <Button x:Name="GetNumberButton" Content="抽" Height="80" Width="80" Click="GetNumberButton_Click" FontSize="36" Margin="0,0,0,0" Style="{DynamicResource ButtonStyle}"/>
-        <TextBlock x:Name="ResultTextBlock" Margin="10,30,0,0" FontSize="24"/>
+        <TextBlock Foreground="White" x:Name="ResultTextBlock" Margin="10,30,0,0" FontSize="24"/>
     </StackPanel>
 </Window>

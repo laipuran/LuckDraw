@@ -30,7 +30,6 @@ namespace LuckDrawWindow
             App.numberOfPeople = Properties.Settings.Default.numberOfPeople;
             App.doShowToasts = Properties.Settings.Default.doShowToasts;
 
-            FrameOfMainWindow.NavigationUIVisibility = System.Windows.Navigation.NavigationUIVisibility.Hidden;
             Storyboard closeMenu = (Storyboard)HamburgerButton.FindResource("CloseMenu");
             closeMenu.Begin();
             BackButton.Visibility = Visibility.Collapsed;

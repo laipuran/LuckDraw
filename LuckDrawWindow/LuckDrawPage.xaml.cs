@@ -31,18 +31,53 @@ namespace LuckDrawWindow
         private void GetNumberButton_Click(object sender, RoutedEventArgs e)
         {
 
-            NumberTextBox.IsEnabled = false;
+            NumberTextBox.IsReadOnly = true;
             GetNumberButton.IsEnabled = false;
 
-            int number = int.Parse(NumberTextBox.Text);
-            if (number <= 0)
+            int number;
+            int max = App.numberOfPeople;
+            try
             {
-                ResultTextBlock.Text = "输入值非法！";
+                number = int.Parse(NumberTextBox.Text);
+            }
+            catch (FormatException)
+            {
+                ResultTextBlock.Text = "输入的数字格式不正确！";
+                NumberTextBox.IsReadOnly = false;
                 GetNumberButton.IsEnabled = true;
-                NumberTextBox.IsEnabled = true;
                 return;
             }
-            int max = App.numberOfPeople;
+            catch (OverflowException)
+            {
+                ResultTextBlock.Text = "输入的值已经超出 int 类型的最大值！";
+                NumberTextBox.IsReadOnly = false;
+                GetNumberButton.IsEnabled = true;
+                return;
+            }
+            catch (IndexOutOfRangeException)
+            {
+                ResultTextBlock.Text = "数组越界异常！";
+                NumberTextBox.IsReadOnly = false;
+                GetNumberButton.IsEnabled = true;
+                return;
+            }
+            if (number <= 0)
+            {
+                ResultTextBlock.Text = "输入的数字不合法！";
+                NumberTextBox.IsReadOnly = false;
+                GetNumberButton.IsEnabled = true;
+                return;
+            }
+            else if (number > max)
+            {
+                ResultTextBlock.Text = "输入的数字超过总人数！";
+                NumberTextBox.IsReadOnly = false;
+                GetNumberButton.IsEnabled = true;
+                return;
+            }
+            number = int.Parse(NumberTextBox.Text);
+
+
 
             int[] array = new int[number];
             int[] check = new int[max];
@@ -53,7 +88,7 @@ namespace LuckDrawWindow
             for (int i = 0; i < number; i++)
             {
                 int temp = r.Next(1, max + 1);
-                check[temp]++;
+                check[temp - 1]++;
                 Thread.Sleep(10);
             }
 
@@ -66,13 +101,19 @@ namespace LuckDrawWindow
                     {
                         check[i]--;
                         int temp = r.Next(1, max + 1);
-                        check[temp]++;
+                        check[temp - 1]++;
                     }
                 }
+                int index = 0;
                 for (int i = 0; i < max; i++)
                 {
                     if (check[i] == 1 || check[i] == 0)
                     {
+                        if (check[i] == 1)
+                        {
+                            array[index] = i + 1;
+                            index++;
+                        }
                         if (i == max - 1)
                         {
                             chk = false;
@@ -81,18 +122,6 @@ namespace LuckDrawWindow
                     else break;
                 }
 
-            }
-
-            {
-                int temp = 0;
-                for (int i = 0; i < max; i++)
-                {
-                    if (check[i] == 1)
-                    {
-                        array[temp] = i + 1;
-                        temp++;
-                    }
-                }
             }
 
             for (int i = number - 1; i > 0; i--)
@@ -122,7 +151,7 @@ namespace LuckDrawWindow
 
 
             GetNumberButton.IsEnabled = true;
-            NumberTextBox.IsEnabled = true;
+            NumberTextBox.IsReadOnly = false;
         }
     }
 }

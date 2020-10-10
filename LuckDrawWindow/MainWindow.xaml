@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LuckDrawWindow"
         mc:Ignorable="d"
-        Title="Luck Draw" Height="450" Width="800">
+        Title="Luck Draw" Height="450" Width="800" Icon="favicon.ico">
     <Window.Resources>
         <Storyboard x:Key="CloseMenu">
             <DoubleAnimationUsingKeyFrames 
@@ -93,6 +93,6 @@
             </StackPanel>
         </StackPanel>
         
-        <Frame Margin="20,20,0,0" Grid.Row="1" Grid.Column="1" x:Name="FrameOfMainWindow" Source="LuckDrawPage.xaml"></Frame>
+        <Frame NavigationUIVisibility="Hidden" Margin="20,20,0,0" Grid.Row="1" Grid.Column="1" x:Name="FrameOfMainWindow" Source="LuckDrawPage.xaml"></Frame>
     </Grid>
 </Window>
