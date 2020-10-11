@@ -45,6 +45,6 @@
     </Window.Resources>
     <StackPanel Orientation="Horizontal">
         <Button x:Name="GetNumberButton" Content="抽" Height="80" Width="80" Click="GetNumberButton_Click" FontSize="36" Margin="0,0,0,0" Style="{DynamicResource ButtonStyle}"/>
-        <TextBlock Foreground="White" x:Name="ResultTextBlock" Margin="10,30,0,0" FontSize="24"/>
+        <TextBlock Foreground="White" Background="Black" x:Name="ResultTextBlock" Height="24" Margin="10,0,0,0" FontSize="24"/>
     </StackPanel>
 </Window>

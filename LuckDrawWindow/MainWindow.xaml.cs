@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,6 +31,12 @@ namespace LuckDrawWindow
 
             App.numberOfPeople = Properties.Settings.Default.numberOfPeople;
             App.doShowToasts = Properties.Settings.Default.doShowToasts;
+
+            string path = System.IO.Directory.GetCurrentDirectory() + "\\Floating\\Floating.exe";
+            if (File.Exists(path))
+            {
+                Process.Start(path);
+            }
 
             Storyboard closeMenu = (Storyboard)HamburgerButton.FindResource("CloseMenu");
             closeMenu.Begin();

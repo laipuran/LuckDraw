@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,7 +24,10 @@ namespace Floating
         public MainWindow()
         {
             InitializeComponent();
+            this.Left = 30;
+            this.Top = 30;
         }
+
 
         private void GetNumberButton_Click(object sender, RoutedEventArgs e)
         {
