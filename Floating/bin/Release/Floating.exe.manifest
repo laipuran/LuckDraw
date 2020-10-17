@@ -42,36 +42,36 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Floating.exe" size="12792">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Floating.exe" size="13816">
       <assemblyIdentity name="Floating" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>85VwEpK0pvY8P/tQjQ2ev8LjXorXc96GIVAbT8nTXi8=</dsig:DigestValue>
+        <dsig:DigestValue>m9cFNPIr1S8rXRkVxxsmrLoWkr5UI4zRE0J4gxYKTcE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LuckDrawWindow.exe" size="28672">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LuckDrawWindow.exe" size="29184">
       <assemblyIdentity name="LuckDrawWindow" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>pRr36SLFgtXskqlLW3jHarLI8UgDxahZlHAGNBcxL0c=</dsig:DigestValue>
+        <dsig:DigestValue>XcCqeFvvxO/174qCdwLfvGSJSPuLNUcvJESoKkNAF3c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Floating.exe.config" size="189">
+  <file name="Floating.exe.config" size="924">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+      <dsig:DigestValue>exJSh3wHGr1f5wFZ3LQGw/9ujcDPKMPg6m9AxbhZMKw=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
