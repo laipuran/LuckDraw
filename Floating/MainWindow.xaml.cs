@@ -21,7 +21,6 @@ namespace Floating
     /// </summary>
     public partial class MainWindow : Window
     {
-        int max;
         public MainWindow()
         {
             InitializeComponent();
@@ -32,8 +31,12 @@ namespace Floating
 
             if (args.Length>0)
             {
-                max = int.Parse(args.ToString());
-                ResultTextBlock.Text = "最大" + max.ToString();
+                App.numberOfPeople = int.Parse(args.ToString());
+                ResultTextBlock.Text = "最大：" + App.numberOfPeople.ToString();
+            }
+            else
+            {
+                App.numberOfPeople = Properties.Settings.Default.numberOfPeople;
             }
 
             this.Left = 50;
@@ -45,11 +48,19 @@ namespace Floating
         private void GetNumberButton_Click(object sender, RoutedEventArgs e)
         {
             Random r = new Random();
-            ResultTextBlock.Text = r.Next(1, max).ToString();
+            ResultTextBlock.Text = r.Next(1, App.numberOfPeople).ToString();
         }
         private void Window_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
         {
             this.DragMove();
+        }
+        protected override void OnClosing(CancelEventArgs e)
+        {
+            if (Properties.Settings.Default.numberOfPeople != App.numberOfPeople)
+            {
+                Properties.Settings.Default.numberOfPeople = App.numberOfPeople;
+            }
+            base.OnClosing(e);
         }
     }
 }
