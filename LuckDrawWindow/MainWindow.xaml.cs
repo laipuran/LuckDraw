@@ -32,10 +32,11 @@ namespace LuckDrawWindow
             App.numberOfPeople = Properties.Settings.Default.numberOfPeople;
             App.doShowToasts = Properties.Settings.Default.doShowToasts;
 
-            string path = System.IO.Directory.GetCurrentDirectory() + "\\Floating\\Floating.exe";
+            string path = Directory.GetCurrentDirectory() + "\\Floating\\Floating.exe";
             if (File.Exists(path))
             {
-                Process.Start(path);
+                Process.Start(path, App.numberOfPeople.ToString());
+                MessageBox.Show("Exists");
             }
 
             Storyboard closeMenu = (Storyboard)HamburgerButton.FindResource("CloseMenu");
@@ -108,6 +109,15 @@ namespace LuckDrawWindow
             Properties.Settings.Default.numberOfPeople = App.numberOfPeople;
             Properties.Settings.Default.doShowToasts = App.doShowToasts;
             Properties.Settings.Default.Save();
+
+            var processInfo = new ProcessStartInfo("cmd.exe", "/S /C " + "taskkill /im Floating.exe")
+            {
+                CreateNoWindow = true,
+                UseShellExecute = true,
+                WindowStyle = ProcessWindowStyle.Hidden
+            };
+            Process.Start(processInfo);
+
             base.OnClosing(e);
         }
     }

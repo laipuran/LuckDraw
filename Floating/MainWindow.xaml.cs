@@ -21,18 +21,31 @@ namespace Floating
     /// </summary>
     public partial class MainWindow : Window
     {
+        int max;
         public MainWindow()
         {
             InitializeComponent();
-            this.Left = 30;
-            this.Top = 30;
+        }
+        public MainWindow(string[] args)
+        {
+            InitializeComponent();
+
+            if (args.Length>0)
+            {
+                max = int.Parse(args.ToString());
+                ResultTextBlock.Text = "最大" + max.ToString();
+            }
+
+            this.Left = 50;
+            this.Top = 50;
+            
         }
 
 
         private void GetNumberButton_Click(object sender, RoutedEventArgs e)
         {
             Random r = new Random();
-            ResultTextBlock.Text = r.Next(1, 55).ToString();
+            ResultTextBlock.Text = r.Next(1, max).ToString();
         }
         private void Window_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
         {

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LuckDrawWindow"
         mc:Ignorable="d"
-        Title="Luck Draw" Height="450" Width="800" Icon="favicon.ico">
+        Title="Luck Draw" Height="450" Width="800" Icon="favicon.ico" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <Storyboard x:Key="CloseMenu">
             <DoubleAnimationUsingKeyFrames 
@@ -38,7 +38,7 @@
             <ColumnDefinition Width="1*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         
-        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
+        <StackPanel Grid.ColumnSpan="2" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
             <Button
                 Name="HamburgerButton"
                 Style="{StaticResource NavigationButtonStyle}"
@@ -60,9 +60,10 @@
                 Height="56"/>
         </StackPanel>
 
+        
         <StackPanel x:Name="MiddleStackPanel" Grid.Row="1" HorizontalAlignment="Left">
-            <StackPanel>
                 <ListBox
+                    
                     Grid.Column="0"
                     Name="ListBoxOfMainPage"
                     SelectionMode="Single"
@@ -90,7 +91,6 @@
                         </StackPanel>
                     </ListBoxItem>
                 </ListBox>
-            </StackPanel>
         </StackPanel>
         
         <Frame NavigationUIVisibility="Hidden" Margin="20,20,0,0" Grid.Row="1" Grid.Column="1" x:Name="FrameOfMainWindow" Source="LuckDrawPage.xaml"></Frame>
