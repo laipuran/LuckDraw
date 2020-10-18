@@ -13,7 +13,8 @@
         Height="80"
         Width="120"
         Topmost="True"
-        MouseLeftButtonDown="Window_MouseLeftButtonDown_1" Icon="favicon.ico">
+        Loaded="Window_Loaded"
+    MouseLeftButtonDown="Window_MouseLeftButtonDown_1" Icon="favicon.ico">
     <Window.Resources>
         <Style x:Key="ButtonStyle" TargetType="{x:Type Button}">
             <Setter Property="Template">

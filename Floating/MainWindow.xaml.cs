@@ -21,30 +21,20 @@ namespace Floating
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
         public MainWindow(string[] args)
         {
             InitializeComponent();
 
-            if (args.Length>0)
-            {
-                App.numberOfPeople = int.Parse(args.ToString());
-                ResultTextBlock.Text = "最大：" + App.numberOfPeople.ToString();
-            }
-            else
-            {
-                App.numberOfPeople = Properties.Settings.Default.numberOfPeople;
-            }
-
-            this.Left = 50;
-            this.Top = 50;
-            
+            Top = 50;
+            Left = 50;
         }
-
-
+        public MainWindow()
+        {
+            InitializeComponent();
+            Top = 50;
+            Left = 50;
+        }
+        
         private void GetNumberButton_Click(object sender, RoutedEventArgs e)
         {
             Random r = new Random();
@@ -61,6 +51,11 @@ namespace Floating
                 Properties.Settings.Default.numberOfPeople = App.numberOfPeople;
             }
             base.OnClosing(e);
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            ResultTextBlock.Text = App.numberOfPeople.ToString();
         }
     }
 }

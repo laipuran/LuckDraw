@@ -39,12 +39,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_BF05F9F65A08421390FADE6ADC44FCFE"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_C6F7D24B04514BC7A0E80F6F64E59263"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -70,13 +64,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_C6F7D24B04514BC7A0E80F6F64E59263"
+        "OwnerKey" = "8:_2A838915E909E095E305D6446FCEDDD3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_2A838915E909E095E305D6446FCEDDD3"
+        "OwnerKey" = "8:_C6F7D24B04514BC7A0E80F6F64E59263"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -251,26 +245,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BF05F9F65A08421390FADE6ADC44FCFE"
-            {
-            "SourcePath" = "8:..\\..\\..\\..\\Downloads\\StoreLogo.bmp"
-            "TargetName" = "8:StoreLogo.bmp"
-            "Tag" = "8:"
-            "Folder" = "8:_3D7880BC79FC457B9E42197C2F61E6D7"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E9148D607FE152495D47599B4187786E"
             {
             "AssemblyRegister" = "3:1"
@@ -392,11 +366,11 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Luck Draw"
         "ProductCode" = "8:{B6F17138-E351-4D4E-BD3F-A3098211DAAB}"
-        "PackageCode" = "8:{7519EFBB-59CF-4ECD-AB7B-6FF57BE3E6EE}"
+        "PackageCode" = "8:{0CA4E951-93F0-49F6-A314-1F13AEC0A81E}"
         "UpgradeCode" = "8:{1EA843D6-89DA-41E8-A230-312CC42DA27E}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
-        "RemovePreviousVersions" = "11:FALSE"
+        "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
         "ProductVersion" = "8:1.4"
@@ -722,8 +696,7 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:2"
-                            "Value" = "8:_BF05F9F65A08421390FADE6ADC44FCFE"
+                            "Setting" = "3:1"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "CopyrightWarning"
@@ -843,8 +816,7 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:2"
-                            "Value" = "8:_BF05F9F65A08421390FADE6ADC44FCFE"
+                            "Setting" = "3:1"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "CopyrightWarning"
@@ -957,7 +929,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_898CBE8C683840F3A57209F24BE98540"
             {
-            "SourcePath" = "8:..\\LuckDrawWindow\\obj\\Debug\\LuckDrawWindow.exe"
+            "SourcePath" = "8:..\\LuckDrawWindow\\obj\\Release\\LuckDrawWindow.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_B735B859A1D645E8B98F4E0D65B8915E"
@@ -985,7 +957,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_C6F7D24B04514BC7A0E80F6F64E59263"
             {
-            "SourcePath" = "8:..\\Floating\\obj\\Debug\\Floating.exe"
+            "SourcePath" = "8:..\\Floating\\obj\\Release\\Floating.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_9D6170631C9C4CD4BB0D1DC0428A716C"

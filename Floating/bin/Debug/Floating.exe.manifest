@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Floating.exe" size="14328">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Floating.exe" size="14840">
       <assemblyIdentity name="Floating" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>0MoODbXqNXjH6zvuWyHW6si14XcqTlbw/zDBjjFORbs=</dsig:DigestValue>
+        <dsig:DigestValue>DcdXYO3pV4U6S7YnH/PQe7Y6Mqv47lfT1kVl5NzGQBg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
