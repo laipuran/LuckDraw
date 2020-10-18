@@ -36,7 +36,6 @@ namespace LuckDrawWindow
             if (File.Exists(path))
             {
                 Process.Start(path, App.numberOfPeople.ToString());
-                MessageBox.Show("Exists");
             }
 
             Storyboard closeMenu = (Storyboard)HamburgerButton.FindResource("CloseMenu");
