@@ -30,8 +30,7 @@ namespace LuckDrawWindow
         public class MyEx : Exception
         {
             public MyEx(string message) : base(message)
-            {
-            }
+            { }
         }
         private void GetNumberButton_Click(object sender, RoutedEventArgs e)
         {
