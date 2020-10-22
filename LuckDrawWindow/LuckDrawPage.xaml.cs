@@ -27,10 +27,14 @@ namespace LuckDrawWindow
 
             ResultTextBlock.Text = Properties.Settings.Default.numbersLastTime;
         }
-
+        public class MyEx : Exception
+        {
+            public MyEx(string message) : base(message)
+            {
+            }
+        }
         private void GetNumberButton_Click(object sender, RoutedEventArgs e)
         {
-
             NumberTextBox.IsReadOnly = true;
             GetNumberButton.IsEnabled = false;
 
@@ -39,45 +43,23 @@ namespace LuckDrawWindow
             try
             {
                 number = int.Parse(NumberTextBox.Text);
+                if (number <= 0)
+                {
+                    throw new MyEx("输入的数字不合法！");
+                }
+                else if (number>max)
+                {
+                    throw new MyEx("输入的数字超过总人数！");
+                }
             }
-            catch (FormatException)
+            catch (Exception Ex)
             {
-                ResultTextBlock.Text = "输入的数字格式不正确！";
-                NumberTextBox.IsReadOnly = false;
-                GetNumberButton.IsEnabled = true;
-                return;
-            }
-            catch (OverflowException)
-            {
-                ResultTextBlock.Text = "输入的值已经超出 int 类型的最大值！";
-                NumberTextBox.IsReadOnly = false;
-                GetNumberButton.IsEnabled = true;
-                return;
-            }
-            catch (IndexOutOfRangeException)
-            {
-                ResultTextBlock.Text = "数组越界异常！";
-                NumberTextBox.IsReadOnly = false;
-                GetNumberButton.IsEnabled = true;
-                return;
-            }
-            if (number <= 0)
-            {
-                ResultTextBlock.Text = "输入的数字不合法！";
-                NumberTextBox.IsReadOnly = false;
-                GetNumberButton.IsEnabled = true;
-                return;
-            }
-            else if (number > max)
-            {
-                ResultTextBlock.Text = "输入的数字超过总人数！";
+                ResultTextBlock.Text = Ex.Message;
                 NumberTextBox.IsReadOnly = false;
                 GetNumberButton.IsEnabled = true;
                 return;
             }
             number = int.Parse(NumberTextBox.Text);
-
-
 
             int[] array = new int[number];
             int[] check = new int[max];

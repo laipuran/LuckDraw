@@ -40,7 +40,25 @@ namespace LuckDrawWindow
         {
             if (NumberTextBox.Text != null)
             {
+                try
+                {
+                    int number = int.Parse(NumberTextBox.Text);
+                    if (number < 0)
+                    {
+                        throw new LuckDrawPage.MyEx("输入的数字不合法！");
+                    }
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                    NumberTextBox.Text = App.numberOfPeople.ToString();
+                    return;
+                }
                 App.numberOfPeople = int.Parse(NumberTextBox.Text);
+            }
+            else
+            {
+                NumberTextBox.Text = App.numberOfPeople.ToString();
             }
         }
 
