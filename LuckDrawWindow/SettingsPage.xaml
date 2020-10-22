@@ -13,6 +13,8 @@
                 <TextBox Margin="0,20,0,0" Name="NumberTextBox" Width="75" Height="30" TextChanged="NumberTextBox_TextChanged"></TextBox>
                 <TextBlock Margin="0,20,0,0" Style="{StaticResource SettingsTextBlockStyle}" FontSize="18">抽取完毕后是否弹出Toast提示：</TextBlock>
                 <ToggleButton Margin="0,20,0,0" Click="ToastToggleButton_Click" Name="ToastToggleButton" Width="75" Height="30" IsChecked="False"></ToggleButton>
+                <Border Margin="0,5,0,0" BorderBrush="Black"></Border>
+                <Button Margin="0,5,0,0" Width="75" Height="30" Click="Button_Click">获取更新</Button>
             </StackPanel>
         </ScrollViewer>
     </StackPanel>
