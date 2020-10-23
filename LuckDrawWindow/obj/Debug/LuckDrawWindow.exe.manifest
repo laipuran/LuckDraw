@@ -50,7 +50,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>43swJtCtACzPCAf7k6b0+Zun4741VV8FyFCGKHQae9A=</dsig:DigestValue>
+        <dsig:DigestValue>C/dzGsD8KP2138TRU2TdKMolPvd4P5vudE6D0bnkOOw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -63,13 +63,13 @@
       <dsig:DigestValue>tsedbTlMfq64X5TQjcG9JB00DDU38yVyiUVBiHCUBzI=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="LuckDrawWindow.exe.config" size="1882">
+  <file name="LuckDrawWindow.exe.config" size="1883">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>sFOTqdCVfJwbeuOUxnhtUYOJXX3WJFbgV/WU1TgX0M4=</dsig:DigestValue>
+      <dsig:DigestValue>VzCdbPzgFcqfqTDuA0CBRg+sPv2aJpNL9vLfVDJSoJo=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

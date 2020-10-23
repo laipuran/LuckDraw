@@ -35,7 +35,10 @@ namespace LuckDrawWindow
             //实例化流对象
             FileStream FStream;
             //文件不保存创建一个文件
-            File.Delete(Directory.GetCurrentDirectory().ToString() + file);
+            if (File.Exists(Directory.GetCurrentDirectory().ToString() + file))
+            {
+                File.Delete(Directory.GetCurrentDirectory().ToString() + file);
+            }
             FStream = new FileStream(strFileName, FileMode.Create);
             SPosition = 0;
             try
@@ -121,8 +124,7 @@ namespace LuckDrawWindow
             {
                 if (MessageBox.Show("目前版本：v" + Properties.Settings.Default.currentVersion.ToString() + "，而最新版本是v" + version + "\n是否更新？", "更新提示", MessageBoxButton.YesNo, MessageBoxImage.Information) == MessageBoxResult.Yes)
                 {
-
-                    bool isSuccessfully = DownloadFile("assets/LuckDrawSetup.msi", "Setup.msi");
+                    bool isSuccessfully = DownloadFile("LuckDrawSetup.msi", "assets/Setup.msi");
                     if (!isSuccessfully)
                     {
                         MessageBox.Show("下载成功！", "下载结果");
@@ -144,6 +146,7 @@ namespace LuckDrawWindow
             else
             {
                 MessageBox.Show("目前版本：v" + Properties.Settings.Default.currentVersion.ToString() + "，无需更新！", "更新提示");
+                return;
             }
         }
     }
