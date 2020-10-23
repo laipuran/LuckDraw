@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LuckDrawWindow.exe" size="34808">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LuckDrawWindow.exe" size="35320">
       <assemblyIdentity name="LuckDrawWindow" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2Tt8lqCjw9ylCpm2r3emFpIRp3tgyytAezSV31hsdl8=</dsig:DigestValue>
+        <dsig:DigestValue>43swJtCtACzPCAf7k6b0+Zun4741VV8FyFCGKHQae9A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -63,13 +63,13 @@
       <dsig:DigestValue>tsedbTlMfq64X5TQjcG9JB00DDU38yVyiUVBiHCUBzI=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="LuckDrawWindow.exe.config" size="1185">
+  <file name="LuckDrawWindow.exe.config" size="1882">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>OsGcp5wRFwBOmgtWJ7jb1o3k5kFSRQeJAvIJYnlwjO0=</dsig:DigestValue>
+      <dsig:DigestValue>sFOTqdCVfJwbeuOUxnhtUYOJXX3WJFbgV/WU1TgX0M4=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

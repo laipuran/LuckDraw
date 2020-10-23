@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 using System.IO;
 using System.Net;
 using System.Windows;
@@ -115,22 +116,34 @@ namespace LuckDrawWindow
                 return;
             }
             string version = File.ReadAllText(Directory.GetCurrentDirectory().ToString() + "\\version.txt");
-            MessageBox.Show("最新版本：v" + version);
-            float ver = Convet.ToSingle(ver);
-            if (ver > Properties.Settings.Defalt.CurrenVersion)
+            float ver = Convert.ToSingle(version);
+            if (ver > Properties.Settings.Default.currentVersion)
             {
-                bool isSuccessfully = DownloadFile("assets/LuckDrawSetup.msi", "Setup.msi");
-                if (!flag)
+                if (MessageBox.Show("目前版本：v" + Properties.Settings.Default.currentVersion.ToString() + "，而最新版本是v" + version + "\n是否更新？", "更新提示", MessageBoxButton.YesNo, MessageBoxImage.Information) == MessageBoxResult.Yes)
                 {
-                    MessageBox.Show("下载成功！");
-                    Process.Start(Directory.GetCurrentDirectory().ToString() + "Setup.msi");
-                    return;
+
+                    bool isSuccessfully = DownloadFile("assets/LuckDrawSetup.msi", "Setup.msi");
+                    if (!isSuccessfully)
+                    {
+                        MessageBox.Show("下载成功！", "下载结果");
+                        Process.Start(Directory.GetCurrentDirectory().ToString() + "Setup.msi");
+                        Application.Current.Shutdown();
+                    }
+                    else
+                    {
+                        MessageBox.Show("下载失败！", "下载结果");
+                        return;
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("下载失败！");
                     return;
+
                 }
+            }
+            else
+            {
+                MessageBox.Show("目前版本：v" + Properties.Settings.Default.currentVersion.ToString() + "，无需更新！", "更新提示");
             }
         }
     }

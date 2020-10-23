@@ -64,13 +64,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_2A838915E909E095E305D6446FCEDDD3"
+        "OwnerKey" = "8:_C6F7D24B04514BC7A0E80F6F64E59263"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_C6F7D24B04514BC7A0E80F6F64E59263"
+        "OwnerKey" = "8:_2A838915E909E095E305D6446FCEDDD3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -365,15 +365,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Luck Draw"
-        "ProductCode" = "8:{B6F17138-E351-4D4E-BD3F-A3098211DAAB}"
-        "PackageCode" = "8:{0CA4E951-93F0-49F6-A314-1F13AEC0A81E}"
+        "ProductCode" = "8:{DAC93C94-0AB1-4E7A-9A0D-1A67B5254D84}"
+        "PackageCode" = "8:{00BCD1A2-6786-4182-94DB-E5609126EF34}"
         "UpgradeCode" = "8:{1EA843D6-89DA-41E8-A230-312CC42DA27E}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.4"
+        "ProductVersion" = "8:1.5"
         "Manufacturer" = "8:Puran Lai"
         "ARPHELPTELEPHONE" = "8:18979221743"
         "ARPHELPLINK" = "8:https://laipuran.github.io/LuckDraw"
@@ -503,7 +503,7 @@
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_64AA14B959D84AB1AC07DA9C9837C6A1"
             {
             "Name" = "8:卸载"
-            "Arguments" = "8:/x {B6F17138-E351-4D4E-BD3F-A3098211DAAB}"
+            "Arguments" = "8:/x [ProductCode]"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
@@ -929,7 +929,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_898CBE8C683840F3A57209F24BE98540"
             {
-            "SourcePath" = "8:..\\LuckDrawWindow\\obj\\Release\\LuckDrawWindow.exe"
+            "SourcePath" = "8:..\\LuckDrawWindow\\obj\\Debug\\LuckDrawWindow.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_B735B859A1D645E8B98F4E0D65B8915E"
@@ -957,7 +957,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_C6F7D24B04514BC7A0E80F6F64E59263"
             {
-            "SourcePath" = "8:..\\Floating\\obj\\Release\\Floating.exe"
+            "SourcePath" = "8:..\\Floating\\obj\\Debug\\Floating.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_9D6170631C9C4CD4BB0D1DC0428A716C"

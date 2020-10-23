@@ -37,7 +37,7 @@ namespace LuckDrawWindow.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool doShowToasts {
             get {
                 return ((bool)(this["doShowToasts"]));
@@ -56,6 +56,15 @@ namespace LuckDrawWindow.Properties {
             }
             set {
                 this["numbersLastTime"] = value;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1.5")]
+        public float currentVersion {
+            get {
+                return ((float)(this["currentVersion"]));
             }
         }
     }
