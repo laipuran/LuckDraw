@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Net;
 using System.Windows;
@@ -115,8 +115,23 @@ namespace LuckDrawWindow
                 return;
             }
             string version = File.ReadAllText(Directory.GetCurrentDirectory().ToString() + "\\version.txt");
-            MessageBoxButton button = new MessageBoxButton();
-            MessageBox.Show("最新版本：v" + version, "更新", button);
+            MessageBox.Show("最新版本：v" + version);
+            float ver = Convet.ToSingle(ver);
+            if (ver > Properties.Settings.Defalt.CurrenVersion)
+            {
+                bool isSuccessfully = DownloadFile("assets/LuckDrawSetup.msi", "Setup.msi");
+                if (!flag)
+                {
+                    MessageBox.Show("下载成功！");
+                    Process.Start(Directory.GetCurrentDirectory().ToString() + "Setup.msi");
+                    return;
+                }
+                else
+                {
+                    MessageBox.Show("下载失败！");
+                    return;
+                }
+            }
         }
     }
 }
