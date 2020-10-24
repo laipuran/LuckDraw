@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Toolkit.Uwp.Notifications;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Windows.UI.Notifications;
 
 namespace LuckDrawWindow
 {
@@ -31,6 +33,15 @@ namespace LuckDrawWindow
         {
             public MyEx(string message) : base(message)
             { }
+        }
+        public void sendNotifications(string title, string notifications)
+        {
+            ToastContent toastContent = new ToastContentBuilder()
+       .AddToastActivationInfo("action=viewConversation&conversationId=5", ToastActivationType.Foreground)
+       .AddText(notifications)
+       .GetToastContent();
+            var toast = new ToastNotification(toastContent.GetXml());
+            DesktopNotificationManagerCompat.CreateToastNotifier().Show(toast);
         }
         private void GetNumberButton_Click(object sender, RoutedEventArgs e)
         {
@@ -128,6 +139,7 @@ namespace LuckDrawWindow
             {
                 string notifications;
                 notifications = "被抽中的幸运同学： " + string.Join(" ", array);
+                sendNotifications("Luck Draw", notifications);
             }
 
 

@@ -14,14 +14,14 @@
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Floating.exe.manifest" size="4069">
+    <dependentAssembly dependencyType="install" codebase="Floating.exe.manifest" size="5478">
       <assemblyIdentity name="Floating.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>0hIiFEaR3tw+uNHpy5mIM42g3BySZIcNM0CKO9i/3Qw=</dsig:DigestValue>
+        <dsig:DigestValue>MmwBRDHCf7kX+SwZMGjHhyxSFBXt9HpxKFTAySUBl8Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Toolkit.Uwp.Notifications;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -28,7 +29,8 @@ namespace LuckDrawWindow
         public MainWindow()
         {
             InitializeComponent();
-
+            DesktopNotificationManagerCompat.RegisterActivator<MyNotificationActivator>();
+            DesktopNotificationManagerCompat.RegisterAumidAndComServer<MyNotificationActivator>("PuranLai.LuckDraw");
             App.numberOfPeople = Properties.Settings.Default.numberOfPeople;
             App.doShowToasts = Properties.Settings.Default.doShowToasts;
 
@@ -37,9 +39,7 @@ namespace LuckDrawWindow
             {
                 Process.Start(path, App.numberOfPeople.ToString());
             }
-
-            Storyboard closeMenu = (Storyboard)HamburgerButton.FindResource("CloseMenu");
-            closeMenu.Begin();
+            MiddleStackPanel.Width = 56;
             BackButton.Visibility = Visibility.Collapsed;
             LuckDrawListBoxItem.IsSelected = true;
             TitleTextBlock.Text = "抽奖";
@@ -108,7 +108,14 @@ namespace LuckDrawWindow
             Properties.Settings.Default.numberOfPeople = App.numberOfPeople;
             Properties.Settings.Default.doShowToasts = App.doShowToasts;
             Properties.Settings.Default.Save();
+            try
+            {
+                DesktopNotificationManagerCompat.History.Clear();
+            }
+            catch (Exception)
+            {
 
+            }
             var processInfo = new ProcessStartInfo("cmd.exe", "/S /C " + "taskkill /im Floating.exe")
             {
                 CreateNoWindow = true,

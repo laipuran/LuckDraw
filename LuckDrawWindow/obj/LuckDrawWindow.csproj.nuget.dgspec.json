@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Laifuzhou\\source\\repos\\LuckDraw\\LuckDrawWindow\\LuckDrawWindow.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Laifuzhou\\source\\repos\\LuckDraw\\LuckDrawWindow\\LuckDrawWindow.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Laifuzhou\\source\\repos\\LuckDraw\\LuckDrawWindow\\LuckDrawWindow.csproj",
+        "projectName": "LuckDrawWindow",
+        "projectPath": "C:\\Users\\Laifuzhou\\source\\repos\\LuckDraw\\LuckDrawWindow\\LuckDrawWindow.csproj",
+        "packagesPath": "C:\\Users\\Laifuzhou\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Laifuzhou\\source\\repos\\LuckDraw\\LuckDrawWindow\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Laifuzhou\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Microsoft.Toolkit.Uwp.Notifications": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            },
+            "QueryString.NET": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

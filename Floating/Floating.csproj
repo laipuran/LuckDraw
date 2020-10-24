@@ -130,12 +130,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LuckDrawWindow\LuckDrawWindow.csproj">
-      <Project>{a228f497-06a0-4c10-8d4f-201ef18e1adb}</Project>
-      <Name>LuckDrawWindow</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.7.2 %28x86 和 x64%29</ProductName>
@@ -149,6 +143,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LuckDrawWindow\LuckDrawWindow.csproj">
+      <Project>{a228f497-06a0-4c10-8d4f-201ef18e1adb}</Project>
+      <Name>LuckDrawWindow</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
