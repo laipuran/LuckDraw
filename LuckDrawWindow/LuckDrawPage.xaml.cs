@@ -31,8 +31,7 @@ namespace LuckDrawWindow
         }
         public class MyEx : Exception
         {
-            public MyEx(string message) : base(message)
-            { }
+            public MyEx(string message) : base(message){ }
         }
         public void sendNotifications(string title, string notifications)
         {
@@ -41,7 +40,14 @@ namespace LuckDrawWindow
        .AddText(notifications)
        .GetToastContent();
             var toast = new ToastNotification(toastContent.GetXml());
-            DesktopNotificationManagerCompat.CreateToastNotifier().Show(toast);
+            try
+            {
+                DesktopNotificationManagerCompat.CreateToastNotifier().Show(toast);
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message, "Debug Log");
+            }
         }
         private void GetNumberButton_Click(object sender, RoutedEventArgs e)
         {

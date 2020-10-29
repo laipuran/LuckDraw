@@ -21,3 +21,6 @@ C:\Users\Laifuzhou\source\repos\LuckDraw\Floating\obj\Release\Floating.applicati
 C:\Users\Laifuzhou\source\repos\LuckDraw\Floating\obj\Release\Floating.csproj.CopyComplete
 C:\Users\Laifuzhou\source\repos\LuckDraw\Floating\obj\Release\Floating.exe
 C:\Users\Laifuzhou\source\repos\LuckDraw\Floating\obj\Release\Floating.pdb
+C:\Users\Laifuzhou\source\repos\LuckDraw\Floating\bin\Release\Microsoft.Toolkit.Uwp.Notifications.dll
+C:\Users\Laifuzhou\source\repos\LuckDraw\Floating\bin\Release\System.ValueTuple.dll
+C:\Users\Laifuzhou\source\repos\LuckDraw\Floating\bin\Release\Microsoft.Toolkit.Uwp.Notifications.pdb

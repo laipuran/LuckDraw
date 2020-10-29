@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LuckDrawWindow.exe" size="36352">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LuckDrawWindow.exe" size="55808">
       <assemblyIdentity name="LuckDrawWindow" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>5a3+mISMAr91bZoPuIa8gdoutg+lOUHNtM0VkLMtgNQ=</dsig:DigestValue>
+        <dsig:DigestValue>u4qa7SnpEjd5cVjU62xBxpZJpGLewAQc3mgGflSmi5w=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

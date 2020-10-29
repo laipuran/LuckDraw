@@ -15,5 +15,12 @@ namespace LuckDrawWindow
     {
         internal static int numberOfPeople;
         internal static bool doShowToasts;
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            SplashScreen s = new SplashScreen("SplashScreen.png");
+            s.Show(true);
+            s.Close(new TimeSpan(0, 0, 10));
+            base.OnStartup(e);
+        }
     }
 }

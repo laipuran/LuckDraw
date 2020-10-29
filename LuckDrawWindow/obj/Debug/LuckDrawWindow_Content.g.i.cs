@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("acrru-sn7cw.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("splashscreen.png")]
 
 

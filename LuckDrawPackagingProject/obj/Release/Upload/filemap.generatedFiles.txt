@@ -1,0 +1,2 @@
+obj\Release\Upload\filemap.pri
+obj\Release\Upload\filemap.map.txt

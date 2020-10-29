@@ -124,7 +124,7 @@ namespace LuckDrawWindow
             {
                 if (MessageBox.Show("目前版本：v" + Properties.Settings.Default.currentVersion.ToString() + "，而最新版本是v" + version + "\n是否更新？", "更新提示", MessageBoxButton.YesNo, MessageBoxImage.Information) == MessageBoxResult.Yes)
                 {
-                    bool isSuccessfully = DownloadFile("LuckDrawSetup.msi", "assets/LuckDrawSetup.msi");
+                    bool isSuccessfully = DownloadFile("LuckDrawSetup.msi", "assets/Setup.msi");
                     if (!isSuccessfully)
                     {
                         MessageBox.Show("下载成功！", "下载结果");

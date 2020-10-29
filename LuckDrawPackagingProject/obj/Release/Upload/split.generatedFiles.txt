@@ -1,0 +1,2 @@
+obj\Release\Upload\split.pri
+obj\Release\Upload\split.map.txt

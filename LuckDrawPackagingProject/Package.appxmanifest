@@ -9,13 +9,13 @@
   xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10">
 
 	<Identity
-	  Name="1156782f-ddef-4482-99f0-8d044e914b87"
-	  Publisher="CN=Laifuzhou"
-	  Version="1.0.0.0" />
+	  Name="31869PuranLai.LuckDraw"
+	  Publisher="CN=7E1D7CD2-F295-49DB-BDCB-DDA4AF0952D2"
+	  Version="1.6.1.0" />
 
 	<Properties>
-		<DisplayName>LuckDrawPackagingProject</DisplayName>
-		<PublisherDisplayName>Laifuzhou</PublisherDisplayName>
+		<DisplayName>Luck Draw</DisplayName>
+		<PublisherDisplayName>Puran Lai</PublisherDisplayName>
 		<Logo>Images\StoreLogo.png</Logo>
 	</Properties>
 
@@ -33,7 +33,7 @@
 		  Executable="$targetnametoken$.exe"
 		  EntryPoint="$targetentrypoint$">
 			<uap:VisualElements
-			  DisplayName="LuckDrawPackagingProject"
+			  DisplayName="Luck Draw"
 			  Description="LuckDrawPackagingProject"
 			  BackgroundColor="transparent"
 			  Square150x150Logo="Images\Square150x150Logo.png"
@@ -55,6 +55,7 @@
 				<desktop:Extension Category="windows.toastNotificationActivation">
 					<desktop:ToastNotificationActivation ToastActivatorCLSID="5C5BC8EA-4B17-7315-FF09-899091168E2C" />
 				</desktop:Extension>
+				
 			</Extensions>
 		</Application>
 	</Applications>
