@@ -11,7 +11,7 @@
 	<Identity
 	  Name="31869PuranLai.LuckDraw"
 	  Publisher="CN=7E1D7CD2-F295-49DB-BDCB-DDA4AF0952D2"
-	  Version="1.6.1.0" />
+	  Version="1.7.0.0" />
 
 	<Properties>
 		<DisplayName>Luck Draw</DisplayName>

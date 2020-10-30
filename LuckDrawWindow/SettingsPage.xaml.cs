@@ -78,7 +78,7 @@ namespace LuckDrawWindow
                 try
                 {
                     int number = int.Parse(NumberTextBox.Text);
-                    if (number < 0)
+                    if (number < 0 || number> 100000000)
                     {
                         throw new LuckDrawPage.MyEx("输入的数字不合法！");
                     }

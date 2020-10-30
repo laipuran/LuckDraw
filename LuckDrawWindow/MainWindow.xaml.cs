@@ -39,6 +39,10 @@ namespace LuckDrawWindow
             {
                 Process.Start(path, App.numberOfPeople.ToString());
             }
+            else if (File.Exists(Directory.GetCurrentDirectory() + "\\Floating.exe"))
+            {
+                Process.Start(Directory.GetCurrentDirectory() + "\\Floating.exe", App.numberOfPeople.ToString());
+            }
             MiddleStackPanel.Width = 56;
             BackButton.Visibility = Visibility.Collapsed;
             LuckDrawListBoxItem.IsSelected = true;

@@ -1,115 +1,115 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\results.xsl'?>
-<REPORT xml:lang="zh-CN" OVERALL_RESULT="PASS" VERSION="10.0.18362.1" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="Centennial" PUBLISHER_DISPLAY_NAME="CN=7E1D7CD2-F295-49DB-BDCB-DDA4AF0952D2" APP_NAME="31869PuranLai.LuckDraw" APP_VERSION="1.6.1.0" OSVERSION="10.0.19041.0" OS="Microsoft Windows 10 家庭中文版" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="2052" X64_ONLY="FALSE" VALIDATION_TYPE="UI" ReportGenerationTime="2020/10/29 21:55:55" ID="b7b6748c8f34c82842b305104bfd02f7">
+<REPORT xml:lang="zh-CN" OVERALL_RESULT="PASS" VERSION="10.0.18362.1" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="Centennial" PUBLISHER_DISPLAY_NAME="CN=7E1D7CD2-F295-49DB-BDCB-DDA4AF0952D2" APP_NAME="31869PuranLai.LuckDraw" APP_VERSION="1.6.0.0" OSVERSION="10.0.19041.0" OS="Microsoft Windows 10 家庭中文版" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="2052" X64_ONLY="FALSE" VALIDATION_TYPE="UI" ReportGenerationTime="2020/10/30 20:50:20" ID="cf0c975e99b74373a345172d2057d888">
   <REQUIREMENTS>
     <REQUIREMENT NUMBER="3" TITLE="数字签名的文件测试" RATIONALE="验证码数字签名使用户不仅能够确保软件是正版软件，而且能够检测文件是否被篡改，例如是否感染了病毒。">
-      <TEST INDEX="2" NAME="安装已签名的驱动程序和可执行文件" DESCRIPTION="安装已签名的驱动程序和可执行文件。" EXECUTIONTIME="00h:00m:16s.66ms" OPTIONAL="TRUE">
+      <TEST INDEX="2" NAME="安装已签名的驱动程序和可执行文件" DESCRIPTION="安装已签名的驱动程序和可执行文件。" EXECUTIONTIME="00h:00m:07s.28ms" OPTIONAL="TRUE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="6" TITLE="用户帐户控制(UAC)测试" RATIONALE="大多数应用程序在运行时都不需要管理员特权，只需以标准用户身份运行即可。Windows 应用程序必须有一个清单(嵌入清单或外部清单)，用于定义其执行级别以通知操作系统运行应用程序所需的特权。">
-      <TEST INDEX="11" NAME="用户帐户控制运行级别" DESCRIPTION="Windows® 应用程序必须有一个清单(嵌入清单或外部清单)，用于定义其执行级别以通知操作系统运行应用程序所需的特权。" EXECUTIONTIME="00h:00m:01s.34ms" OPTIONAL="TRUE">
+      <TEST INDEX="11" NAME="用户帐户控制运行级别" DESCRIPTION="Windows® 应用程序必须有一个清单(嵌入清单或外部清单)，用于定义其执行级别以通知操作系统运行应用程序所需的特权。" EXECUTIONTIME="00h:00m:02s.01ms" OPTIONAL="TRUE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="12" TITLE="包合规性测试" RATIONALE="包清单缺少一个或多个必需的属性。">
-      <TEST INDEX="77" NAME="应用程序计数" DESCRIPTION="一个包不应定义清单中的多个应用。" EXECUTIONTIME="00h:00m:01s.55ms" OPTIONAL="TRUE">
+      <TEST INDEX="77" NAME="应用程序计数" DESCRIPTION="一个包不应定义清单中的多个应用。" EXECUTIONTIME="00h:00m:01s.78ms" OPTIONAL="TRUE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="31" NAME="应用清单" DESCRIPTION="应用部件清单(manifest)必须包括所有必填字段的有效条目。" EXECUTIONTIME="00h:00m:02s.53ms" OPTIONAL="FALSE">
+      <TEST INDEX="31" NAME="应用清单" DESCRIPTION="应用部件清单(manifest)必须包括所有必填字段的有效条目。" EXECUTIONTIME="00h:00m:03s.60ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="87" NAME="文件关联谓词" DESCRIPTION="未安装注册文件关联谓词的注册表验证。" EXECUTIONTIME="00h:00m:01s.74ms" OPTIONAL="TRUE">
+      <TEST INDEX="87" NAME="文件关联谓词" DESCRIPTION="未安装注册文件关联谓词的注册表验证。" EXECUTIONTIME="00h:00m:03s.67ms" OPTIONAL="TRUE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="86" NAME="注册表检查" DESCRIPTION="未安装驱动程序且未安装 NT 服务的注册表验证。" EXECUTIONTIME="00h:00m:01s.48ms" OPTIONAL="TRUE">
+      <TEST INDEX="86" NAME="注册表检查" DESCRIPTION="未安装驱动程序且未安装 NT 服务的注册表验证。" EXECUTIONTIME="00h:00m:02s.10ms" OPTIONAL="TRUE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="90" NAME="资源包" DESCRIPTION="检查任何资源包是否包含 PE 文件。" EXECUTIONTIME="00h:00m:02s.37ms" OPTIONAL="FALSE">
+      <TEST INDEX="90" NAME="资源包" DESCRIPTION="检查任何资源包是否包含 PE 文件。" EXECUTIONTIME="00h:00m:02s.01ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="14" TITLE="Windows 安全中心功能测试" RATIONALE="应用程序必须选择启用 Windows 安全中心功能。">
-      <TEST INDEX="70" NAME="禁止文件分析器" DESCRIPTION="用于检测已知的不安全文件的应用程序分析" EXECUTIONTIME="00h:00m:03s.52ms" OPTIONAL="FALSE">
+      <TEST INDEX="70" NAME="禁止文件分析器" DESCRIPTION="用于检测已知的不安全文件的应用程序分析" EXECUTIONTIME="00h:00m:04s.94ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="62" NAME="私有代码签名" DESCRIPTION="应用不应对私有代码签名密钥文件进行打包。" EXECUTIONTIME="00h:00m:02s.35ms" OPTIONAL="FALSE">
+      <TEST INDEX="62" NAME="私有代码签名" DESCRIPTION="应用不应对私有代码签名密钥文件进行打包。" EXECUTIONTIME="00h:00m:02s.36ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="15" TITLE="支持的 API 测试" RATIONALE="应用程序只应引用 Windows SDK 允许 Windows 应用商店应用使用的 API。">
-      <TEST INDEX="38" NAME="支持的 API" DESCRIPTION="Windows 应用商店应用只能使用支持的平台 API。" EXECUTIONTIME="00h:00m:02s.10ms" OPTIONAL="FALSE">
+      <TEST INDEX="38" NAME="支持的 API" DESCRIPTION="Windows 应用商店应用只能使用支持的平台 API。" EXECUTIONTIME="00h:00m:02s.92ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="19" TITLE="应用清单资源测试" RATIONALE="按照应用打包规范和应用部件清单(manifest)架构的规定，应用包清单应在 resources.pri 文件中定义有效的资源。">
-      <TEST INDEX="45" NAME="应用资源" DESCRIPTION="包应该在 resources.pri 文件中定义有效资源。" EXECUTIONTIME="00h:00m:01s.24ms" OPTIONAL="TRUE">
+      <TEST INDEX="45" NAME="应用资源" DESCRIPTION="包应该在 resources.pri 文件中定义有效资源。" EXECUTIONTIME="00h:00m:02s.64ms" OPTIONAL="TRUE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="61" NAME="品牌" DESCRIPTION="应用不应使用 Windows SDK 示例或 Visual Studio 打包的默认映像。" EXECUTIONTIME="00h:00m:03s.01ms" OPTIONAL="FALSE">
+      <TEST INDEX="61" NAME="品牌" DESCRIPTION="应用不应使用 Windows SDK 示例或 Visual Studio 打包的默认映像。" EXECUTIONTIME="00h:00m:04s.56ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="20" TITLE="调试配置测试" RATIONALE="应用不应该安装任何调试二进制文件。">
-      <TEST INDEX="46" NAME="调试配置" DESCRIPTION="应用不应该安装任何调试二进制文件。" EXECUTIONTIME="00h:00m:02s.90ms" OPTIONAL="TRUE">
+      <TEST INDEX="46" NAME="调试配置" DESCRIPTION="应用不应该安装任何调试二进制文件。" EXECUTIONTIME="00h:00m:04s.03ms" OPTIONAL="TRUE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="23" TITLE="应用功能测试" RATIONALE="在服务过程中，声明特殊用途功能的程序包必须提供论证。">
-      <TEST INDEX="91" NAME="企业功能" DESCRIPTION="检查程序包中是否有任何企业专用功能(例如修改包)。" EXECUTIONTIME="00h:00m:01s.98ms" OPTIONAL="FALSE">
+      <TEST INDEX="91" NAME="企业功能" DESCRIPTION="检查程序包中是否有任何企业专用功能(例如修改包)。" EXECUTIONTIME="00h:00m:02s.85ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="52" NAME="特殊用途功能" DESCRIPTION="在服务过程中，声明特殊用途功能的程序包必须提供论证。" EXECUTIONTIME="00h:00m:01s.40ms" OPTIONAL="FALSE">
+      <TEST INDEX="52" NAME="特殊用途功能" DESCRIPTION="在服务过程中，声明特殊用途功能的程序包必须提供论证。" EXECUTIONTIME="00h:00m:02s.51ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="24" TITLE="Windows 运行时元数据验证" RATIONALE="在所有的生成源中，元数据需要保持一致。">
-      <TEST INDEX="56" NAME="ExclusiveTo 属性" DESCRIPTION="一个类不能实现标记了 ExclusiveTo 另一个类的接口。" EXECUTIONTIME="00h:00m:15s.45ms" OPTIONAL="FALSE">
+      <TEST INDEX="56" NAME="ExclusiveTo 属性" DESCRIPTION="一个类不能实现标记了 ExclusiveTo 另一个类的接口。" EXECUTIONTIME="00h:00m:32s.51ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="57" NAME="类型位置" DESCRIPTION="必须使用最长的匹配名称空间在元数据文件中定义类型。" EXECUTIONTIME="00h:00m:01s.41ms" OPTIONAL="FALSE">
+      <TEST INDEX="57" NAME="类型位置" DESCRIPTION="必须使用最长的匹配名称空间在元数据文件中定义类型。" EXECUTIONTIME="00h:00m:01s.66ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="55" NAME="类型名称区分大小写" DESCRIPTION="名称空间和类型名称不得只有大小写区别。" EXECUTIONTIME="00h:00m:01s.41ms" OPTIONAL="FALSE">
+      <TEST INDEX="55" NAME="类型名称区分大小写" DESCRIPTION="名称空间和类型名称不得只有大小写区别。" EXECUTIONTIME="00h:00m:01s.66ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="54" NAME="类型名称正确性" DESCRIPTION="Windows 名称空间中只能包含系统类型，全局名称空间中不得包含类型。" EXECUTIONTIME="00h:00m:01s.05ms" OPTIONAL="FALSE">
+      <TEST INDEX="54" NAME="类型名称正确性" DESCRIPTION="Windows 名称空间中只能包含系统类型，全局名称空间中不得包含类型。" EXECUTIONTIME="00h:00m:02s.05ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="58" NAME="一般元数据正确性" DESCRIPTION="元数据文件必须满足各种要求才是有效且正确的。" EXECUTIONTIME="00h:00m:16s.29ms" OPTIONAL="TRUE">
+      <TEST INDEX="58" NAME="一般元数据正确性" DESCRIPTION="元数据文件必须满足各种要求才是有效且正确的。" EXECUTIONTIME="00h:00m:33s.49ms" OPTIONAL="TRUE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="53" NAME="属性" DESCRIPTION="不得使用只写和索引器属性。对应的 getter 和 setter 方法类型必须匹配。" EXECUTIONTIME="00h:00m:01s.98ms" OPTIONAL="FALSE">
+      <TEST INDEX="53" NAME="属性" DESCRIPTION="不得使用只写和索引器属性。对应的 getter 和 setter 方法类型必须匹配。" EXECUTIONTIME="00h:00m:02s.46ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="25" TITLE="程序包健全性测试" RATIONALE="验证应用包内容以确保正确性。">
-      <TEST INDEX="89" NAME="存档文件使用" DESCRIPTION="程序包不应在存档文件内包含 PE 文件。" EXECUTIONTIME="00h:00m:01s.77ms" OPTIONAL="TRUE">
+      <TEST INDEX="89" NAME="存档文件使用" DESCRIPTION="程序包不应在存档文件内包含 PE 文件。" EXECUTIONTIME="00h:00m:02s.73ms" OPTIONAL="TRUE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="88" NAME="已阻止的可执行文件" DESCRIPTION="检测是否存在对进程安装 API 和不可执行文件的引用" EXECUTIONTIME="00h:00m:02s.68ms" OPTIONAL="TRUE">
+      <TEST INDEX="88" NAME="已阻止的可执行文件" DESCRIPTION="检测是否存在对进程安装 API 和不可执行文件的引用" EXECUTIONTIME="00h:00m:04s.23ms" OPTIONAL="TRUE">
         <MESSAGES>
           <MESSAGE TEXT="文件 Floating\LuckDrawWindow.exe 包含对“启动流程”相关 API System.Diagnostics.Process.Start 的引用" />
           <MESSAGE TEXT="文件 LuckDrawWindow\LuckDrawWindow.exe 包含对“启动流程”相关 API System.Diagnostics.Process.Start 的引用" />
@@ -117,7 +117,7 @@
         </MESSAGES>
         <RESULT><![CDATA[FAIL]]></RESULT>
       </TEST>
-      <TEST INDEX="63" NAME="平台的相应文件" DESCRIPTION="应用不应安装不符合目标处理器体系结构的文件。" EXECUTIONTIME="00h:00m:01s.78ms" OPTIONAL="TRUE">
+      <TEST INDEX="63" NAME="平台的相应文件" DESCRIPTION="应用不应安装不符合目标处理器体系结构的文件。" EXECUTIONTIME="00h:00m:02s.56ms" OPTIONAL="TRUE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
@@ -125,12 +125,12 @@
   </REQUIREMENTS>
   <APPLICATIONS>
     <Installed_Programs>
-      <Program Name="31869PuranLai.LuckDraw" Type="Application" Source="AppxPackage" Publisher="CN=7E1D7CD2-F295-49DB-BDCB-DDA4AF0952D2" Version="1.6.1.0" Language="2052" InstallDate="" OSVersionAtInstallTime="10.0.0.19041" RootDirPath="C:\Windows\temp\appcert_1C64\31869PuranLai.LuckDraw_1.6.1.0_neutral__4r9w1q8b6xeee" Id="000088189932c7eced9450fc9c2b7156ac9100000408" HiddenArp="false">
+      <Program Name="31869PuranLai.LuckDraw" Type="Application" Source="AppxPackage" Publisher="CN=7E1D7CD2-F295-49DB-BDCB-DDA4AF0952D2" Version="1.6.0.0" Language="2052" InstallDate="" OSVersionAtInstallTime="10.0.0.19041" RootDirPath="C:\Windows\temp\appcert_0798\31869PuranLai.LuckDraw_1.6.0.0_neutral__4r9w1q8b6xeee" Id="00008d8f89b3e60bd86d7ef20f3ff5b3fde000000408" HiddenArp="false">
         <Indicators>
           <WindowsStoreAppManifestIndicators>
-            <PackageManifest PackageFullName="31869PuranLai.LuckDraw_1.6.1.0_neutral__4r9w1q8b6xeee">
+            <PackageManifest PackageFullName="31869PuranLai.LuckDraw_1.6.0.0_neutral__4r9w1q8b6xeee">
               <Package>
-                <Identity Name="31869PuranLai.LuckDraw" Publisher="CN=7E1D7CD2-F295-49DB-BDCB-DDA4AF0952D2" Version="1.6.1.0" ProcessorArchitecture="neutral"></Identity>
+                <Identity Name="31869PuranLai.LuckDraw" Publisher="CN=7E1D7CD2-F295-49DB-BDCB-DDA4AF0952D2" Version="1.6.0.0" ProcessorArchitecture="neutral"></Identity>
                 <Properties>
                   <DisplayName>Luck Draw</DisplayName>
                   <PublisherDisplayName>Puran Lai</PublisherDisplayName>
@@ -172,9 +172,9 @@
             </PackageManifest>
             <BundleManifest PackageFamilyName="31869PuranLai.LuckDraw_4r9w1q8b6xeee">
               <Bundle SchemaVersion="4.0">
-                <Identity Name="31869PuranLai.LuckDraw" Publisher="CN=7E1D7CD2-F295-49DB-BDCB-DDA4AF0952D2" Version="1.6.1.0"></Identity>
+                <Identity Name="31869PuranLai.LuckDraw" Publisher="CN=7E1D7CD2-F295-49DB-BDCB-DDA4AF0952D2" Version="1.6.0.0"></Identity>
                 <Packages>
-                  <Package Type="application" Version="1.6.1.0" Architecture="neutral" FileName="LuckDrawPackagingProject_1.6.1.0_AnyCPU.msix" Offset="74" Size="271526">
+                  <Package Type="application" Version="1.6.0.0" Architecture="neutral" FileName="LuckDrawPackagingProject_1.6.0.0_AnyCPU.msix" Offset="74" Size="271487">
                     <Resources>
                       <Resource Language="ZH-CN"></Resource>
                       <Resource Scale="200"></Resource>
@@ -191,22 +191,22 @@
         </Indicators>
         <StaticProperties>
           <Files Id="">
-            <File Id="00000670999138746566f35bdbc4a82c755705122620" Name="Floating.exe" ProductName="floating" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" Size="40960" SizeOfImage="40960" PeHeaderHash="0101e3588e05c04536ba73ae2a093956038c8e8962db" PeChecksum="0" CrcChecksum="849074784" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="floating" LegalCopyright="copyright ©  2020" LinkDate="02/13/2104 07:15:35" BinaryType="pe32_clr_il_prefer32" LowerCaseLongPath="c:\windows\temp\appcert_1c64\31869puranlai.luckdraw_1.6.1.0_neutral__4r9w1q8b6xeee\floating\floating.exe" />
-            <File Id="0000529d08c10723d80c43869e5f26af86fe92b1cce0" Name="LuckDrawWindow.exe" ProductName="luckdrawwindow" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" Size="81920" SizeOfImage="81920" PeHeaderHash="0101fa25b055e87078b17be1eaa5defe9a9c717cb761" PeChecksum="0" CrcChecksum="1897646697" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="luckdrawwindow" LegalCopyright="copyright ©  2020" LinkDate="03/03/2090 18:14:49" BinaryType="pe32_clr_il_prefer32" LowerCaseLongPath="c:\windows\temp\appcert_1c64\31869puranlai.luckdraw_1.6.1.0_neutral__4r9w1q8b6xeee\floating\luckdrawwindow.exe" />
-            <File Id="0000529d08c10723d80c43869e5f26af86fe92b1cce0" Name="LuckDrawWindow.exe" ProductName="luckdrawwindow" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" Size="81920" SizeOfImage="81920" PeHeaderHash="0101fa25b055e87078b17be1eaa5defe9a9c717cb761" PeChecksum="0" CrcChecksum="1897646697" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="luckdrawwindow" LegalCopyright="copyright ©  2020" LinkDate="03/03/2090 18:14:49" BinaryType="pe32_clr_il_prefer32" LowerCaseLongPath="c:\windows\temp\appcert_1c64\31869puranlai.luckdraw_1.6.1.0_neutral__4r9w1q8b6xeee\luckdrawwindow\luckdrawwindow.exe" />
-            <File Id="0000884ab3492f757b87ccbfba6793c98ba56a998cac" Name="Microsoft.Toolkit.Uwp.Notifications.dll" ProductName="microsoft.toolkit.uwp.notifications" CompanyName="microsoft.toolkit" ProductVersion="6.1.1+6cefc60154" VerLanguage="0" SwitchBackContext="0" FileVersion="6.1.1.1" Size="131072" SizeOfImage="131072" PeHeaderHash="01010505083204001c839f57c316792565b28dbf3820" PeChecksum="158523" CrcChecksum="-76060364" BinProductVersion="6.1.1+6cefc60154" BinFileVersion="6.1.1.1" FileDescription="microsoft.toolkit.uwp.notifications" LegalCopyright="(c) .net foundation and contributors.  all rights reserved." LinkDate="10/16/2038 01:15:42" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_1c64\31869puranlai.luckdraw_1.6.1.0_neutral__4r9w1q8b6xeee\luckdrawwindow\microsoft.toolkit.uwp.notifications.dll" />
-            <File Id="0000884ab3492f757b87ccbfba6793c98ba56a998cac" Name="Microsoft.Toolkit.Uwp.Notifications.dll" ProductName="microsoft.toolkit.uwp.notifications" CompanyName="microsoft.toolkit" ProductVersion="6.1.1+6cefc60154" VerLanguage="0" SwitchBackContext="0" FileVersion="6.1.1.1" Size="131072" SizeOfImage="131072" PeHeaderHash="01010505083204001c839f57c316792565b28dbf3820" PeChecksum="158523" CrcChecksum="-76060364" BinProductVersion="6.1.1+6cefc60154" BinFileVersion="6.1.1.1" FileDescription="microsoft.toolkit.uwp.notifications" LegalCopyright="(c) .net foundation and contributors.  all rights reserved." LinkDate="10/16/2038 01:15:42" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_1c64\31869puranlai.luckdraw_1.6.1.0_neutral__4r9w1q8b6xeee\floating\microsoft.toolkit.uwp.notifications.dll" />
-            <File Id="0000c9d328003eebd9225332230af2981b87bf33250a" Name="QueryString.NETCore.dll" ProductName="querystring.netcore" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" Size="40960" SizeOfImage="40960" PeHeaderHash="0101cb75e021f76e767a5a68ed079cc0e61b5d0450a8" PeChecksum="0" CrcChecksum="1305445768" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="querystring.netcore" LegalCopyright="copyright ©  2015" LinkDate="09/11/2015 19:40:40" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_1c64\31869puranlai.luckdraw_1.6.1.0_neutral__4r9w1q8b6xeee\luckdrawwindow\querystring.netcore.dll" />
-            <File Id="000008f50e6a62341788feca0f47bbc688cd3eaeb738" Name="resources.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" Size="0" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="-1916403146" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="c:\windows\temp\appcert_1c64\31869puranlai.luckdraw_1.6.1.0_neutral__4r9w1q8b6xeee\resources.pri" />
-            <File Id="0000d1664731719e85aad7a2273685d77feb0204ec98" Name="System.ValueTuple.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.26515.06 @builtby: dlab-ddvsowinage059 @branch: release/2.1 @srccode: https://github.com/dotnet/corefx/tree/30ab651fcb4354552bd4891619a0bdd81e0ebdbf" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.26515.06" Size="32768" SizeOfImage="32768" PeHeaderHash="01016b59e85ff098f807fd253237312d9af388fdb964" PeChecksum="84160" CrcChecksum="-323696947" BinProductVersion="4.6.26515.06 @builtby: dlab-ddvsowinage059 @branch: release/2.1 @srccode: https://github.com/dotnet/corefx/tree/30ab651fcb4354552bd4891619a0bdd81e0ebdbf" BinFileVersion="4.6.26515.6" FileDescription="system.valuetuple" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="05/15/2018 20:11:55" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_1c64\31869puranlai.luckdraw_1.6.1.0_neutral__4r9w1q8b6xeee\floating\system.valuetuple.dll" />
-            <File Id="0000d1664731719e85aad7a2273685d77feb0204ec98" Name="System.ValueTuple.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.26515.06 @builtby: dlab-ddvsowinage059 @branch: release/2.1 @srccode: https://github.com/dotnet/corefx/tree/30ab651fcb4354552bd4891619a0bdd81e0ebdbf" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.26515.06" Size="32768" SizeOfImage="32768" PeHeaderHash="01016b59e85ff098f807fd253237312d9af388fdb964" PeChecksum="84160" CrcChecksum="-323696947" BinProductVersion="4.6.26515.06 @builtby: dlab-ddvsowinage059 @branch: release/2.1 @srccode: https://github.com/dotnet/corefx/tree/30ab651fcb4354552bd4891619a0bdd81e0ebdbf" BinFileVersion="4.6.26515.6" FileDescription="system.valuetuple" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="05/15/2018 20:11:55" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_1c64\31869puranlai.luckdraw_1.6.1.0_neutral__4r9w1q8b6xeee\luckdrawwindow\system.valuetuple.dll" />
+            <File Id="00000670999138746566f35bdbc4a82c755705122620" Name="Floating.exe" ProductName="floating" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" Size="40960" SizeOfImage="40960" PeHeaderHash="0101e3588e05c04536ba73ae2a093956038c8e8962db" PeChecksum="0" CrcChecksum="849074784" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="floating" LegalCopyright="copyright ©  2020" LinkDate="02/13/2104 07:15:35" BinaryType="pe32_clr_il_prefer32" LowerCaseLongPath="c:\windows\temp\appcert_0798\31869puranlai.luckdraw_1.6.0.0_neutral__4r9w1q8b6xeee\floating\floating.exe" />
+            <File Id="0000de434ecc5d01629fe613e5bb77ccf907731844ec" Name="LuckDrawWindow.exe" ProductName="luckdrawwindow" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" Size="81920" SizeOfImage="81920" PeHeaderHash="0101b879632440cb92d8964c2fdff209c9206fc61b1f" PeChecksum="0" CrcChecksum="-1385059384" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="luckdrawwindow" LegalCopyright="copyright ©  2020" LinkDate="04/02/2052 21:27:00" BinaryType="pe32_clr_il_prefer32" LowerCaseLongPath="c:\windows\temp\appcert_0798\31869puranlai.luckdraw_1.6.0.0_neutral__4r9w1q8b6xeee\luckdrawwindow\luckdrawwindow.exe" />
+            <File Id="0000de434ecc5d01629fe613e5bb77ccf907731844ec" Name="LuckDrawWindow.exe" ProductName="luckdrawwindow" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" Size="81920" SizeOfImage="81920" PeHeaderHash="0101b879632440cb92d8964c2fdff209c9206fc61b1f" PeChecksum="0" CrcChecksum="-1385059384" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="luckdrawwindow" LegalCopyright="copyright ©  2020" LinkDate="04/02/2052 21:27:00" BinaryType="pe32_clr_il_prefer32" LowerCaseLongPath="c:\windows\temp\appcert_0798\31869puranlai.luckdraw_1.6.0.0_neutral__4r9w1q8b6xeee\floating\luckdrawwindow.exe" />
+            <File Id="0000884ab3492f757b87ccbfba6793c98ba56a998cac" Name="Microsoft.Toolkit.Uwp.Notifications.dll" ProductName="microsoft.toolkit.uwp.notifications" CompanyName="microsoft.toolkit" ProductVersion="6.1.1+6cefc60154" VerLanguage="0" SwitchBackContext="0" FileVersion="6.1.1.1" Size="131072" SizeOfImage="131072" PeHeaderHash="01010505083204001c839f57c316792565b28dbf3820" PeChecksum="158523" CrcChecksum="-76060364" BinProductVersion="6.1.1+6cefc60154" BinFileVersion="6.1.1.1" FileDescription="microsoft.toolkit.uwp.notifications" LegalCopyright="(c) .net foundation and contributors.  all rights reserved." LinkDate="10/16/2038 01:15:42" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_0798\31869puranlai.luckdraw_1.6.0.0_neutral__4r9w1q8b6xeee\luckdrawwindow\microsoft.toolkit.uwp.notifications.dll" />
+            <File Id="0000884ab3492f757b87ccbfba6793c98ba56a998cac" Name="Microsoft.Toolkit.Uwp.Notifications.dll" ProductName="microsoft.toolkit.uwp.notifications" CompanyName="microsoft.toolkit" ProductVersion="6.1.1+6cefc60154" VerLanguage="0" SwitchBackContext="0" FileVersion="6.1.1.1" Size="131072" SizeOfImage="131072" PeHeaderHash="01010505083204001c839f57c316792565b28dbf3820" PeChecksum="158523" CrcChecksum="-76060364" BinProductVersion="6.1.1+6cefc60154" BinFileVersion="6.1.1.1" FileDescription="microsoft.toolkit.uwp.notifications" LegalCopyright="(c) .net foundation and contributors.  all rights reserved." LinkDate="10/16/2038 01:15:42" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_0798\31869puranlai.luckdraw_1.6.0.0_neutral__4r9w1q8b6xeee\floating\microsoft.toolkit.uwp.notifications.dll" />
+            <File Id="0000c9d328003eebd9225332230af2981b87bf33250a" Name="QueryString.NETCore.dll" ProductName="querystring.netcore" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" Size="40960" SizeOfImage="40960" PeHeaderHash="0101cb75e021f76e767a5a68ed079cc0e61b5d0450a8" PeChecksum="0" CrcChecksum="1305445768" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="querystring.netcore" LegalCopyright="copyright ©  2015" LinkDate="09/11/2015 19:40:40" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_0798\31869puranlai.luckdraw_1.6.0.0_neutral__4r9w1q8b6xeee\luckdrawwindow\querystring.netcore.dll" />
+            <File Id="000008f50e6a62341788feca0f47bbc688cd3eaeb738" Name="resources.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" Size="0" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="-1916403146" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="c:\windows\temp\appcert_0798\31869puranlai.luckdraw_1.6.0.0_neutral__4r9w1q8b6xeee\resources.pri" />
+            <File Id="0000d1664731719e85aad7a2273685d77feb0204ec98" Name="System.ValueTuple.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.26515.06 @builtby: dlab-ddvsowinage059 @branch: release/2.1 @srccode: https://github.com/dotnet/corefx/tree/30ab651fcb4354552bd4891619a0bdd81e0ebdbf" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.26515.06" Size="32768" SizeOfImage="32768" PeHeaderHash="01016b59e85ff098f807fd253237312d9af388fdb964" PeChecksum="84160" CrcChecksum="-323696947" BinProductVersion="4.6.26515.06 @builtby: dlab-ddvsowinage059 @branch: release/2.1 @srccode: https://github.com/dotnet/corefx/tree/30ab651fcb4354552bd4891619a0bdd81e0ebdbf" BinFileVersion="4.6.26515.6" FileDescription="system.valuetuple" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="05/15/2018 20:11:55" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_0798\31869puranlai.luckdraw_1.6.0.0_neutral__4r9w1q8b6xeee\luckdrawwindow\system.valuetuple.dll" />
+            <File Id="0000d1664731719e85aad7a2273685d77feb0204ec98" Name="System.ValueTuple.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.26515.06 @builtby: dlab-ddvsowinage059 @branch: release/2.1 @srccode: https://github.com/dotnet/corefx/tree/30ab651fcb4354552bd4891619a0bdd81e0ebdbf" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.26515.06" Size="32768" SizeOfImage="32768" PeHeaderHash="01016b59e85ff098f807fd253237312d9af388fdb964" PeChecksum="84160" CrcChecksum="-323696947" BinProductVersion="4.6.26515.06 @builtby: dlab-ddvsowinage059 @branch: release/2.1 @srccode: https://github.com/dotnet/corefx/tree/30ab651fcb4354552bd4891619a0bdd81e0ebdbf" BinFileVersion="4.6.26515.6" FileDescription="system.valuetuple" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="05/15/2018 20:11:55" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_0798\31869puranlai.luckdraw_1.6.0.0_neutral__4r9w1q8b6xeee\floating\system.valuetuple.dll" />
           </Files>
         </StaticProperties>
       </Program>
     </Installed_Programs>
   </APPLICATIONS>
   <DEPENDENCY_INFORMATION>
-    <AitStaticAnalysis ProgramId="0000da39a3ee5e6b4b0d3255bfef95601890afd80709" AnalysisVersion="1.60" DictionaryVersion="3.4" Type="Max" Id="C:\Windows\temp\appcert_1C64\31869PuranLai.LuckDraw_1.6.1.0_neutral__4r9w1q8b6xeee">
+    <AitStaticAnalysis ProgramId="0000da39a3ee5e6b4b0d3255bfef95601890afd80709" AnalysisVersion="1.60" DictionaryVersion="3.4" Type="Max" Id="C:\Windows\temp\appcert_0798\31869PuranLai.LuckDraw_1.6.0.0_neutral__4r9w1q8b6xeee">
       <AitFile FrameworkMoniker=".NETFramework,Version=v4.7.2" ErrorCode="0" Name="Floating.exe" Id="00000670999138746566f35bdbc4a82c755705122620">
         <AitCategory Id="Com">
           <AitFeature Name="{00000000-0000-0000-0000-000000000021}" />
@@ -316,257 +316,6 @@
           <AitFeature Name="System.Windows.Window.OnClosing" />
           <AitFeature Name="System.Windows.Window.set_Left" />
           <AitFeature Name="System.Windows.Window.set_Top" />
-        </AitCategory>
-      </AitFile>
-      <AitFile FrameworkMoniker=".NETFramework,Version=v4.7.2" ErrorCode="0" Name="LuckDrawWindow.exe" Id="0000529d08c10723d80c43869e5f26af86fe92b1cce0">
-        <AitCategory Id="ApiStatic">
-          <AitFeature Name="mscoree.dll!_CorExeMain" />
-        </AitCategory>
-        <AitCategory Id="DotNet">
-          <AitFeature Name="System.Action" />
-          <AitFeature Name="System.Action..ctor" />
-          <AitFeature Name="System.Array" />
-          <AitFeature Name="System.Array.Clear" />
-          <AitFeature Name="System.Boolean" />
-          <AitFeature Name="System.Byte" />
-          <AitFeature Name="System.CodeDom.Compiler.GeneratedCodeAttribute" />
-          <AitFeature Name="System.CodeDom.Compiler.GeneratedCodeAttribute..ctor" />
-          <AitFeature Name="System.Collections.Generic.IEnumerable`1" />
-          <AitFeature Name="System.ComponentModel.CancelEventArgs" />
-          <AitFeature Name="System.ComponentModel.EditorBrowsableAttribute" />
-          <AitFeature Name="System.ComponentModel.EditorBrowsableAttribute..ctor" />
-          <AitFeature Name="System.ComponentModel.EditorBrowsableState" />
-          <AitFeature Name="System.ComponentModel.INotifyPropertyChanged" />
-          <AitFeature Name="System.ComponentModel.PropertyChangedEventArgs" />
-          <AitFeature Name="System.ComponentModel.PropertyChangedEventArgs..ctor" />
-          <AitFeature Name="System.ComponentModel.PropertyChangedEventHandler" />
-          <AitFeature Name="System.ComponentModel.PropertyChangedEventHandler.Invoke" />
-          <AitFeature Name="System.Configuration.ApplicationScopedSettingAttribute" />
-          <AitFeature Name="System.Configuration.ApplicationScopedSettingAttribute..ctor" />
-          <AitFeature Name="System.Configuration.ApplicationSettingsBase" />
-          <AitFeature Name="System.Configuration.ApplicationSettingsBase..ctor" />
-          <AitFeature Name="System.Configuration.DefaultSettingValueAttribute" />
-          <AitFeature Name="System.Configuration.DefaultSettingValueAttribute..ctor" />
-          <AitFeature Name="System.Configuration.SettingsBase" />
-          <AitFeature Name="System.Configuration.SettingsBase.Save" />
-          <AitFeature Name="System.Configuration.SettingsBase.Synchronized" />
-          <AitFeature Name="System.Configuration.SettingsBase.get_Item" />
-          <AitFeature Name="System.Configuration.SettingsBase.set_Item" />
-          <AitFeature Name="System.Configuration.UserScopedSettingAttribute" />
-          <AitFeature Name="System.Configuration.UserScopedSettingAttribute..ctor" />
-          <AitFeature Name="System.Convert" />
-          <AitFeature Name="System.Convert.ToSingle" />
-          <AitFeature Name="System.Delegate" />
-          <AitFeature Name="System.Delegate.Combine" />
-          <AitFeature Name="System.Delegate.Remove" />
-          <AitFeature Name="System.Diagnostics.DebuggableAttribute" />
-          <AitFeature Name="System.Diagnostics.DebuggableAttribute..ctor" />
-          <AitFeature Name="System.Diagnostics.DebuggerHiddenAttribute" />
-          <AitFeature Name="System.Diagnostics.DebuggerHiddenAttribute..ctor" />
-          <AitFeature Name="System.Diagnostics.DebuggerNonUserCodeAttribute" />
-          <AitFeature Name="System.Diagnostics.DebuggerNonUserCodeAttribute..ctor" />
-          <AitFeature Name="System.Diagnostics.Process" />
-          <AitFeature Name="System.Diagnostics.Process.Start" />
-          <AitFeature Name="System.Diagnostics.ProcessStartInfo" />
-          <AitFeature Name="System.Diagnostics.ProcessStartInfo..ctor" />
-          <AitFeature Name="System.Diagnostics.ProcessStartInfo.set_CreateNoWindow" />
-          <AitFeature Name="System.Diagnostics.ProcessStartInfo.set_UseShellExecute" />
-          <AitFeature Name="System.Diagnostics.ProcessStartInfo.set_WindowStyle" />
-          <AitFeature Name="System.Diagnostics.ProcessWindowStyle" />
-          <AitFeature Name="System.Exception" />
-          <AitFeature Name="System.Exception..ctor" />
-          <AitFeature Name="System.Exception.get_Message" />
-          <AitFeature Name="System.Globalization.CultureInfo" />
-          <AitFeature Name="System.IO.Directory" />
-          <AitFeature Name="System.IO.Directory.GetCurrentDirectory" />
-          <AitFeature Name="System.IO.File" />
-          <AitFeature Name="System.IO.File.Delete" />
-          <AitFeature Name="System.IO.File.Exists" />
-          <AitFeature Name="System.IO.File.ReadAllText" />
-          <AitFeature Name="System.IO.FileMode" />
-          <AitFeature Name="System.IO.FileStream" />
-          <AitFeature Name="System.IO.FileStream..ctor" />
-          <AitFeature Name="System.IO.Stream" />
-          <AitFeature Name="System.IO.Stream.Close" />
-          <AitFeature Name="System.IO.Stream.Read" />
-          <AitFeature Name="System.IO.Stream.Write" />
-          <AitFeature Name="System.Int32" />
-          <AitFeature Name="System.Int32.Parse" />
-          <AitFeature Name="System.Int32.ToString" />
-          <AitFeature Name="System.Net.HttpWebRequest" />
-          <AitFeature Name="System.Net.HttpWebRequest.AddRange" />
-          <AitFeature Name="System.Net.WebRequest" />
-          <AitFeature Name="System.Net.WebRequest.Create" />
-          <AitFeature Name="System.Net.WebRequest.GetResponse" />
-          <AitFeature Name="System.Net.WebResponse" />
-          <AitFeature Name="System.Net.WebResponse.GetResponseStream" />
-          <AitFeature Name="System.Nullable`1" />
-          <AitFeature Name="System.Object" />
-          <AitFeature Name="System.Object..ctor" />
-          <AitFeature Name="System.Object.ToString" />
-          <AitFeature Name="System.Random" />
-          <AitFeature Name="System.Random..ctor" />
-          <AitFeature Name="System.Random.Next" />
-          <AitFeature Name="System.Reflection.Assembly" />
-          <AitFeature Name="System.Reflection.AssemblyCompanyAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyCompanyAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyConfigurationAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyConfigurationAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyCopyrightAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyCopyrightAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyDescriptionAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyDescriptionAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyFileVersionAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyFileVersionAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyProductAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyProductAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyTitleAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyTitleAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyTrademarkAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyTrademarkAttribute..ctor" />
-          <AitFeature Name="System.Resources.ResourceManager" />
-          <AitFeature Name="System.Resources.ResourceManager..ctor" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncStateMachineAttribute" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncStateMachineAttribute..ctor" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Create" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetException" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetResult" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetStateMachine" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start" />
-          <AitFeature Name="System.Runtime.CompilerServices.CompilationRelaxationsAttribute" />
-          <AitFeature Name="System.Runtime.CompilerServices.CompilationRelaxationsAttribute..ctor" />
-          <AitFeature Name="System.Runtime.CompilerServices.CompilerGeneratedAttribute" />
-          <AitFeature Name="System.Runtime.CompilerServices.CompilerGeneratedAttribute..ctor" />
-          <AitFeature Name="System.Runtime.CompilerServices.IAsyncStateMachine" />
-          <AitFeature Name="System.Runtime.CompilerServices.IAsyncStateMachine.MoveNext" />
-          <AitFeature Name="System.Runtime.CompilerServices.IAsyncStateMachine.SetStateMachine" />
-          <AitFeature Name="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute" />
-          <AitFeature Name="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute..ctor" />
-          <AitFeature Name="System.Runtime.CompilerServices.TaskAwaiter" />
-          <AitFeature Name="System.Runtime.CompilerServices.TaskAwaiter.GetResult" />
-          <AitFeature Name="System.Runtime.CompilerServices.TaskAwaiter.get_IsCompleted" />
-          <AitFeature Name="System.Runtime.InteropServices.ClassInterfaceAttribute" />
-          <AitFeature Name="System.Runtime.InteropServices.ClassInterfaceAttribute..ctor" />
-          <AitFeature Name="System.Runtime.InteropServices.ClassInterfaceType" />
-          <AitFeature Name="System.Runtime.InteropServices.ComSourceInterfacesAttribute" />
-          <AitFeature Name="System.Runtime.InteropServices.ComSourceInterfacesAttribute..ctor" />
-          <AitFeature Name="System.Runtime.InteropServices.ComVisibleAttribute" />
-          <AitFeature Name="System.Runtime.InteropServices.ComVisibleAttribute..ctor" />
-          <AitFeature Name="System.Runtime.InteropServices.GuidAttribute" />
-          <AitFeature Name="System.Runtime.InteropServices.GuidAttribute..ctor" />
-          <AitFeature Name="System.Runtime.Versioning.TargetFrameworkAttribute" />
-          <AitFeature Name="System.Runtime.Versioning.TargetFrameworkAttribute..ctor" />
-          <AitFeature Name="System.RuntimeTypeHandle" />
-          <AitFeature Name="System.STAThreadAttribute" />
-          <AitFeature Name="System.STAThreadAttribute..ctor" />
-          <AitFeature Name="System.Single" />
-          <AitFeature Name="System.Single.ToString" />
-          <AitFeature Name="System.String" />
-          <AitFeature Name="System.String.Concat" />
-          <AitFeature Name="System.String.Join" />
-          <AitFeature Name="System.String.op_Equality" />
-          <AitFeature Name="System.Threading.Interlocked" />
-          <AitFeature Name="System.Threading.Interlocked.CompareExchange" />
-          <AitFeature Name="System.Threading.Tasks.Task" />
-          <AitFeature Name="System.Threading.Tasks.Task.Delay" />
-          <AitFeature Name="System.Threading.Tasks.Task.GetAwaiter" />
-          <AitFeature Name="System.Threading.Tasks.Task.Run" />
-          <AitFeature Name="System.Threading.Thread" />
-          <AitFeature Name="System.Threading.Thread.Sleep" />
-          <AitFeature Name="System.TimeSpan" />
-          <AitFeature Name="System.TimeSpan..ctor" />
-          <AitFeature Name="System.Type" />
-          <AitFeature Name="System.Type.GetTypeFromHandle" />
-          <AitFeature Name="System.Type.get_Assembly" />
-          <AitFeature Name="System.Uri" />
-          <AitFeature Name="System.Uri..ctor" />
-          <AitFeature Name="System.UriKind" />
-          <AitFeature Name="System.ValueType" />
-          <AitFeature Name="System.Windows.Application" />
-          <AitFeature Name="System.Windows.Application..ctor" />
-          <AitFeature Name="System.Windows.Application.LoadComponent" />
-          <AitFeature Name="System.Windows.Application.OnStartup" />
-          <AitFeature Name="System.Windows.Application.Run" />
-          <AitFeature Name="System.Windows.Application.Shutdown" />
-          <AitFeature Name="System.Windows.Application.get_Current" />
-          <AitFeature Name="System.Windows.Application.set_StartupUri" />
-          <AitFeature Name="System.Windows.Controls.Button" />
-          <AitFeature Name="System.Windows.Controls.ContentControl" />
-          <AitFeature Name="System.Windows.Controls.ContentControl.set_Content" />
-          <AitFeature Name="System.Windows.Controls.Frame" />
-          <AitFeature Name="System.Windows.Controls.Frame.GoBack" />
-          <AitFeature Name="System.Windows.Controls.Frame.get_CanGoBack" />
-          <AitFeature Name="System.Windows.Controls.Frame.get_NavigationService" />
-          <AitFeature Name="System.Windows.Controls.Frame.get_Source" />
-          <AitFeature Name="System.Windows.Controls.ListBox" />
-          <AitFeature Name="System.Windows.Controls.ListBoxItem" />
-          <AitFeature Name="System.Windows.Controls.ListBoxItem.get_IsSelected" />
-          <AitFeature Name="System.Windows.Controls.ListBoxItem.set_IsSelected" />
-          <AitFeature Name="System.Windows.Controls.Page" />
-          <AitFeature Name="System.Windows.Controls.Page..ctor" />
-          <AitFeature Name="System.Windows.Controls.Primitives.ButtonBase" />
-          <AitFeature Name="System.Windows.Controls.Primitives.ButtonBase.add_Click" />
-          <AitFeature Name="System.Windows.Controls.Primitives.Selector" />
-          <AitFeature Name="System.Windows.Controls.Primitives.Selector.add_SelectionChanged" />
-          <AitFeature Name="System.Windows.Controls.Primitives.TextBoxBase" />
-          <AitFeature Name="System.Windows.Controls.Primitives.TextBoxBase.add_TextChanged" />
-          <AitFeature Name="System.Windows.Controls.Primitives.TextBoxBase.set_IsReadOnly" />
-          <AitFeature Name="System.Windows.Controls.Primitives.ToggleButton" />
-          <AitFeature Name="System.Windows.Controls.Primitives.ToggleButton.get_IsChecked" />
-          <AitFeature Name="System.Windows.Controls.Primitives.ToggleButton.set_IsChecked" />
-          <AitFeature Name="System.Windows.Controls.SelectionChangedEventArgs" />
-          <AitFeature Name="System.Windows.Controls.SelectionChangedEventHandler" />
-          <AitFeature Name="System.Windows.Controls.SelectionChangedEventHandler..ctor" />
-          <AitFeature Name="System.Windows.Controls.StackPanel" />
-          <AitFeature Name="System.Windows.Controls.TextBlock" />
-          <AitFeature Name="System.Windows.Controls.TextBlock.set_Text" />
-          <AitFeature Name="System.Windows.Controls.TextBox" />
-          <AitFeature Name="System.Windows.Controls.TextBox.get_Text" />
-          <AitFeature Name="System.Windows.Controls.TextBox.set_Text" />
-          <AitFeature Name="System.Windows.Controls.TextChangedEventArgs" />
-          <AitFeature Name="System.Windows.Controls.TextChangedEventHandler" />
-          <AitFeature Name="System.Windows.Controls.TextChangedEventHandler..ctor" />
-          <AitFeature Name="System.Windows.FrameworkElement" />
-          <AitFeature Name="System.Windows.FrameworkElement.FindResource" />
-          <AitFeature Name="System.Windows.FrameworkElement.set_Width" />
-          <AitFeature Name="System.Windows.Markup.IComponentConnector" />
-          <AitFeature Name="System.Windows.Markup.IComponentConnector.Connect" />
-          <AitFeature Name="System.Windows.Media.Animation.Storyboard" />
-          <AitFeature Name="System.Windows.Media.Animation.Storyboard.Begin" />
-          <AitFeature Name="System.Windows.MessageBox" />
-          <AitFeature Name="System.Windows.MessageBox.Show" />
-          <AitFeature Name="System.Windows.MessageBoxButton" />
-          <AitFeature Name="System.Windows.MessageBoxImage" />
-          <AitFeature Name="System.Windows.MessageBoxResult" />
-          <AitFeature Name="System.Windows.Navigation.NavigationService" />
-          <AitFeature Name="System.Windows.Navigation.NavigationService.Navigate" />
-          <AitFeature Name="System.Windows.ResourceDictionaryLocation" />
-          <AitFeature Name="System.Windows.RoutedEventArgs" />
-          <AitFeature Name="System.Windows.RoutedEventHandler" />
-          <AitFeature Name="System.Windows.RoutedEventHandler..ctor" />
-          <AitFeature Name="System.Windows.SplashScreen" />
-          <AitFeature Name="System.Windows.SplashScreen..ctor" />
-          <AitFeature Name="System.Windows.SplashScreen.Close" />
-          <AitFeature Name="System.Windows.SplashScreen.Show" />
-          <AitFeature Name="System.Windows.StartupEventArgs" />
-          <AitFeature Name="System.Windows.ThemeInfoAttribute" />
-          <AitFeature Name="System.Windows.ThemeInfoAttribute..ctor" />
-          <AitFeature Name="System.Windows.UIElement" />
-          <AitFeature Name="System.Windows.UIElement.set_IsEnabled" />
-          <AitFeature Name="System.Windows.UIElement.set_Visibility" />
-          <AitFeature Name="System.Windows.Visibility" />
-          <AitFeature Name="System.Windows.Window" />
-          <AitFeature Name="System.Windows.Window..ctor" />
-          <AitFeature Name="System.Windows.Window.OnClosing" />
-        </AitCategory>
-        <AitCategory Id="DotNetWinRt">
-          <AitFeature Name="Windows.Data.Xml.Dom.XmlDocument" />
-          <AitFeature Name="Windows.UI.Notifications.ToastNotification" />
-          <AitFeature Name="Windows.UI.Notifications.ToastNotification..ctor" />
-          <AitFeature Name="Windows.UI.Notifications.ToastNotifier" />
-          <AitFeature Name="Windows.UI.Notifications.ToastNotifier.Show" />
         </AitCategory>
       </AitFile>
       <AitFile FrameworkMoniker=".NETFramework,Version=v4.6.1" ErrorCode="0" Name="Microsoft.Toolkit.Uwp.Notifications.dll" Id="0000884ab3492f757b87ccbfba6793c98ba56a998cac">
@@ -968,6 +717,257 @@
           <AitFeature Name="System.StringComparison" />
           <AitFeature Name="System.Type" />
           <AitFeature Name="System.Type.GetTypeFromHandle" />
+        </AitCategory>
+      </AitFile>
+      <AitFile FrameworkMoniker=".NETFramework,Version=v4.7.2" ErrorCode="0" Name="LuckDrawWindow.exe" Id="0000de434ecc5d01629fe613e5bb77ccf907731844ec">
+        <AitCategory Id="ApiStatic">
+          <AitFeature Name="mscoree.dll!_CorExeMain" />
+        </AitCategory>
+        <AitCategory Id="DotNet">
+          <AitFeature Name="System.Action" />
+          <AitFeature Name="System.Action..ctor" />
+          <AitFeature Name="System.Array" />
+          <AitFeature Name="System.Array.Clear" />
+          <AitFeature Name="System.Boolean" />
+          <AitFeature Name="System.Byte" />
+          <AitFeature Name="System.CodeDom.Compiler.GeneratedCodeAttribute" />
+          <AitFeature Name="System.CodeDom.Compiler.GeneratedCodeAttribute..ctor" />
+          <AitFeature Name="System.Collections.Generic.IEnumerable`1" />
+          <AitFeature Name="System.ComponentModel.CancelEventArgs" />
+          <AitFeature Name="System.ComponentModel.EditorBrowsableAttribute" />
+          <AitFeature Name="System.ComponentModel.EditorBrowsableAttribute..ctor" />
+          <AitFeature Name="System.ComponentModel.EditorBrowsableState" />
+          <AitFeature Name="System.ComponentModel.INotifyPropertyChanged" />
+          <AitFeature Name="System.ComponentModel.PropertyChangedEventArgs" />
+          <AitFeature Name="System.ComponentModel.PropertyChangedEventArgs..ctor" />
+          <AitFeature Name="System.ComponentModel.PropertyChangedEventHandler" />
+          <AitFeature Name="System.ComponentModel.PropertyChangedEventHandler.Invoke" />
+          <AitFeature Name="System.Configuration.ApplicationScopedSettingAttribute" />
+          <AitFeature Name="System.Configuration.ApplicationScopedSettingAttribute..ctor" />
+          <AitFeature Name="System.Configuration.ApplicationSettingsBase" />
+          <AitFeature Name="System.Configuration.ApplicationSettingsBase..ctor" />
+          <AitFeature Name="System.Configuration.DefaultSettingValueAttribute" />
+          <AitFeature Name="System.Configuration.DefaultSettingValueAttribute..ctor" />
+          <AitFeature Name="System.Configuration.SettingsBase" />
+          <AitFeature Name="System.Configuration.SettingsBase.Save" />
+          <AitFeature Name="System.Configuration.SettingsBase.Synchronized" />
+          <AitFeature Name="System.Configuration.SettingsBase.get_Item" />
+          <AitFeature Name="System.Configuration.SettingsBase.set_Item" />
+          <AitFeature Name="System.Configuration.UserScopedSettingAttribute" />
+          <AitFeature Name="System.Configuration.UserScopedSettingAttribute..ctor" />
+          <AitFeature Name="System.Convert" />
+          <AitFeature Name="System.Convert.ToSingle" />
+          <AitFeature Name="System.Delegate" />
+          <AitFeature Name="System.Delegate.Combine" />
+          <AitFeature Name="System.Delegate.Remove" />
+          <AitFeature Name="System.Diagnostics.DebuggableAttribute" />
+          <AitFeature Name="System.Diagnostics.DebuggableAttribute..ctor" />
+          <AitFeature Name="System.Diagnostics.DebuggerHiddenAttribute" />
+          <AitFeature Name="System.Diagnostics.DebuggerHiddenAttribute..ctor" />
+          <AitFeature Name="System.Diagnostics.DebuggerNonUserCodeAttribute" />
+          <AitFeature Name="System.Diagnostics.DebuggerNonUserCodeAttribute..ctor" />
+          <AitFeature Name="System.Diagnostics.Process" />
+          <AitFeature Name="System.Diagnostics.Process.Start" />
+          <AitFeature Name="System.Diagnostics.ProcessStartInfo" />
+          <AitFeature Name="System.Diagnostics.ProcessStartInfo..ctor" />
+          <AitFeature Name="System.Diagnostics.ProcessStartInfo.set_CreateNoWindow" />
+          <AitFeature Name="System.Diagnostics.ProcessStartInfo.set_UseShellExecute" />
+          <AitFeature Name="System.Diagnostics.ProcessStartInfo.set_WindowStyle" />
+          <AitFeature Name="System.Diagnostics.ProcessWindowStyle" />
+          <AitFeature Name="System.Exception" />
+          <AitFeature Name="System.Exception..ctor" />
+          <AitFeature Name="System.Exception.get_Message" />
+          <AitFeature Name="System.Globalization.CultureInfo" />
+          <AitFeature Name="System.IO.Directory" />
+          <AitFeature Name="System.IO.Directory.GetCurrentDirectory" />
+          <AitFeature Name="System.IO.File" />
+          <AitFeature Name="System.IO.File.Delete" />
+          <AitFeature Name="System.IO.File.Exists" />
+          <AitFeature Name="System.IO.File.ReadAllText" />
+          <AitFeature Name="System.IO.FileMode" />
+          <AitFeature Name="System.IO.FileStream" />
+          <AitFeature Name="System.IO.FileStream..ctor" />
+          <AitFeature Name="System.IO.Stream" />
+          <AitFeature Name="System.IO.Stream.Close" />
+          <AitFeature Name="System.IO.Stream.Read" />
+          <AitFeature Name="System.IO.Stream.Write" />
+          <AitFeature Name="System.Int32" />
+          <AitFeature Name="System.Int32.Parse" />
+          <AitFeature Name="System.Int32.ToString" />
+          <AitFeature Name="System.Net.HttpWebRequest" />
+          <AitFeature Name="System.Net.HttpWebRequest.AddRange" />
+          <AitFeature Name="System.Net.WebRequest" />
+          <AitFeature Name="System.Net.WebRequest.Create" />
+          <AitFeature Name="System.Net.WebRequest.GetResponse" />
+          <AitFeature Name="System.Net.WebResponse" />
+          <AitFeature Name="System.Net.WebResponse.GetResponseStream" />
+          <AitFeature Name="System.Nullable`1" />
+          <AitFeature Name="System.Object" />
+          <AitFeature Name="System.Object..ctor" />
+          <AitFeature Name="System.Object.ToString" />
+          <AitFeature Name="System.Random" />
+          <AitFeature Name="System.Random..ctor" />
+          <AitFeature Name="System.Random.Next" />
+          <AitFeature Name="System.Reflection.Assembly" />
+          <AitFeature Name="System.Reflection.AssemblyCompanyAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyCompanyAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyConfigurationAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyConfigurationAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyCopyrightAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyCopyrightAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyDescriptionAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyDescriptionAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyFileVersionAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyFileVersionAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyProductAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyProductAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyTitleAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyTitleAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyTrademarkAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyTrademarkAttribute..ctor" />
+          <AitFeature Name="System.Resources.ResourceManager" />
+          <AitFeature Name="System.Resources.ResourceManager..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncStateMachineAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncStateMachineAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Create" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetException" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetResult" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetStateMachine" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilationRelaxationsAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilationRelaxationsAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilerGeneratedAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilerGeneratedAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.IAsyncStateMachine" />
+          <AitFeature Name="System.Runtime.CompilerServices.IAsyncStateMachine.MoveNext" />
+          <AitFeature Name="System.Runtime.CompilerServices.IAsyncStateMachine.SetStateMachine" />
+          <AitFeature Name="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.TaskAwaiter" />
+          <AitFeature Name="System.Runtime.CompilerServices.TaskAwaiter.GetResult" />
+          <AitFeature Name="System.Runtime.CompilerServices.TaskAwaiter.get_IsCompleted" />
+          <AitFeature Name="System.Runtime.InteropServices.ClassInterfaceAttribute" />
+          <AitFeature Name="System.Runtime.InteropServices.ClassInterfaceAttribute..ctor" />
+          <AitFeature Name="System.Runtime.InteropServices.ClassInterfaceType" />
+          <AitFeature Name="System.Runtime.InteropServices.ComSourceInterfacesAttribute" />
+          <AitFeature Name="System.Runtime.InteropServices.ComSourceInterfacesAttribute..ctor" />
+          <AitFeature Name="System.Runtime.InteropServices.ComVisibleAttribute" />
+          <AitFeature Name="System.Runtime.InteropServices.ComVisibleAttribute..ctor" />
+          <AitFeature Name="System.Runtime.InteropServices.GuidAttribute" />
+          <AitFeature Name="System.Runtime.InteropServices.GuidAttribute..ctor" />
+          <AitFeature Name="System.Runtime.Versioning.TargetFrameworkAttribute" />
+          <AitFeature Name="System.Runtime.Versioning.TargetFrameworkAttribute..ctor" />
+          <AitFeature Name="System.RuntimeTypeHandle" />
+          <AitFeature Name="System.STAThreadAttribute" />
+          <AitFeature Name="System.STAThreadAttribute..ctor" />
+          <AitFeature Name="System.Single" />
+          <AitFeature Name="System.Single.ToString" />
+          <AitFeature Name="System.String" />
+          <AitFeature Name="System.String.Concat" />
+          <AitFeature Name="System.String.Join" />
+          <AitFeature Name="System.String.op_Equality" />
+          <AitFeature Name="System.Threading.Interlocked" />
+          <AitFeature Name="System.Threading.Interlocked.CompareExchange" />
+          <AitFeature Name="System.Threading.Tasks.Task" />
+          <AitFeature Name="System.Threading.Tasks.Task.Delay" />
+          <AitFeature Name="System.Threading.Tasks.Task.GetAwaiter" />
+          <AitFeature Name="System.Threading.Tasks.Task.Run" />
+          <AitFeature Name="System.Threading.Thread" />
+          <AitFeature Name="System.Threading.Thread.Sleep" />
+          <AitFeature Name="System.TimeSpan" />
+          <AitFeature Name="System.TimeSpan..ctor" />
+          <AitFeature Name="System.Type" />
+          <AitFeature Name="System.Type.GetTypeFromHandle" />
+          <AitFeature Name="System.Type.get_Assembly" />
+          <AitFeature Name="System.Uri" />
+          <AitFeature Name="System.Uri..ctor" />
+          <AitFeature Name="System.UriKind" />
+          <AitFeature Name="System.ValueType" />
+          <AitFeature Name="System.Windows.Application" />
+          <AitFeature Name="System.Windows.Application..ctor" />
+          <AitFeature Name="System.Windows.Application.LoadComponent" />
+          <AitFeature Name="System.Windows.Application.OnStartup" />
+          <AitFeature Name="System.Windows.Application.Run" />
+          <AitFeature Name="System.Windows.Application.Shutdown" />
+          <AitFeature Name="System.Windows.Application.get_Current" />
+          <AitFeature Name="System.Windows.Application.set_StartupUri" />
+          <AitFeature Name="System.Windows.Controls.Button" />
+          <AitFeature Name="System.Windows.Controls.ContentControl" />
+          <AitFeature Name="System.Windows.Controls.ContentControl.set_Content" />
+          <AitFeature Name="System.Windows.Controls.Frame" />
+          <AitFeature Name="System.Windows.Controls.Frame.GoBack" />
+          <AitFeature Name="System.Windows.Controls.Frame.get_CanGoBack" />
+          <AitFeature Name="System.Windows.Controls.Frame.get_NavigationService" />
+          <AitFeature Name="System.Windows.Controls.Frame.get_Source" />
+          <AitFeature Name="System.Windows.Controls.ListBox" />
+          <AitFeature Name="System.Windows.Controls.ListBoxItem" />
+          <AitFeature Name="System.Windows.Controls.ListBoxItem.get_IsSelected" />
+          <AitFeature Name="System.Windows.Controls.ListBoxItem.set_IsSelected" />
+          <AitFeature Name="System.Windows.Controls.Page" />
+          <AitFeature Name="System.Windows.Controls.Page..ctor" />
+          <AitFeature Name="System.Windows.Controls.Primitives.ButtonBase" />
+          <AitFeature Name="System.Windows.Controls.Primitives.ButtonBase.add_Click" />
+          <AitFeature Name="System.Windows.Controls.Primitives.Selector" />
+          <AitFeature Name="System.Windows.Controls.Primitives.Selector.add_SelectionChanged" />
+          <AitFeature Name="System.Windows.Controls.Primitives.TextBoxBase" />
+          <AitFeature Name="System.Windows.Controls.Primitives.TextBoxBase.add_TextChanged" />
+          <AitFeature Name="System.Windows.Controls.Primitives.TextBoxBase.set_IsReadOnly" />
+          <AitFeature Name="System.Windows.Controls.Primitives.ToggleButton" />
+          <AitFeature Name="System.Windows.Controls.Primitives.ToggleButton.get_IsChecked" />
+          <AitFeature Name="System.Windows.Controls.Primitives.ToggleButton.set_IsChecked" />
+          <AitFeature Name="System.Windows.Controls.SelectionChangedEventArgs" />
+          <AitFeature Name="System.Windows.Controls.SelectionChangedEventHandler" />
+          <AitFeature Name="System.Windows.Controls.SelectionChangedEventHandler..ctor" />
+          <AitFeature Name="System.Windows.Controls.StackPanel" />
+          <AitFeature Name="System.Windows.Controls.TextBlock" />
+          <AitFeature Name="System.Windows.Controls.TextBlock.set_Text" />
+          <AitFeature Name="System.Windows.Controls.TextBox" />
+          <AitFeature Name="System.Windows.Controls.TextBox.get_Text" />
+          <AitFeature Name="System.Windows.Controls.TextBox.set_Text" />
+          <AitFeature Name="System.Windows.Controls.TextChangedEventArgs" />
+          <AitFeature Name="System.Windows.Controls.TextChangedEventHandler" />
+          <AitFeature Name="System.Windows.Controls.TextChangedEventHandler..ctor" />
+          <AitFeature Name="System.Windows.FrameworkElement" />
+          <AitFeature Name="System.Windows.FrameworkElement.FindResource" />
+          <AitFeature Name="System.Windows.FrameworkElement.set_Width" />
+          <AitFeature Name="System.Windows.Markup.IComponentConnector" />
+          <AitFeature Name="System.Windows.Markup.IComponentConnector.Connect" />
+          <AitFeature Name="System.Windows.Media.Animation.Storyboard" />
+          <AitFeature Name="System.Windows.Media.Animation.Storyboard.Begin" />
+          <AitFeature Name="System.Windows.MessageBox" />
+          <AitFeature Name="System.Windows.MessageBox.Show" />
+          <AitFeature Name="System.Windows.MessageBoxButton" />
+          <AitFeature Name="System.Windows.MessageBoxImage" />
+          <AitFeature Name="System.Windows.MessageBoxResult" />
+          <AitFeature Name="System.Windows.Navigation.NavigationService" />
+          <AitFeature Name="System.Windows.Navigation.NavigationService.Navigate" />
+          <AitFeature Name="System.Windows.ResourceDictionaryLocation" />
+          <AitFeature Name="System.Windows.RoutedEventArgs" />
+          <AitFeature Name="System.Windows.RoutedEventHandler" />
+          <AitFeature Name="System.Windows.RoutedEventHandler..ctor" />
+          <AitFeature Name="System.Windows.SplashScreen" />
+          <AitFeature Name="System.Windows.SplashScreen..ctor" />
+          <AitFeature Name="System.Windows.SplashScreen.Close" />
+          <AitFeature Name="System.Windows.SplashScreen.Show" />
+          <AitFeature Name="System.Windows.StartupEventArgs" />
+          <AitFeature Name="System.Windows.ThemeInfoAttribute" />
+          <AitFeature Name="System.Windows.ThemeInfoAttribute..ctor" />
+          <AitFeature Name="System.Windows.UIElement" />
+          <AitFeature Name="System.Windows.UIElement.set_IsEnabled" />
+          <AitFeature Name="System.Windows.UIElement.set_Visibility" />
+          <AitFeature Name="System.Windows.Visibility" />
+          <AitFeature Name="System.Windows.Window" />
+          <AitFeature Name="System.Windows.Window..ctor" />
+          <AitFeature Name="System.Windows.Window.OnClosing" />
+        </AitCategory>
+        <AitCategory Id="DotNetWinRt">
+          <AitFeature Name="Windows.Data.Xml.Dom.XmlDocument" />
+          <AitFeature Name="Windows.UI.Notifications.ToastNotification" />
+          <AitFeature Name="Windows.UI.Notifications.ToastNotification..ctor" />
+          <AitFeature Name="Windows.UI.Notifications.ToastNotifier" />
+          <AitFeature Name="Windows.UI.Notifications.ToastNotifier.Show" />
         </AitCategory>
       </AitFile>
     </AitStaticAnalysis>

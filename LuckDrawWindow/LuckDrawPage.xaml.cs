@@ -33,21 +33,14 @@ namespace LuckDrawWindow
         {
             public MyEx(string message) : base(message){ }
         }
-        public void sendNotifications(string title, string notifications)
+        public void sendNotifications(string notifications)
         {
             ToastContent toastContent = new ToastContentBuilder()
        .AddToastActivationInfo("action=viewConversation&conversationId=5", ToastActivationType.Foreground)
        .AddText(notifications)
        .GetToastContent();
             var toast = new ToastNotification(toastContent.GetXml());
-            try
-            {
-                DesktopNotificationManagerCompat.CreateToastNotifier().Show(toast);
-            }
-            catch (Exception Ex)
-            {
-                MessageBox.Show(Ex.Message, "Debug Log");
-            }
+            DesktopNotificationManagerCompat.CreateToastNotifier().Show(toast);
         }
         private void GetNumberButton_Click(object sender, RoutedEventArgs e)
         {
@@ -145,7 +138,7 @@ namespace LuckDrawWindow
             {
                 string notifications;
                 notifications = "被抽中的幸运同学： " + string.Join(" ", array);
-                sendNotifications("Luck Draw", notifications);
+                sendNotifications(notifications);
             }
 
 
