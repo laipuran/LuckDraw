@@ -7,7 +7,7 @@
 
   有关程序包清单文件的详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=241727
  -->
-  <Identity Name="31869PuranLai.LuckDraw" Publisher="CN=7E1D7CD2-F295-49DB-BDCB-DDA4AF0952D2" Version="1.7.0.0" ProcessorArchitecture="neutral" />
+  <Identity Name="31869PuranLai.LuckDraw" Publisher="CN=Puran Lai" Version="1.7.0.0" ProcessorArchitecture="neutral" />
   <Properties>
     <DisplayName>Luck Draw</DisplayName>
     <PublisherDisplayName>Puran Lai</PublisherDisplayName>
@@ -34,7 +34,7 @@
     <Resource uap:Scale="400" />
   </Resources>
   <Applications>
-    <Application Id="App" Executable="Floating\LuckDrawWindow.exe" EntryPoint="Windows.FullTrustApplication">
+    <Application Id="App" Executable="LuckDrawWindow\LuckDrawWindow.exe" EntryPoint="Windows.FullTrustApplication">
       <uap:VisualElements DisplayName="Luck Draw" Description="LuckDrawPackagingProject" BackgroundColor="transparent" Square150x150Logo="Images\Square150x150Logo.png" Square44x44Logo="Images\Square44x44Logo.png">
         <uap:DefaultTile Wide310x150Logo="Images\Wide310x150Logo.png" />
         <uap:SplashScreen Image="Images\SplashScreen.png" />

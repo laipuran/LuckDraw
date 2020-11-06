@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>31869PuranLai.LuckDraw</PackageIdentityName>
-    <PackageIdentityPublisher>CN=7E1D7CD2-F295-49DB-BDCB-DDA4AF0952D2</PackageIdentityPublisher>
+    <PackageIdentityPublisher>CN=Puran Lai</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawPackagingProject\obj\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>

@@ -34,15 +34,9 @@ namespace LuckDrawWindow
             App.numberOfPeople = Properties.Settings.Default.numberOfPeople;
             App.doShowToasts = Properties.Settings.Default.doShowToasts;
 
-            string path = Directory.GetCurrentDirectory() + "\\Floating\\Floating.exe";
-            if (File.Exists(path))
-            {
-                Process.Start(path, App.numberOfPeople.ToString());
-            }
-            else if (File.Exists(Directory.GetCurrentDirectory() + "\\Floating.exe"))
-            {
-                Process.Start(Directory.GetCurrentDirectory() + "\\Floating.exe", App.numberOfPeople.ToString());
-            }
+            Window Floating = new Floating();
+            Floating.Show();
+
             MiddleStackPanel.Width = 56;
             BackButton.Visibility = Visibility.Collapsed;
             LuckDrawListBoxItem.IsSelected = true;

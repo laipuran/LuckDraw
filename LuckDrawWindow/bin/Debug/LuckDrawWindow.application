@@ -14,14 +14,14 @@
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="LuckDrawWindow.exe.manifest" size="5525">
+    <dependentAssembly dependencyType="install" codebase="LuckDrawWindow.exe.manifest" size="6613">
       <assemblyIdentity name="LuckDrawWindow.exe" version="1.0.0.5" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>53gKO/A8yC7oWjJKXgIGkPL9gK0n6Ir4IlJQk78G3zQ=</dsig:DigestValue>
+        <dsig:DigestValue>Bvc+WNa1WQT2cfsqlixv2aNdw72KEGQbckmCDV08rVg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -1,6 +1,4 @@
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\bin\Release\LuckDrawWindow.exe.config
-C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\bin\Release\LuckDrawWindow.exe.manifest
-C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\bin\Release\LuckDrawWindow.application
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\bin\Release\LuckDrawWindow.exe
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\bin\Release\LuckDrawWindow.pdb
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\bin\Release\Microsoft.Toolkit.Uwp.Notifications.dll
@@ -25,8 +23,13 @@ C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Release\LuckDrawWind
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Release\LuckDrawWindow.Properties.Resources.resources
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Release\LuckDrawWindow.csproj.GenerateResource.cache
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Release\LuckDrawWindow.csproj.CoreCompileInputs.cache
-C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Release\LuckDrawWindow.exe.manifest
-C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Release\LuckDrawWindow.application
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Release\LuckDrawWindow.csproj.CopyComplete
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Release\LuckDrawWindow.exe
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Release\LuckDrawWindow.pdb
+C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\bin\Release\LuckDrawWindow.exe.manifest
+C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\bin\Release\LuckDrawWindow.application
+C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Release\LuckDrawWindow.TrustInfo.xml
+C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Release\LuckDrawWindow.exe.manifest
+C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Release\LuckDrawWindow.application
+C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Release\Floating.g.cs
+C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Release\Floating.baml

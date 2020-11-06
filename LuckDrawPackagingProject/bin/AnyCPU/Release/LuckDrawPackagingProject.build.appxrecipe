@@ -9,7 +9,7 @@
     <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>31869PuranLai.LuckDraw</PackageIdentityName>
-    <PackageIdentityPublisher>CN=7E1D7CD2-F295-49DB-BDCB-DDA4AF0952D2</PackageIdentityPublisher>
+    <PackageIdentityPublisher>CN=Puran Lai</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawPackagingProject\obj\Release\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
@@ -54,24 +54,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawPackagingProject\bin\AnyCPU\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\bin\Release\LuckDrawWindow.exe">
-      <PackagePath>Floating\LuckDrawWindow.exe</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\bin\Release\Microsoft.Toolkit.Uwp.Notifications.dll">
-      <PackagePath>Floating\Microsoft.Toolkit.Uwp.Notifications.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\bin\Release\System.ValueTuple.dll">
-      <PackagePath>Floating\System.ValueTuple.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\bin\Release\LuckDrawWindow.exe.config">
-      <PackagePath>Floating\LuckDrawWindow.exe.config</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\Floating\bin\Release\Floating.exe">
-      <PackagePath>Floating\Floating.exe</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Laifuzhou\source\repos\LuckDraw\Floating\bin\Release\Floating.exe.config">
-      <PackagePath>Floating\Floating.exe.config</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Laifuzhou\.nuget\packages\microsoft.toolkit.uwp.notifications\6.1.1\lib\net461\Microsoft.Toolkit.Uwp.Notifications.dll">
       <PackagePath>LuckDrawWindow\Microsoft.Toolkit.Uwp.Notifications.dll</PackagePath>

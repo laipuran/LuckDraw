@@ -1,6 +1,4 @@
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\bin\Debug\LuckDrawWindow.exe.config
-C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\bin\Debug\LuckDrawWindow.exe.manifest
-C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\bin\Debug\LuckDrawWindow.application
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\bin\Debug\LuckDrawWindow.exe
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\bin\Debug\LuckDrawWindow.pdb
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\bin\Debug\Microsoft.Toolkit.Uwp.Notifications.dll
@@ -24,9 +22,14 @@ C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\LuckDrawWindow
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\LuckDrawWindow.Properties.Resources.resources
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\LuckDrawWindow.csproj.GenerateResource.cache
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\LuckDrawWindow.csproj.CoreCompileInputs.cache
-C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\LuckDrawWindow.exe.manifest
-C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\LuckDrawWindow.application
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\LuckDrawWindow.csproj.CopyComplete
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\LuckDrawWindow.exe
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\LuckDrawWindow.pdb
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\LuckDrawWindow.csprojAssemblyReference.cache
+C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\bin\Debug\LuckDrawWindow.exe.manifest
+C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\bin\Debug\LuckDrawWindow.application
+C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\Floating.g.cs
+C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\Floating.baml
+C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\LuckDrawWindow.TrustInfo.xml
+C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\LuckDrawWindow.exe.manifest
+C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\obj\Debug\LuckDrawWindow.application

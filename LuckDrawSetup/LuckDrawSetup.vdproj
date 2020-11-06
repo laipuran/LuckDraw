@@ -1264,12 +1264,6 @@
         "Entry"
         {
         "MsmKey" = "8:_241642BC52606C2D3BA36FD433556C92"
-        "OwnerKey" = "8:_C6F7D24B04514BC7A0E80F6F64E59263"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_241642BC52606C2D3BA36FD433556C92"
         "OwnerKey" = "8:_898CBE8C683840F3A57209F24BE98540"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -1305,12 +1299,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_2A838915E909E095E305D6446FCEDDD3"
-        "OwnerKey" = "8:_C6F7D24B04514BC7A0E80F6F64E59263"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_2B6911F2AB614A2A008941CEFD46F248"
         "OwnerKey" = "8:_898CBE8C683840F3A57209F24BE98540"
         "MsmSig" = "8:_UNDEFINED"
@@ -1331,12 +1319,6 @@
         {
         "MsmKey" = "8:_2EECB4F6D9930FBA60750228D69286DE"
         "OwnerKey" = "8:_4FBD7FDB34AD5304FE075059DEED4302"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_2EECB4F6D9930FBA60750228D69286DE"
-        "OwnerKey" = "8:_2A838915E909E095E305D6446FCEDDD3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1913,18 +1895,6 @@
         {
         "MsmKey" = "8:_4FBD7FDB34AD5304FE075059DEED4302"
         "OwnerKey" = "8:_898CBE8C683840F3A57209F24BE98540"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_4FBD7FDB34AD5304FE075059DEED4302"
-        "OwnerKey" = "8:_C6F7D24B04514BC7A0E80F6F64E59263"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_4FBD7FDB34AD5304FE075059DEED4302"
-        "OwnerKey" = "8:_2A838915E909E095E305D6446FCEDDD3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -4677,12 +4647,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_C6F7D24B04514BC7A0E80F6F64E59263"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_C89E54CF28FBC0E7CED0C8D242320DA9"
         "OwnerKey" = "8:_898CBE8C683840F3A57209F24BE98540"
         "MsmSig" = "8:_UNDEFINED"
@@ -4821,12 +4785,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_E9148D607FE152495D47599B4187786E"
-        "OwnerKey" = "8:_C6F7D24B04514BC7A0E80F6F64E59263"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_E96DF52C77B7F0F3D514C130C051365F"
         "OwnerKey" = "8:_898CBE8C683840F3A57209F24BE98540"
         "MsmSig" = "8:_UNDEFINED"
@@ -4949,18 +4907,6 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_190FD1D1626C5FEB59EF84D432B2FCD3"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_C6F7D24B04514BC7A0E80F6F64E59263"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_2A838915E909E095E305D6446FCEDDD3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -7422,37 +7368,6 @@
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_B735B859A1D645E8B98F4E0D65B8915E"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_2A838915E909E095E305D6446FCEDDD3"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:LuckDrawWindow, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_2A838915E909E095E305D6446FCEDDD3"
-                    {
-                    "Name" = "8:LuckDrawWindow.exe"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:LuckDrawWindow.exe"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_9D6170631C9C4CD4BB0D1DC0428A716C"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -13358,34 +13273,6 @@
             "OutputConfiguration" = "8:"
             "OutputGroupCanonicalName" = "8:Built"
             "OutputProjectGuid" = "8:{A228F497-06A0-4C10-8D4F-201EF18E1ADB}"
-            "ShowKeyOutput" = "11:TRUE"
-                "ExcludeFilters"
-                {
-                }
-            }
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_C6F7D24B04514BC7A0E80F6F64E59263"
-            {
-            "SourcePath" = "8:..\\Floating\\obj\\Debug\\Floating.exe"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_9D6170631C9C4CD4BB0D1DC0428A716C"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:"
-            "OutputGroupCanonicalName" = "8:Built"
-            "OutputProjectGuid" = "8:{138C56D7-16E0-46E6-B7CE-5A737E8B8EC5}"
             "ShowKeyOutput" = "11:TRUE"
                 "ExcludeFilters"
                 {

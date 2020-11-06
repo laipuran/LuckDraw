@@ -6,15 +6,6 @@ C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawPackagingProject\Images\Square4
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawPackagingProject\Images\StoreLogo.png
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawPackagingProject\Images\Wide310x150Logo.scale-200.png
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawPackagingProject\bin\AnyCPU\Release\resources.pri
-C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\bin\Release\LuckDrawWindow.exe
-C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\bin\Release\Microsoft.Toolkit.Uwp.Notifications.dll
-C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\bin\Release\System.ValueTuple.dll
-C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\bin\Release\LuckDrawWindow.pdb
-C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\bin\Release\LuckDrawWindow.exe.config
-C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawWindow\bin\Release\Microsoft.Toolkit.Uwp.Notifications.pdb
-C:\Users\Laifuzhou\source\repos\LuckDraw\Floating\bin\Release\Floating.exe
-C:\Users\Laifuzhou\source\repos\LuckDraw\Floating\bin\Release\Floating.exe.config
-C:\Users\Laifuzhou\source\repos\LuckDraw\Floating\bin\Release\Floating.pdb
 C:\Users\Laifuzhou\.nuget\packages\microsoft.toolkit.uwp.notifications\6.1.1\lib\net461\Microsoft.Toolkit.Uwp.Notifications.dll
 C:\Users\Laifuzhou\.nuget\packages\microsoft.toolkit.uwp.notifications\6.1.1\lib\net461\Microsoft.Toolkit.Uwp.Notifications.pdb
 C:\Users\Laifuzhou\.nuget\packages\querystring.net\1.0.0\lib\dotnet\QueryString.NETCore.dll

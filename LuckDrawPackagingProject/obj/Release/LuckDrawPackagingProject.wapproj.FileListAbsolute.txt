@@ -1,12 +1,3 @@
-C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawPackagingProject\bin\AnyCPU\Release\Floating\LuckDrawWindow.exe
-C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawPackagingProject\bin\AnyCPU\Release\Floating\Microsoft.Toolkit.Uwp.Notifications.dll
-C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawPackagingProject\bin\AnyCPU\Release\Floating\System.ValueTuple.dll
-C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawPackagingProject\bin\AnyCPU\Release\Floating\LuckDrawWindow.pdb
-C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawPackagingProject\bin\AnyCPU\Release\Floating\LuckDrawWindow.exe.config
-C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawPackagingProject\bin\AnyCPU\Release\Floating\Microsoft.Toolkit.Uwp.Notifications.pdb
-C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawPackagingProject\bin\AnyCPU\Release\Floating\Floating.exe
-C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawPackagingProject\bin\AnyCPU\Release\Floating\Floating.exe.config
-C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawPackagingProject\bin\AnyCPU\Release\Floating\Floating.pdb
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawPackagingProject\bin\AnyCPU\Release\LuckDrawWindow\Microsoft.Toolkit.Uwp.Notifications.dll
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawPackagingProject\bin\AnyCPU\Release\LuckDrawWindow\Microsoft.Toolkit.Uwp.Notifications.pdb
 C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawPackagingProject\bin\AnyCPU\Release\LuckDrawWindow\QueryString.NETCore.dll
