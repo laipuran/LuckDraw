@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using Application = System.Windows.Application;
 
 namespace LuckDrawWindow
 {
@@ -15,6 +16,7 @@ namespace LuckDrawWindow
     {
         internal static int numberOfPeople;
         internal static bool doShowToasts;
+        internal static Window FloatingWindow = new Floating();
         protected override void OnStartup(StartupEventArgs e)
         {
             SplashScreen s = new SplashScreen("SplashScreen.png");

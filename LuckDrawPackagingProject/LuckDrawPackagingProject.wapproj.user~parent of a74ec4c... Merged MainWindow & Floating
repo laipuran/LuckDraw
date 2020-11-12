@@ -4,9 +4,6 @@
     <UapAppxPackageBuildMode>StoreOnly</UapAppxPackageBuildMode>
     <AppxShowAllApps>True</AppxShowAllApps>
     <AppxBuildConfigurationSelection>neutral</AppxBuildConfigurationSelection>
-    <PackageOptionalProjectsInIdeBuilds>True</PackageOptionalProjectsInIdeBuilds>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DebuggerFlavor>AppHostLocalDebugger</DebuggerFlavor>
+    <PackageOptionalProjectsInIdeBuilds>False</PackageOptionalProjectsInIdeBuilds>
   </PropertyGroup>
 </Project>

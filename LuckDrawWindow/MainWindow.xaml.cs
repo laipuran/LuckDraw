@@ -34,8 +34,7 @@ namespace LuckDrawWindow
             App.numberOfPeople = Properties.Settings.Default.numberOfPeople;
             App.doShowToasts = Properties.Settings.Default.doShowToasts;
 
-            Window Floating = new Floating();
-            Floating.Show();
+            App.FloatingWindow.Show();
 
             MiddleStackPanel.Width = 56;
             BackButton.Visibility = Visibility.Collapsed;
@@ -106,21 +105,10 @@ namespace LuckDrawWindow
             Properties.Settings.Default.numberOfPeople = App.numberOfPeople;
             Properties.Settings.Default.doShowToasts = App.doShowToasts;
             Properties.Settings.Default.Save();
-            try
-            {
-                DesktopNotificationManagerCompat.History.Clear();
-            }
-            catch (Exception)
-            {
 
-            }
-            var processInfo = new ProcessStartInfo("cmd.exe", "/S /C " + "taskkill /im Floating.exe")
-            {
-                CreateNoWindow = true,
-                UseShellExecute = true,
-                WindowStyle = ProcessWindowStyle.Hidden
-            };
-            Process.Start(processInfo);
+            App.FloatingWindow.Close();
+
+            DesktopNotificationManagerCompat.History.Clear();
 
             base.OnClosing(e);
         }

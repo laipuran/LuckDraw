@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,19 +24,39 @@ namespace LuckDrawWindow
         {
             InitializeComponent();
 
-            Top = 50;
+            Top = 100;
             Left = 50;
         }
 
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            this.DragMove();
+            DragMove();
         }
 
         private void GetNumberButton_Click(object sender, RoutedEventArgs e)
         {
             Random r = new Random();
             ResultTextBlock.Text = r.Next(1, App.numberOfPeople + 1).ToString();
+        }
+
+        private void GetNumberButton_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            Pop.IsOpen = true;
+        }
+
+        private void SeewoBoardButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void DesktopButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MainWindowButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

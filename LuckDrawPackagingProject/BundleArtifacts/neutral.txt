@@ -1,2 +1,0 @@
-MainPackage=C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawPackagingProject\bin\AnyCPU\Release\LuckDrawPackagingProject_1.7.0.0_AnyCPU.msix
-SymbolPackage=C:\Users\Laifuzhou\source\repos\LuckDraw\LuckDrawPackagingProject\obj\Release\Symbols\LuckDrawPackagingProject_1.7.0.0_AnyCPU.appxsym

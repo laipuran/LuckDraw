@@ -27,5 +27,19 @@
             <Setter Property="FontSize" Value="24"></Setter>
             <Setter Property="FontWeight" Value="Black"></Setter>
         </Style>
+        <!--Default Button Style-->
+        <Style TargetType="Button" x:Key="DefaultButtonStyle">
+            <Setter Property="Background" Value="LightGray"></Setter>
+            <Setter Property="Foreground" Value="Black"></Setter>
+            <Setter Property="BorderThickness" Value="2"></Setter>
+            <Setter Property="BorderBrush" Value="DarkGray"></Setter>
+            <Setter Property="Height" Value="30"></Setter>
+            <Style.Triggers>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="Blue"></Setter>
+                    <Setter Property="Foreground" Value="White"></Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
     </Application.Resources>
 </Application>
