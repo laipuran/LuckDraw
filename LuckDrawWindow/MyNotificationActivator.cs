@@ -1,10 +1,6 @@
 ﻿// The GUID CLSID must be unique to your app. Create a new GUID if copying this code.
-using LuckDrawWindow;
-using Microsoft.QueryStringDotNET;
 using Microsoft.Toolkit.Uwp.Notifications;
 using System.Runtime.InteropServices;
-using System.Windows;
-using static Microsoft.Toolkit.Uwp.Notifications.NotificationActivator;
 
 [ClassInterface(ClassInterfaceType.None)]
 [ComSourceInterfaces(typeof(INotificationActivationCallback))]

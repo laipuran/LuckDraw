@@ -4,42 +4,10 @@
              xmlns:local="clr-namespace:LuckDrawWindow"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <!--MainWindow-->
-        <Style TargetType="Button" x:Key="NavigationButtonStyle">
-            <Setter Property="FontSize" Value="36"></Setter>
-            <Setter Property="FontFamily" Value="Segoe MDL2 Assets"></Setter>
-        </Style>
-        <Style TargetType="TextBlock" x:Key="NavigationTextBlockStyle">
-            <Setter Property="FontSize" Value="36"></Setter>
-            <Setter Property="FontFamily" Value="Segoe MDL2 Assets"></Setter>
-        </Style>
-        <Style TargetType="TextBlock" x:Key="PaneTextBlockStyle">
-            <Setter Property="FontSize" Value="24"></Setter>
-            <Setter Property="Margin" Value="20,0,0,0"></Setter>
-        </Style>
-
-        <!--SettingsPage-->
-        <Style TargetType="TextBox" x:Key="SettingsTextBoxStyle">
-            <Setter Property="FontSize" Value="28"></Setter>
-            <Setter Property="FontWeight" Value="Black"></Setter>
-        </Style>
-        <Style TargetType="TextBlock" x:Key="SettingsTextBlockStyle">
-            <Setter Property="FontSize" Value="24"></Setter>
-            <Setter Property="FontWeight" Value="Black"></Setter>
-        </Style>
-        <!--Default Button Style-->
-        <Style TargetType="Button" x:Key="DefaultButtonStyle">
-            <Setter Property="Background" Value="LightGray"></Setter>
-            <Setter Property="Foreground" Value="Black"></Setter>
-            <Setter Property="BorderThickness" Value="2"></Setter>
-            <Setter Property="BorderBrush" Value="DarkGray"></Setter>
-            <Setter Property="Height" Value="30"></Setter>
-            <Style.Triggers>
-                <Trigger Property="IsPressed" Value="True">
-                    <Setter Property="Background" Value="Blue"></Setter>
-                    <Setter Property="Foreground" Value="White"></Setter>
-                </Trigger>
-            </Style.Triggers>
-        </Style>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="StaticResources.xaml"></ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

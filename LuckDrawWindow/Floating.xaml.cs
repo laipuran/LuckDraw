@@ -1,17 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace LuckDrawWindow
 {
@@ -41,22 +30,16 @@ namespace LuckDrawWindow
 
         private void GetNumberButton_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
         {
-            Pop.IsOpen = true;
+            Pop.IsOpen = !Pop.IsOpen;
         }
-
-        private void SeewoBoardButton_Click(object sender, RoutedEventArgs e)
+        private void Pop_LostFocus(object sender, RoutedEventArgs e)
         {
-
+            Pop.IsOpen = false;
         }
-
         private void DesktopButton_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void MainWindowButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

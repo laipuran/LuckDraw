@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LuckDrawWindow"
         mc:Ignorable="d"
-        Title="Luck Draw" Height="450" Width="800" Icon="favicon.ico" WindowStartupLocation="CenterScreen">
+        Title="Luck Draw" Height="450" Width="800" Icon="Resources\favicon.ico" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <Storyboard x:Key="CloseMenu">
             <DoubleAnimationUsingKeyFrames 

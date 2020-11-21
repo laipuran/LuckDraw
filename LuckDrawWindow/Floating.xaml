@@ -16,41 +16,18 @@
         ShowInTaskbar="False"
         MouseLeftButtonDown="Window_MouseLeftButtonDown">
     <Window.Resources>
-        <Style x:Key="ButtonStyle" TargetType="{x:Type Button}">
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type Button}">
-                        <Grid>
-                            <Ellipse Fill="#FFFFFF" Stroke="{x:Static SystemParameters.WindowGlassBrush}" StrokeThickness="3"/>
-                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-                        </Grid>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsFocused" Value="True">
-                                <Setter Property="Background" Value="LightCyan"></Setter>
-                            </Trigger>
-                            <Trigger Property="IsDefaulted" Value="True"/>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="Cyan"></Setter>
-                            </Trigger>
-                            <Trigger Property="IsPressed" Value="True">
-                                <Setter Property="Background" Value="DarkCyan"></Setter>
-                            </Trigger>
-                            <Trigger Property="IsEnabled" Value="False">
-                                <Setter Property="Background" Value="DarkGray"></Setter>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="StaticResources.xaml"></ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+        
     </Window.Resources>
     <StackPanel Orientation="Horizontal">
         <Button x:Name="GetNumberButton" Content="抽" Height="80" Width="80" MouseRightButtonDown="GetNumberButton_MouseRightButtonDown" Click="GetNumberButton_Click" FontSize="36" Margin="0,0,0,0" Style="{DynamicResource ButtonStyle}"/>
-        <Popup x:Name="Pop" PopupAnimation="None" Width="100" Height="100" PlacementTarget="{Binding ElementName=GetNumberButton}" Placement="Bottom"  AllowsTransparency="True" StaysOpen="True">
+        <Popup x:Name="Pop" LostFocus="Pop_LostFocus" PopupAnimation="None" Width="100" Height="100" PlacementTarget="{Binding ElementName=GetNumberButton}" Placement="Bottom"  AllowsTransparency="True" StaysOpen="True">
             <StackPanel Margin="5">
-                <Button x:Name="SeewoBoardButton" Click="SeewoBoardButton_Click" Style="{StaticResource DefaultButtonStyle}">打开希沃白板</Button>
-                <Button x:Name="DesktopButton" Click="DesktopButton_Click" Style="{StaticResource DefaultButtonStyle}">回到桌面</Button>
-                <Button x:Name="MainWindowButton" Click="MainWindowButton_Click" Style="{StaticResource DefaultButtonStyle}">显示主窗口</Button>
+                <Button Style="{StaticResource DefaultButtonStyle}" x:Name="DesktopButton" Click="DesktopButton_Click">回到桌面</Button>
             </StackPanel>
         </Popup>
         <TextBlock Foreground="White" Background="Black" x:Name="ResultTextBlock" Height="24" Margin="10,0,0,0" FontSize="24"/>

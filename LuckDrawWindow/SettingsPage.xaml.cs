@@ -78,7 +78,7 @@ namespace LuckDrawWindow
                 try
                 {
                     int number = int.Parse(NumberTextBox.Text);
-                    if (number < 0 || number> 100000000)
+                    if (number < 0 || number > 100000000)
                     {
                         throw new LuckDrawPage.MyEx("输入的数字不合法！");
                     }
@@ -115,27 +115,16 @@ namespace LuckDrawWindow
             bool flag = DownloadFile("version.txt", "version.txt");
             if (!flag)
             {
-                MessageBox.Show("下载失败！", "下载结果");
+                MessageBox.Show("获取失败！", "更新");
                 return;
             }
             string version = File.ReadAllText(Directory.GetCurrentDirectory().ToString() + "\\version.txt");
-            float ver = Convert.ToSingle(version);
-            if (ver > Properties.Settings.Default.currentVersion)
+            if (version != Properties.Settings.Default.currentVersion)
             {
-                if (MessageBox.Show("目前版本：v" + Properties.Settings.Default.currentVersion.ToString() + "，而最新版本是v" + version + "\n是否更新？", "更新提示", MessageBoxButton.YesNo, MessageBoxImage.Information) == MessageBoxResult.Yes)
+                if (MessageBox.Show("目前版本：v" + Properties.Settings.Default.currentVersion + "，而最新版本是v" + version + "\n是否更新？", "更新提示", MessageBoxButton.YesNo, MessageBoxImage.Information) == MessageBoxResult.Yes)
                 {
-                    bool isSuccessfully = DownloadFile("LuckDrawSetup.msi", "assets/Setup.msi");
-                    if (!isSuccessfully)
-                    {
-                        MessageBox.Show("下载成功！", "下载结果");
-                        Process.Start(Directory.GetCurrentDirectory().ToString() + "Setup.msi");
-                        Application.Current.Shutdown();
-                    }
-                    else
-                    {
-                        MessageBox.Show("下载失败！", "下载结果");
-                        return;
-                    }
+                    ProcessStartInfo info = new ProcessStartInfo("https://laipuran.github.io/LuckDraw");
+                    Process.Start(info);
                 }
                 else
                 {
@@ -145,7 +134,7 @@ namespace LuckDrawWindow
             }
             else
             {
-                MessageBox.Show("目前版本：v" + Properties.Settings.Default.currentVersion.ToString() + "，无需更新！", "更新提示");
+                MessageBox.Show("目前版本：v" + Properties.Settings.Default.currentVersion + "，无需更新！", "更新提示");
                 return;
             }
         }

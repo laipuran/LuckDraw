@@ -1,22 +1,9 @@
 ﻿using Microsoft.Toolkit.Uwp.Notifications;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Diagnostics;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
 using System.Windows.Media.Animation;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace LuckDrawWindow
 {
@@ -102,15 +89,22 @@ namespace LuckDrawWindow
 
         protected override void OnClosing(CancelEventArgs e)
         {
+            WindowState = WindowState.Minimized;
+            ShowInTaskbar = false;
+            e.Cancel = !App.closeApp;
+
+            base.OnClosing(e);
+        }
+        protected override void OnClosed(EventArgs e)
+        {
             Properties.Settings.Default.numberOfPeople = App.numberOfPeople;
             Properties.Settings.Default.doShowToasts = App.doShowToasts;
             Properties.Settings.Default.Save();
 
             App.FloatingWindow.Close();
-
             DesktopNotificationManagerCompat.History.Clear();
 
-            base.OnClosing(e);
+            base.OnClosed(e);
         }
     }
 }
