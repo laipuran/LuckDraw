@@ -22,10 +22,8 @@ namespace LuckDrawWindow
             {
                 ToastToggleButton.Content = "打开";
             }
-            else if (!(bool)ToastToggleButton.IsChecked)
-            {
+            else
                 ToastToggleButton.Content = "关闭";
-            }
         }
         public bool DownloadFile(string strFileName, string file)
         {
@@ -103,10 +101,9 @@ namespace LuckDrawWindow
             {
                 ToastToggleButton.Content = "打开";
             }
-            else if (!(bool)ToastToggleButton.IsChecked)
-            {
+            else
                 ToastToggleButton.Content = "关闭";
-            }
+
             App.doShowToasts = (bool)ToastToggleButton.IsChecked;
         }
 

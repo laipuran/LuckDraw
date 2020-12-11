@@ -45,7 +45,7 @@ namespace LuckDrawWindow
                 {
                     throw new MyEx("输入的数字不合法！");
                 }
-                else if (number > max)
+                if (number > max)
                 {
                     throw new MyEx("输入的数字超过总人数！");
                 }
@@ -129,7 +129,6 @@ namespace LuckDrawWindow
                 notifications = "被抽中的幸运同学： " + string.Join(" ", array);
                 sendNotifications(notifications);
             }
-
 
             GetNumberButton.IsEnabled = true;
             NumberTextBox.IsReadOnly = false;

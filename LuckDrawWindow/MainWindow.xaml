@@ -25,7 +25,7 @@
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
     </Window.Resources>
-    
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
@@ -37,10 +37,14 @@
             <ColumnDefinition Width="Auto"></ColumnDefinition>
             <ColumnDefinition Width="1*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        
+
         <StackPanel Grid.ColumnSpan="2" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
             <Button
                 Name="HamburgerButton"
+                Background="White"
+                Foreground="Black"
+                BorderThickness="2"
+                BorderBrush="DarkGray"
                 Style="{StaticResource NavigationButtonStyle}"
                 Click="HamburgerButton_Click"
                 Height="56"
@@ -48,6 +52,10 @@
                 Content="&#xE700;"/>
             <Button
                 Name="BackButton"
+                Background="White"
+                Foreground="Black"
+                BorderThickness="2"
+                BorderBrush="DarkGray"
                 Style="{StaticResource NavigationButtonStyle}"
                 Click="BackButton_Click"
                 Height="56"
@@ -60,39 +68,41 @@
                 Height="56"/>
         </StackPanel>
 
-        
+
         <StackPanel x:Name="MiddleStackPanel" Grid.Row="1" HorizontalAlignment="Left">
-                <ListBox
-                    
+            <ListBox
+                ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                ScrollViewer.HorizontalScrollBarVisibility="Hidden"
                     Grid.Column="0"
                     Name="ListBoxOfMainPage"
                     SelectionMode="Single"
                     HorizontalAlignment="Left"
                     SelectionChanged="ListBoxOfMainWindow_SelectionChanged">
 
-                    <ListBoxItem Name="LuckDrawListBoxItem" Height="56" VerticalAlignment="Center">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Style="{StaticResource NavigationTextBlockStyle}">&#xE10F;</TextBlock>
-                            <TextBlock Style="{StaticResource PaneTextBlockStyle}">抽奖</TextBlock>
-                        </StackPanel>
-                    </ListBoxItem>
+                <ListBoxItem Style="{StaticResource ListBoxItemStyle}" Name="LuckDrawListBoxItem" Height="56" VerticalAlignment="Center">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Style="{StaticResource NavigationTextBlockStyle}">&#xE10F;</TextBlock>
+                        <TextBlock Style="{StaticResource PaneTextBlockStyle}">抽奖</TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
 
-                    <ListBoxItem Name="RollListBoxItem" Height="56" VerticalAlignment="Center">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Style="{StaticResource NavigationTextBlockStyle}">&#xE12C;</TextBlock>
-                            <TextBlock Style="{StaticResource PaneTextBlockStyle}">转轮</TextBlock>
-                        </StackPanel>
-                    </ListBoxItem>
+                <ListBoxItem Style="{StaticResource ListBoxItemStyle}" Name="RollListBoxItem" Height="56" VerticalAlignment="Center">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Style="{StaticResource NavigationTextBlockStyle}">&#xE12C;</TextBlock>
+                        <TextBlock Style="{StaticResource PaneTextBlockStyle}">转轮</TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
 
-                    <ListBoxItem Name="SettingsListBoxItem" Height="56" VerticalAlignment="Center">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Style="{StaticResource NavigationTextBlockStyle}">&#xE115;</TextBlock>
-                            <TextBlock Style="{StaticResource PaneTextBlockStyle}">设置</TextBlock>
-                        </StackPanel>
-                    </ListBoxItem>
-                </ListBox>
+                <ListBoxItem Style="{StaticResource ListBoxItemStyle}" Name="SettingsListBoxItem" Height="56" VerticalAlignment="Center">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Style="{StaticResource NavigationTextBlockStyle}">&#xE115;</TextBlock>
+                        <TextBlock Style="{StaticResource PaneTextBlockStyle}">设置</TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+            </ListBox>
         </StackPanel>
-        
+
         <Frame NavigationUIVisibility="Hidden" Margin="20,20,0,0" Grid.Row="1" Grid.Column="1" x:Name="FrameOfMainWindow" Source="LuckDrawPage.xaml"></Frame>
     </Grid>
 </Window>
+

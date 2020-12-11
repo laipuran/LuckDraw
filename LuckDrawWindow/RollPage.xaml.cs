@@ -49,10 +49,7 @@ namespace LuckDrawWindow
                 {
                     return "结束抽取";
                 }
-                else
-                {
-                    return "开始抽取";
-                }
+                return "开始抽取";
             }
         }
 

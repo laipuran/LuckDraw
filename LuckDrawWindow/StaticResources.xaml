@@ -32,24 +32,9 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Grid>
-                        <Ellipse Fill="#FFFFFF" Stroke="{x:Static SystemParameters.WindowGlassBrush}" StrokeThickness="3"/>
+                        <Ellipse Fill="White" Stroke="{x:Static SystemParameters.WindowGlassBrush}" StrokeThickness="3"/>
                         <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
                     </Grid>
-                    <ControlTemplate.Triggers>
-                        <Trigger Property="IsFocused" Value="True">
-                            <Setter Property="Background" Value="LightCyan"></Setter>
-                        </Trigger>
-                        <Trigger Property="IsDefaulted" Value="True"/>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" Value="Cyan"></Setter>
-                        </Trigger>
-                        <Trigger Property="IsPressed" Value="True">
-                            <Setter Property="Background" Value="DarkCyan"></Setter>
-                        </Trigger>
-                        <Trigger Property="IsEnabled" Value="False">
-                            <Setter Property="Background" Value="DarkGray"></Setter>
-                        </Trigger>
-                    </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
@@ -68,5 +53,37 @@
                 <Setter Property="Foreground" Value="White"></Setter>
             </Trigger>
         </Style.Triggers>
+    </Style>
+    
+    <!--Default ToggleButton Style-->
+    <Style TargetType="ToggleButton" x:Key="ToggleButtonStyle">
+        <Setter Property="Background" Value="White"></Setter>
+        <Setter Property="Foreground" Value="Black"></Setter>
+        <Setter Property="BorderThickness" Value="2"></Setter>
+        <Setter Property="BorderBrush" Value="DarkGray"></Setter>
+        <Setter Property="Height" Value="30"></Setter>
+        <Style.Triggers>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="Blue"></Setter>
+                <Setter Property="Foreground" Value="White"></Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <!--Default TextBox Style-->
+    <Style TargetType="TextBox" x:Key="TextBoxStyle">
+        <Setter Property="Background" Value="White"></Setter>
+        <Setter Property="Foreground" Value="Black"></Setter>
+        <Setter Property="BorderThickness" Value="2"></Setter>
+        <Setter Property="BorderBrush" Value="DarkGray"></Setter>
+        <Setter Property="Height" Value="30"></Setter>
+    </Style>
+    
+    <!--Default ListBoxItem Style-->
+    <Style TargetType="ListBoxItem" x:Key="ListBoxItemStyle">
+        <Setter Property="Background" Value="White"></Setter>
+        <Setter Property="Foreground" Value="Black"></Setter>
+        <Setter Property="BorderThickness" Value="2"></Setter>
+        <Setter Property="BorderBrush" Value="DarkGray"></Setter>
     </Style>
 </ResourceDictionary>

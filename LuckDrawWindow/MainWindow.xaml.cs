@@ -16,10 +16,30 @@ namespace LuckDrawWindow
         public MainWindow()
         {
             InitializeComponent();
+
+            if (App.closeApp)
+            {
+                return;
+            }
+
             DesktopNotificationManagerCompat.RegisterActivator<MyNotificationActivator>();
             DesktopNotificationManagerCompat.RegisterAumidAndComServer<MyNotificationActivator>("PuranLai.LuckDraw");
+
+            if (App.closeApp)
+            {
+                Close();
+            }
+
             App.numberOfPeople = Properties.Settings.Default.numberOfPeople;
             App.doShowToasts = Properties.Settings.Default.doShowToasts;
+
+            System.Security.Principal.WindowsIdentity identity = System.Security.Principal.WindowsIdentity.GetCurrent();
+            System.Security.Principal.WindowsPrincipal principal = new System.Security.Principal.WindowsPrincipal(identity);
+
+            if (principal.IsInRole(System.Security.Principal.WindowsBuiltInRole.Administrator))
+            {
+                Title += "（管理员）";
+            }
 
             App.FloatingWindow.Show();
 
@@ -35,12 +55,10 @@ namespace LuckDrawWindow
             {
                 Storyboard openMenu = (Storyboard)HamburgerButton.FindResource("OpenMenu");
                 openMenu.Begin();
+                return;
             }
-            else
-            {
-                Storyboard closeMenu = (Storyboard)HamburgerButton.FindResource("CloseMenu");
-                closeMenu.Begin();
-            }
+            Storyboard closeMenu = (Storyboard)HamburgerButton.FindResource("CloseMenu");
+            closeMenu.Begin();
 
             MenuClosed = !MenuClosed;
         }
@@ -52,18 +70,21 @@ namespace LuckDrawWindow
                 FrameOfMainWindow.NavigationService.Navigate(new Uri("LuckDrawPage.xaml", UriKind.Relative));
                 BackButton.Visibility = Visibility.Collapsed;
                 TitleTextBlock.Text = "抽奖";
+                return;
             }
-            else if (RollListBoxItem.IsSelected)
+            if (RollListBoxItem.IsSelected)
             {
                 FrameOfMainWindow.NavigationService.Navigate(new Uri("RollPage.xaml", UriKind.Relative));
                 BackButton.Visibility = Visibility.Visible;
                 TitleTextBlock.Text = "摇奖";
+                return;
             }
-            else if (SettingsListBoxItem.IsSelected)
+            if (SettingsListBoxItem.IsSelected)
             {
                 FrameOfMainWindow.NavigationService.Navigate(new Uri("SettingsPage.xaml", UriKind.Relative));
                 BackButton.Visibility = Visibility.Visible;
                 TitleTextBlock.Text = "设置";
+                return;
             }
         }
 
@@ -75,18 +96,20 @@ namespace LuckDrawWindow
                 if (FrameOfMainWindow.Source.ToString() == "LuckDrawPage.xaml")
                 {
                     LuckDrawListBoxItem.IsSelected = true;
+                    return;
                 }
-                else if (FrameOfMainWindow.Source.ToString() == "RollPage.xaml")
+                if (FrameOfMainWindow.Source.ToString() == "RollPage.xaml")
                 {
                     RollListBoxItem.IsSelected = true;
+                    return;
                 }
-                else if (FrameOfMainWindow.Source.ToString() == "SettingsPage.xaml")
+                if (FrameOfMainWindow.Source.ToString() == "SettingsPage.xaml")
                 {
                     SettingsListBoxItem.IsSelected = true;
+                    return;
                 }
             }
         }
-
         protected override void OnClosing(CancelEventArgs e)
         {
             WindowState = WindowState.Minimized;
@@ -103,6 +126,9 @@ namespace LuckDrawWindow
 
             App.FloatingWindow.Close();
             DesktopNotificationManagerCompat.History.Clear();
+
+            if (App.trayIcon != null)
+                App.trayIcon.Dispose();
 
             base.OnClosed(e);
         }
