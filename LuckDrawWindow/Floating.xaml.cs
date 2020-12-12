@@ -31,6 +31,8 @@ namespace LuckDrawWindow
 
             Left = ScreenWidth - 120;
             Top = ScreenHeight - 150;
+
+            GetNumberButton.Focus();
         }
 
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)

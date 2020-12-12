@@ -47,7 +47,6 @@ namespace LuckDrawWindow
             BackButton.Visibility = Visibility.Collapsed;
             LuckDrawListBoxItem.IsSelected = true;
             TitleTextBlock.Text = "抽奖";
-
         }
         private void HamburgerButton_Click(object sender, RoutedEventArgs e)
         {
@@ -129,6 +128,7 @@ namespace LuckDrawWindow
 
             if (App.trayIcon != null)
                 App.trayIcon.Dispose();
+            App.trayIcon = null;
 
             base.OnClosed(e);
         }

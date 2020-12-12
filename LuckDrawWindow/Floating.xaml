@@ -32,6 +32,6 @@
                 <Button Style="{StaticResource DefaultButtonStyle}" Width="70" x:Name="MainWindowButton" Click="MainWindowButton_Click">主窗口</Button>
             </StackPanel>
         </Popup>
-        <TextBlock Foreground="White" Background="Black" x:Name="ResultTextBlock" Height="24" Margin="10,0,0,0" FontSize="24"/>
+        <TextBlock Foreground="White" Opacity="0.8" Background="Black" x:Name="ResultTextBlock" Height="24" Margin="10,0,0,0" FontSize="24"/>
     </StackPanel>
 </Window>
