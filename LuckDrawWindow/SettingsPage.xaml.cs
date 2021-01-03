@@ -24,27 +24,24 @@ namespace LuckDrawWindow
             }
             else
                 ToastToggleButton.Content = "关闭";
+
+            Properties.Settings.Default.Save();
         }
         public bool DownloadFile(string strFileName, string file)
         {
             bool flag = false;
-            //打开上次下载的文件
-            long SPosition = 0;
             //实例化流对象
             FileStream FStream;
             //文件不保存创建一个文件
-            if (File.Exists(Directory.GetCurrentDirectory().ToString() + file))
+            if (File.Exists(Directory.GetCurrentDirectory() + file))
             {
-                File.Delete(Directory.GetCurrentDirectory().ToString() + file);
+                File.Delete(Directory.GetCurrentDirectory() + file);
             }
             FStream = new FileStream(strFileName, FileMode.Create);
-            SPosition = 0;
             try
             {
                 //打开网络连接
                 HttpWebRequest myRequest = (HttpWebRequest)WebRequest.Create("http://laipuran.github.io/LuckDraw/" + file);
-                if (SPosition > 0)
-                    myRequest.AddRange((int)SPosition);             //设置Range值
                 //向服务器请求,获得服务器的回应数据流
                 Stream myStream = myRequest.GetResponse().GetResponseStream();
                 //定义一个字节数据
@@ -93,6 +90,8 @@ namespace LuckDrawWindow
             {
                 NumberTextBox.Text = App.numberOfPeople.ToString();
             }
+
+            Properties.Settings.Default.Save();
         }
 
         private void ToastToggleButton_Click(object sender, RoutedEventArgs e)
@@ -105,6 +104,8 @@ namespace LuckDrawWindow
                 ToastToggleButton.Content = "关闭";
 
             App.doShowToasts = (bool)ToastToggleButton.IsChecked;
+
+            Properties.Settings.Default.Save();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

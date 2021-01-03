@@ -22,6 +22,8 @@ namespace LuckDrawWindow
         public static extern bool ShowWindowAsync(IntPtr hWnd, int cmdShow);
         [DllImport("user32.dll", EntryPoint = "IsWindowVisible", SetLastError = true)]
         public static extern bool IsWindowVisible(IntPtr hWnd);
+        [DllImport("user32.dll", CharSet = CharSet.Auto)]
+        public static extern int SendMessage(IntPtr hwnd, int wMsg, int wParam, int lParam);
         public Floating()
         {
             InitializeComponent();
@@ -32,8 +34,11 @@ namespace LuckDrawWindow
             Left = ScreenWidth - 120;
             Top = ScreenHeight - 150;
 
+            
+
             GetNumberButton.Focus();
         }
+
 
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
@@ -80,17 +85,28 @@ namespace LuckDrawWindow
             mainWindow = FindWindow(null, "Luck Draw（管理员）");
             ShowWindowAsync(mainWindow, 1);
         }
-
         private void SeewoWhiteBoardButton_Click(object sender, RoutedEventArgs e)
         {
-            IntPtr seewoWhiteBoard = FindWindow(null, "希沃白板 5");
+            IntPtr seewoWhiteBoard = FindWindow(null, "EasiNote");
             if (seewoWhiteBoard != IntPtr.Zero)
             {
                 ShowWindowAsync(seewoWhiteBoard, 1);
                 return;
             }
-            seewoWhiteBoard = FindWindow(null, "希沃白板 3");
-            ShowWindowAsync(seewoWhiteBoard, 1);
+        }
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            App.closeApp = true;
+            IntPtr mainWindow = FindWindow(null, "LuckDraw");
+            if (mainWindow!=IntPtr.Zero)
+            {
+                SendMessage(mainWindow, 0, 0, 0);
+            }
+            else
+            {
+                mainWindow = FindWindow(null, "Luck Draw（管理员）");
+                SendMessage(mainWindow, , 0, 0);
+            }
         }
     }
 }

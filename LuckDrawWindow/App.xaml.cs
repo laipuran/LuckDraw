@@ -1,10 +1,13 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Drawing;
+using System.IO;
+using System.Runtime.InteropServices;
 using System.Security.AccessControl;
 using System.Windows;
 using System.Windows.Forms;
 using Application = System.Windows.Application;
+using MessageBox = System.Windows.MessageBox;
 
 namespace LuckDrawWindow
 {
@@ -13,14 +16,35 @@ namespace LuckDrawWindow
     /// </summary>
     public partial class App : Application
     {
+        [DllImport("user32.dll", EntryPoint = "FindWindow", SetLastError = true)]
+        public static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
+
+        [DllImport("user32.dll", EntryPoint = "ShowWindowAsync", SetLastError = true)]
+        public static extern bool ShowWindowAsync(IntPtr hWnd, int cmdShow);
         internal static int numberOfPeople;
         internal static bool doShowToasts;
         internal static bool closeApp = false;
         internal static Window FloatingWindow = new Floating();
-        public static NotifyIcon trayIcon;
+        internal static NotifyIcon trayIcon;
 
         protected override void OnStartup(StartupEventArgs e)
         {
+            if (File.Exists(Path.GetTempPath()+".lock"))
+            {
+                IntPtr MainWindow = FindWindow("Luck Draw", null);
+                if (MainWindow!=IntPtr.Zero)
+                {
+                    ShowWindowAsync(MainWindow, 1);
+                }
+                else
+                {
+                    MainWindow = FindWindow("Luck Draw（管理员）", null);
+                    ShowWindowAsync(MainWindow, 1);
+                }
+                closeApp = true;
+                return;
+            }
+
             ShowSplashScreen();
             AddTrayIcon();
 
@@ -50,16 +74,19 @@ namespace LuckDrawWindow
                 AutoStart();
             }
 
+            File.Create(Path.GetTempFileName() + ".lock");
             base.OnStartup(e);
         }
 
         protected override void OnExit(ExitEventArgs e)
         {
+            File.Delete(Directory.GetCurrentDirectory() + ".lock");
+
             closeApp = true;
             RemoveTrayIcon();
             base.OnExit(e);
         }
-        private void ExitApp(object sender, EventArgs e)
+        public void ExitApp(object sender, EventArgs e)
         {
             closeApp = true;
             MainWindow.Close();
@@ -138,7 +165,7 @@ namespace LuckDrawWindow
             }
             catch(Exception Ex)
             {
-                System.Windows.MessageBox.Show(Ex.Message);
+                MessageBox.Show(Ex.Message);
             }
         }
     }

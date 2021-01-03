@@ -1,6 +1,7 @@
 ﻿using Microsoft.Toolkit.Uwp.Notifications;
 using System;
 using System.ComponentModel;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Animation;
@@ -17,10 +18,9 @@ namespace LuckDrawWindow
         {
             InitializeComponent();
 
-            if (App.closeApp)
-            {
-                return;
-            }
+#if DEBUG
+            MessageBox.Show(Path.GetTempFileName() + ".lock");
+#endif
 
             DesktopNotificationManagerCompat.RegisterActivator<MyNotificationActivator>();
             DesktopNotificationManagerCompat.RegisterAumidAndComServer<MyNotificationActivator>("PuranLai.LuckDraw");
@@ -28,6 +28,7 @@ namespace LuckDrawWindow
             if (App.closeApp)
             {
                 Close();
+                return;
             }
 
             App.numberOfPeople = Properties.Settings.Default.numberOfPeople;
@@ -54,12 +55,16 @@ namespace LuckDrawWindow
             {
                 Storyboard openMenu = (Storyboard)HamburgerButton.FindResource("OpenMenu");
                 openMenu.Begin();
+                MenuClosed = false;
                 return;
             }
-            Storyboard closeMenu = (Storyboard)HamburgerButton.FindResource("CloseMenu");
-            closeMenu.Begin();
-
-            MenuClosed = !MenuClosed;
+            else
+            {
+                Storyboard closeMenu = (Storyboard)HamburgerButton.FindResource("CloseMenu");
+                closeMenu.Begin();
+                MenuClosed = true;
+                return;
+            }
         }
 
         private void ListBoxOfMainWindow_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -125,10 +130,6 @@ namespace LuckDrawWindow
 
             App.FloatingWindow.Close();
             DesktopNotificationManagerCompat.History.Clear();
-
-            if (App.trayIcon != null)
-                App.trayIcon.Dispose();
-            App.trayIcon = null;
 
             base.OnClosed(e);
         }
