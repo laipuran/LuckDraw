@@ -5,11 +5,4 @@
     <!--
         Define global resources and styles here, that apply to all pages in your app.
     -->
-    <Application.Resources>
-        <ResourceDictionary>
-            <Style TargetType="Label">
-                <Setter Property="FontSize" Value="Large"></Setter>
-            </Style>
-        </ResourceDictionary>
-    </Application.Resources>
 </Application>

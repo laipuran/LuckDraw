@@ -16,7 +16,6 @@ namespace LuckDrawXamarin.Views
         public LuckDrawPage()
         {
             InitializeComponent();
-            Title = "抽奖";
         }
 
         public class MyEx : Exception

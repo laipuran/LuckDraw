@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LuckDrawXamarin.Views.LuckDrawPage"
-             Title="{Binding Title}">
+             Title="抽奖">
     <ContentPage.Content>
         <ScrollView VerticalOptions="Start" Margin="10,20,10,0" HorizontalOptions="Center">
             <StackLayout>
