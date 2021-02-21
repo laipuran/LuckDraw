@@ -4,7 +4,7 @@
              x:Class="LuckDrawXamarin.Views.SettingsPage"
              Title="{Binding Title}">
     <ContentPage.Content>
-        <Grid Margin="10,20,0,0">
+        <Grid Margin="10,20,10,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"></ColumnDefinition>
                 <ColumnDefinition Width="2*"></ColumnDefinition>

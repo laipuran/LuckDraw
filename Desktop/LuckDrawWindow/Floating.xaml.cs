@@ -105,7 +105,8 @@ namespace LuckDrawWindow
             else
             {
                 mainWindow = FindWindow(null, "Luck Draw（管理员）");
-                SendMessage(mainWindow, , 0, 0);
+                // SendMessage(mainWindow, , 0, 0);
+                // TODO: Fix This
             }
         }
     }

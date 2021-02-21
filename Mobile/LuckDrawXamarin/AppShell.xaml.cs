@@ -1,6 +1,4 @@
-﻿using Xamarin.Forms;
-
-namespace LuckDrawXamarin
+﻿namespace LuckDrawXamarin
 {
     public partial class AppShell : Xamarin.Forms.Shell
     {

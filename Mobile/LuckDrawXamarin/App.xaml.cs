@@ -16,7 +16,6 @@ namespace LuckDrawXamarin
                 Current.Properties.Add("number", 55);
             }
         }
-
         protected override void OnStart()
         {
         }

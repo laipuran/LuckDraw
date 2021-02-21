@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -17,7 +12,6 @@ namespace LuckDrawXamarin.Views
         {
             InitializeComponent();
         }
-
         public class MyEx : Exception
         {
             public MyEx(string message) : base(message) { }
@@ -111,9 +105,9 @@ namespace LuckDrawXamarin.Views
             }
 
             string output;
-            output = "被抽中的幸运同学：\n" + string.Join("\n", array);
+            output = "被暗中选定的同学：\n" + string.Join("\n", array);
             ResultLabel.Text = output;
-
+            // IAppHandler.ShowToastMessage("完成", false);
             GetButton.IsEnabled = true;
             NumberEditor.IsReadOnly = false;
         }

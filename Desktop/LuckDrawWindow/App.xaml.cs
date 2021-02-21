@@ -1,13 +1,9 @@
-﻿using Microsoft.Win32;
-using System;
+﻿using System;
 using System.Drawing;
-using System.IO;
 using System.Runtime.InteropServices;
-using System.Security.AccessControl;
 using System.Windows;
 using System.Windows.Forms;
 using Application = System.Windows.Application;
-using MessageBox = System.Windows.MessageBox;
 
 namespace LuckDrawWindow
 {
