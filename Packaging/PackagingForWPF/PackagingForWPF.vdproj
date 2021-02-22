@@ -3,7 +3,7 @@
 "VSVersion" = "3:800"
 "ProjectType" = "8:{978C614F-708E-4E1A-B201-565925725DBA}"
 "IsWebType" = "8:FALSE"
-"ProjectName" = "8:LuckDrawSetup"
+"ProjectName" = "8:PackagingForWPF"
 "LanguageId" = "3:2052"
 "CodePage" = "3:936"
 "UILanguageId" = "3:2052"
@@ -6117,7 +6117,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\LuckDrawSetup.msi"
+        "OutputFilename" = "8:Packaging\\LuckDrawSetup\\Debug\\LuckDrawSetup.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -6149,7 +6149,7 @@
         "DisplayName" = "8:Release"
         "IsDebugOnly" = "11:FALSE"
         "IsReleaseOnly" = "11:TRUE"
-        "OutputFilename" = "8:Release\\LuckDrawSetup.msi"
+        "OutputFilename" = "8:Packaging\\LuckDrawSetup\\Release\\LuckDrawSetup.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -11465,7 +11465,7 @@
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C7601B4DF33642A9B9F6DFDB4ED818F8"
             {
-            "SourcePath" = "8:..\\LuckDrawWindow\\Resources\\favicon.ico"
+            "SourcePath" = "8:Packaging\\LuckDrawWindow\\Resources\\favicon.ico"
             "TargetName" = "8:favicon.ico"
             "Tag" = "8:"
             "Folder" = "8:_3D7880BC79FC457B9E42197C2F61E6D7"
@@ -13241,7 +13241,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_898CBE8C683840F3A57209F24BE98540"
             {
-            "SourcePath" = "8:..\\LuckDrawWindow\\obj\\Debug\\LuckDrawWindow.exe"
+            "SourcePath" = "8:Desktop\\LuckDrawWindow\\obj\\Debug\\LuckDrawWindow.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_B735B859A1D645E8B98F4E0D65B8915E"

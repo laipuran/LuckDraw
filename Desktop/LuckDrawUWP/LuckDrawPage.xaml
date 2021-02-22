@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="LuckDraw.LuckDrawPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LuckDraw"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource SystemControlAcrylicWindowBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <ScrollViewer Grid.Row="1">
+            <RelativePanel Margin="0,20,0,0">
+                <TextBlock x:Name="TitleTextBlock" RelativePanel.AlignLeftWithPanel="True" FontSize="24">选择或输入抽取的人数</TextBlock>
+                <ComboBox
+                    x:Name="NumberComboBox"
+                    RelativePanel.RightOf="TitleTextBlock"
+                    RelativePanel.LeftOf="GetNumberButton"
+                    IsEditable="True"
+                    Margin="20,0,0,0"
+                    MinWidth="100"
+                    FontSize="18">
+                    <x:String>1</x:String>
+                    <x:String>2</x:String>
+                    <x:String>3</x:String>
+                    <x:String>5</x:String>
+                    <x:String>10</x:String>
+                </ComboBox>
+                <TextBlock RelativePanel.Below="TitleTextBlock" x:Name="ResultTextBlock" Margin="0,20,0,0" FontSize="20">被抽中的幸运观众：</TextBlock>
+                <Button RelativePanel.AlignRightWithPanel="True" x:Name="GetNumberButton" Margin="20,0,0,0" Click="GetNumber_Click" FontSize="18">抽取</Button>
+            </RelativePanel>
+        </ScrollViewer>
+
+        <HyperlinkButton Grid.Row="2" NavigateUri="https://github.com/laipuran/LuckDraw" FontSize="15">获取帮助</HyperlinkButton>
+
+    </Grid>
+
+</Page>
