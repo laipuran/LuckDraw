@@ -15,6 +15,10 @@ using Windows.UI.Xaml.Navigation;
 using Windows.Data.Json;
 using Windows.Storage;
 using Windows.UI.Core.Preview;
+using System.Net;
+using System.Text;
+using System.Text.RegularExpressions;
+using Windows.UI.Xaml.Media.Imaging;
 
 // https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x804 上介绍了“空白页”项模板
 
@@ -53,8 +57,24 @@ namespace LuckDraw
             App.doShowToasts = (bool)localSettings.Values["doShowToasts"];
             FrameOfMainPage.Navigate(typeof(LuckDrawPage));
             TitleTextBlock.Text = "抽奖";
+
+            GetBingWallPaper();
         }
 
+        public void GetBingWallPaper()
+        {
+            var client = new WebClient();
+            client.Encoding = Encoding.UTF8;
+            var html = client.DownloadString("https://cn.bing.com/");
+            var match = Regex.Match(html, "id=\"bgLink\".*?href=\"(.+?)\"");
+            string url = string.Format("https://cn.bing.com{0}", match.Groups[1].Value);
+
+            var filePath = Path.Combine(Path.GetTempPath(), "bing.jpg");
+            client.DownloadFile(url, filePath);
+
+            ImageBrush imageBrush = new ImageBrush();
+            imageBrush.ImageSource = new BitmapImage(new Uri(filePath));
+        }
         private void ListBoxOfMainPage_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (LuckDrawListBoxItem.IsSelected)

@@ -5,7 +5,7 @@ using System.Net;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace LuckDrawWindow
+namespace LuckDrawWPF
 {
     /// <summary>
     /// SettingsPage.xaml 的交互逻辑

@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Input;
 
-namespace LuckDrawWindow
+namespace LuckDrawWPF
 {
     /// <summary>
     /// Floating.xaml 的交互逻辑
@@ -24,6 +24,7 @@ namespace LuckDrawWindow
         public static extern bool IsWindowVisible(IntPtr hWnd);
         [DllImport("user32.dll", CharSet = CharSet.Auto)]
         public static extern int SendMessage(IntPtr hwnd, int wMsg, int wParam, int lParam);
+        Window window = App.Window;
         public Floating()
         {
             InitializeComponent();
@@ -33,8 +34,6 @@ namespace LuckDrawWindow
 
             Left = ScreenWidth - 120;
             Top = ScreenHeight - 150;
-
-            
 
             GetNumberButton.Focus();
         }
@@ -76,14 +75,14 @@ namespace LuckDrawWindow
         }
         private void MainWindowButton_Click(object sender, RoutedEventArgs e)
         {
-            IntPtr mainWindow = FindWindow(null, "Luck Draw");
-            if (mainWindow != IntPtr.Zero)
-            {
-                ShowWindowAsync(mainWindow, 1);
-                return;
-            }
-            mainWindow = FindWindow(null, "Luck Draw（管理员）");
-            ShowWindowAsync(mainWindow, 1);
+            MainWindow();
+        }
+        public void MainWindow()
+        {
+            Window window = App.Window;
+            window.WindowState = WindowState.Normal;
+            window.Visibility = Visibility.Visible;
+            window.ShowInTaskbar = true;
         }
         private void SeewoWhiteBoardButton_Click(object sender, RoutedEventArgs e)
         {
@@ -97,17 +96,11 @@ namespace LuckDrawWindow
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
             App.closeApp = true;
-            IntPtr mainWindow = FindWindow(null, "LuckDraw");
-            if (mainWindow!=IntPtr.Zero)
+            if (window == null)
             {
-                SendMessage(mainWindow, 0, 0, 0);
+                MainWindow();
             }
-            else
-            {
-                mainWindow = FindWindow(null, "Luck Draw（管理员）");
-                // SendMessage(mainWindow, , 0, 0);
-                // TODO: Fix This
-            }
+            window.Close();
         }
     }
 }

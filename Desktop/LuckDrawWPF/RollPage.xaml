@@ -1,14 +1,14 @@
-﻿<Page x:Class="LuckDrawWindow.RollPage"
+﻿<Page x:Class="LuckDrawWPF.RollPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:LuckDrawWindow"
+      xmlns:local="clr-namespace:LuckDrawWPF"
       mc:Ignorable="d">
 
     <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left">
         <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left">
-            <Button Style="{StaticResource DefaultButtonStyle}" FontSize="18"
+            <Button Style="{StaticResource DefaultButtonStyle}" FontSize="18" Width="85"
                     Margin="20,0,0,0"
                     Click="ToggleRoll"
                     Content="{ Binding RollButtonText, RelativeSource={ RelativeSource Mode=FindAncestor, AncestorType=local:RollPage } }"/>

@@ -5,7 +5,7 @@ using System.Windows;
 using System.Windows.Controls;
 using Windows.UI.Notifications;
 
-namespace LuckDrawWindow
+namespace LuckDrawWPF
 {
     /// <summary>
     /// LuckDrawPage.xaml 的交互逻辑

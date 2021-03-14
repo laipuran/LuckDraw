@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Text;
+using System.Text.RegularExpressions;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
@@ -35,6 +38,7 @@ namespace LuckDraw
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+
         }
 
         /// <summary>
@@ -42,7 +46,8 @@ namespace LuckDraw
         /// 将在启动应用程序以打开特定文件等情况下使用。
         /// </summary>
         /// <param name="e">有关启动请求和过程的详细信息。</param>
-        
+
+
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
             Frame rootFrame = Window.Current.Content as Frame;

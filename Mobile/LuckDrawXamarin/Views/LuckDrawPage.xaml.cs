@@ -2,6 +2,7 @@
 using System.Threading;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Plugin.Toast;
 
 namespace LuckDrawXamarin.Views
 {
@@ -107,7 +108,7 @@ namespace LuckDrawXamarin.Views
             string output;
             output = "被暗中选定的同学：\n" + string.Join("\n", array);
             ResultLabel.Text = output;
-            // IAppHandler.ShowToastMessage("完成", false);
+            CrossToastPopUp.Current.ShowToastMessage(output);
             GetButton.IsEnabled = true;
             NumberEditor.IsReadOnly = false;
         }

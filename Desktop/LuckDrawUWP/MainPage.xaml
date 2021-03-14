@@ -16,7 +16,7 @@
         </ResourceDictionary>
     </Page.Resources>
     
-    <Grid>
+    <Grid x:Name="Grid">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="1*"></RowDefinition>

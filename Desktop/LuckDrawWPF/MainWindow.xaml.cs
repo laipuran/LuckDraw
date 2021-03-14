@@ -1,30 +1,27 @@
 ﻿using Microsoft.Toolkit.Uwp.Notifications;
 using System;
 using System.ComponentModel;
-using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Animation;
+using Windows.UI.Notifications;
 
-namespace LuckDrawWindow
+namespace LuckDrawWPF
 {
     /// <summary>
-    /// MainWindow.xaml 的交互逻辑
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
         bool MenuClosed = true;
+
         public MainWindow()
         {
             InitializeComponent();
 
-#if DEBUG
-            MessageBox.Show(Path.GetTempFileName() + ".lock");
-#endif
-
             DesktopNotificationManagerCompat.RegisterActivator<MyNotificationActivator>();
             DesktopNotificationManagerCompat.RegisterAumidAndComServer<MyNotificationActivator>("PuranLai.LuckDraw");
-
+            
             if (App.closeApp)
             {
                 Close();
@@ -66,7 +63,6 @@ namespace LuckDrawWindow
                 return;
             }
         }
-
         private void ListBoxOfMainWindow_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (LuckDrawListBoxItem.IsSelected)
@@ -91,7 +87,6 @@ namespace LuckDrawWindow
                 return;
             }
         }
-
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
             if (FrameOfMainWindow.CanGoBack)
