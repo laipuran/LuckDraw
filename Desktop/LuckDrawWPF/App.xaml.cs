@@ -3,7 +3,7 @@ using System.Windows;
 using System.Windows.Forms;
 using Application = System.Windows.Application;
 
-namespace LuckDrawWPF
+namespace LuckDraw
 {
     /// <summary>
     /// Interaction logic for App.xaml
@@ -36,7 +36,7 @@ namespace LuckDrawWPF
         }
         private void AddTrayIcon()
         {
-            Icon icon = LuckDrawWPF.Properties.Resources.favicon;
+            Icon icon = LuckDraw.Properties.Resources.favicon;
             if (trayIcon != null)
             {
                 return;

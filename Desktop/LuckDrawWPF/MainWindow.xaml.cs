@@ -1,12 +1,18 @@
 ﻿using Microsoft.Toolkit.Uwp.Notifications;
 using System;
 using System.ComponentModel;
+using System.IO;
+using System.Net;
+using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 using System.Windows.Media.Animation;
+using System.Windows.Media.Imaging;
 using Windows.UI.Notifications;
 
-namespace LuckDrawWPF
+namespace LuckDraw
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -21,13 +27,13 @@ namespace LuckDrawWPF
 
             DesktopNotificationManagerCompat.RegisterActivator<MyNotificationActivator>();
             DesktopNotificationManagerCompat.RegisterAumidAndComServer<MyNotificationActivator>("PuranLai.LuckDraw");
-            
+
             if (App.closeApp)
             {
                 Close();
                 return;
             }
-
+            GetBingWallPaper();
             App.numberOfPeople = Properties.Settings.Default.numberOfPeople;
             App.doShowToasts = Properties.Settings.Default.doShowToasts;
 
@@ -108,6 +114,29 @@ namespace LuckDrawWPF
                     return;
                 }
             }
+        }
+        public void GetBingWallPaper()
+        {
+            var client = new WebClient();
+            client.Encoding = Encoding.UTF8;
+            var html = client.DownloadString("https://cn.bing.com/");
+            var match = Regex.Match(html, "id=\"bgLink\".*?href=\"(.+?)\"");
+            string url = string.Format("https://cn.bing.com{0}", match.Groups[1].Value);
+
+            var filePath = Path.Combine(Path.GetTempPath(), "bing.jpg");
+            try
+            {
+                client.DownloadFile(url, filePath);
+            }
+            catch
+            {
+                filePath += "1";
+                client.DownloadFile(url, filePath);
+            }
+            ImageBrush imageBrush = new ImageBrush();
+            imageBrush.ImageSource = new BitmapImage(new Uri(filePath));
+            imageBrush.Opacity = 0.3;
+            Grid.Background = imageBrush;
         }
         protected override void OnClosing(CancelEventArgs e)
         {

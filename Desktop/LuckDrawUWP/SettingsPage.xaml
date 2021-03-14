@@ -5,9 +5,15 @@
     xmlns:local="using:LuckDraw"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource SystemControlAcrylicWindowBrush}">
+    mc:Ignorable="d">
 
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="DictionaryRes.xaml"></ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
@@ -18,7 +24,7 @@
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
             <StackPanel Margin="20,20,20,0">
                 <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
-                    <TextBox Header="抽取的总人数：" Name="NumberTextBox" Width="200"></TextBox>
+                    <TextBox Style="{StaticResource SettingsTextBoxStyle}" Header="抽取的总人数：" Name="NumberTextBox" Width="200"></TextBox>
                     <ToggleSwitch Header="抽取完毕后是否弹出Toast提示：" Name="ToastToggleSwitch" Margin="0,20,0,0"></ToggleSwitch>
                 </StackPanel>
             </StackPanel>

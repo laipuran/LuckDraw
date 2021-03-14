@@ -29,28 +29,24 @@ namespace LuckDraw
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
         public MainPage()
         {
             this.InitializeComponent();
 
-
-            ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
-            if (localSettings.Values.ContainsKey("numberOfPeople"))
-            {
-                App.numberOfPeople= (int)localSettings.Values["numberOfPeople"];
-            }
-            else
+            if (!localSettings.Values.ContainsKey("numberOfPeople"))
             {
                 localSettings.Values["numberOfPeople"] = 55;
             }
 
-            if (localSettings.Values.ContainsKey("doShowToasts"))
-            {
-                App.doShowToasts = (bool)localSettings.Values["doShowToasts"];
-            }
-            else
+            if (!localSettings.Values.ContainsKey("doShowToasts"))
             {
                 localSettings.Values["doShowToasts"] = false;
+            }
+
+            if (!localSettings.Values.ContainsKey("numbersLastTime"))
+            {
+                localSettings.Values["numbersLastTime"] = "欢迎使用抽奖！\n点击上侧的输入框然后抽取\n假如你喜欢它的话，进入 https://laipuran.github.io/about 打个赏吧~";
             }
 
             App.numberOfPeople = (int)localSettings.Values["numberOfPeople"];
@@ -74,6 +70,7 @@ namespace LuckDraw
 
             ImageBrush imageBrush = new ImageBrush();
             imageBrush.ImageSource = new BitmapImage(new Uri(filePath));
+            Grid.Background = imageBrush;
         }
         private void ListBoxOfMainPage_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {

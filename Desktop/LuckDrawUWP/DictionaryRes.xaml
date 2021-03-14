@@ -17,7 +17,7 @@
         <Setter Property="Margin" Value="20,0,0,0"></Setter>
     </Style>
     
-    <!--`SettingsPage-->
+    <!--SettingsPage-->
     <Style TargetType="TextBox" x:Key="SettingsTextBoxStyle">
         <Setter Property="FontSize" Value="28"></Setter>
         <Setter Property="FontWeight" Value="Black"></Setter>
@@ -27,4 +27,9 @@
         <Setter Property="FontWeight" Value="Black"></Setter>
     </Style>
     
+    <AcrylicBrush x:Key="AcrylicBrush"
+                  BackgroundSource="Backdrop"
+                  TintOpacity="0.3"
+                  TintColor="Black"
+                  FallbackColor="White" />
 </ResourceDictionary>

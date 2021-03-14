@@ -21,6 +21,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_98DCD922A7C241919D2138D9C5954900"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_F62F3B65890E447397C32462AD1FAC46"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -108,6 +114,16 @@
         {
             "LaunchCondition"
             {
+                "{A06ECF26-33A3-4562-8140-9B0E340D4F24}:_6127E05ACE9F42E5A9DDB79C2C76A9CF"
+                {
+                "Name" = "8:.NET Core"
+                "Message" = "8:[VSDNETCOREMSG]"
+                "AllowLaterVersions" = "11:FALSE"
+                "InstallUrl" = "8:https://dotnet.microsoft.com/download/dotnet-core/[NetCoreVerMajorDotMinor]"
+                "IsNETCore" = "11:TRUE"
+                "Architecture" = "2:0"
+                "Runtime" = "2:0"
+                }
                 "{A06ECF26-33A3-4562-8140-9B0E340D4F24}:_AF852FAFDB4E4BE187B869C688C34095"
                 {
                 "Name" = "8:.NET Framework"
@@ -209,13 +225,13 @@
             "Property" = "8:ProgramMenuFolder"
                 "Folders"
                 {
-                    "{9EF0B969-E518-4E46-987F-47570745A589}:_1CCA1F4BA9AF4697B537975F0E857A1E"
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_9B098EEADA914BAE845414594D21DB01"
                     {
                     "Name" = "8:Luck Draw"
                     "AlwaysCreate" = "11:FALSE"
                     "Condition" = "8:"
                     "Transitive" = "11:FALSE"
-                    "Property" = "8:_B86014EF4685414394DEC7FB7BB7689A"
+                    "Property" = "8:_F0BFF5B9C48E44CF97624F77B93351E1"
                         "Folders"
                         {
                         }
@@ -238,15 +254,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Luck Draw"
-        "ProductCode" = "8:{57E3DB24-9A7F-42E7-A4D8-5E96C322C3F2}"
-        "PackageCode" = "8:{93CED136-3A5A-465F-B84F-A81DCDADEFE5}"
+        "ProductCode" = "8:{80544AA4-B4A5-4DDA-8BE7-08658966366C}"
+        "PackageCode" = "8:{4C210049-260E-46A8-9056-919C02B68BD9}"
         "UpgradeCode" = "8:{1EA843D6-89DA-41E8-A230-312CC42DA27E}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.7"
+        "ProductVersion" = "8:1.7.0"
         "Manufacturer" = "8:Puran Lai"
         "ARPHELPTELEPHONE" = "8:18979221743"
         "ARPHELPLINK" = "8:https://laipuran.github.io/LuckDraw"
@@ -359,21 +375,35 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_64AA14B959D84AB1AC07DA9C9837C6A1"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_61976B8931EA4ED7BEA7963F9527EC88"
             {
-            "Name" = "8:卸载"
+            "Name" = "8:Luck Draw"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_98DCD922A7C241919D2138D9C5954900"
+            "Folder" = "8:_75C6A730D5FE43EC90400073D7020FAF"
+            "WorkingFolder" = "8:_B735B859A1D645E8B98F4E0D65B8915E"
+            "Icon" = "8:_F62F3B65890E447397C32462AD1FAC46"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_736D36BDFABE4DD7A0BB69251A297502"
+            {
+            "Name" = "8:Remove Luck Draw"
             "Arguments" = "8:/x {ProductCode}"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
             "Target" = "8:_53ACE90DFFBC420383942DEA1F13DF89"
-            "Folder" = "8:_1CCA1F4BA9AF4697B537975F0E857A1E"
+            "Folder" = "8:_9B098EEADA914BAE845414594D21DB01"
             "WorkingFolder" = "8:_3D7880BC79FC457B9E42197C2F61E6D7"
-            "Icon" = "8:"
+            "Icon" = "8:_F62F3B65890E447397C32462AD1FAC46"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_B256A48DF8C1461CADD416926F5E6EFC"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_CE2FCB8E193D4FB6BC66D0A1CFBA18D6"
             {
             "Name" = "8:Luck Draw"
             "Arguments" = "8:"
@@ -381,22 +411,8 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:"
-            "Folder" = "8:_1CCA1F4BA9AF4697B537975F0E857A1E"
-            "WorkingFolder" = "8:_B735B859A1D645E8B98F4E0D65B8915E"
-            "Icon" = "8:_F62F3B65890E447397C32462AD1FAC46"
-            "Feature" = "8:"
-            }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_FD0F5469F4284D8095456018EFB6E0C8"
-            {
-            "Name" = "8:Luck Draw"
-            "Arguments" = "8:"
-            "Description" = "8:一个简易的抽号工具"
-            "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
-            "Transitive" = "11:FALSE"
-            "Target" = "8:"
-            "Folder" = "8:_75C6A730D5FE43EC90400073D7020FAF"
+            "Target" = "8:_98DCD922A7C241919D2138D9C5954900"
+            "Folder" = "8:_9B098EEADA914BAE845414594D21DB01"
             "WorkingFolder" = "8:_B735B859A1D645E8B98F4E0D65B8915E"
             "Icon" = "8:_F62F3B65890E447397C32462AD1FAC46"
             "Feature" = "8:"
@@ -800,6 +816,34 @@
         }
         "ProjectOutput"
         {
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_98DCD922A7C241919D2138D9C5954900"
+            {
+            "SourcePath" = "8:..\\..\\Desktop\\LuckDrawWPF\\obj\\Debug\\netcoreapp3.1\\apphost.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_B735B859A1D645E8B98F4E0D65B8915E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:PublishItems"
+            "OutputProjectGuid" = "8:{1C6B7EE7-0CD0-433A-8BED-F9AB851260FB}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
         }
     }
 }

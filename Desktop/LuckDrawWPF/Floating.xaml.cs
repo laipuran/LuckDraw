@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Input;
 
-namespace LuckDrawWPF
+namespace LuckDraw
 {
     /// <summary>
     /// Floating.xaml 的交互逻辑

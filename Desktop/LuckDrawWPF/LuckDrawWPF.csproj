@@ -6,21 +6,8 @@
 		<UseWPF>true</UseWPF>
 		<UseWindowsForms>true</UseWindowsForms>
 		<ApplicationIcon>favicon.ico</ApplicationIcon>
+		<RootNamespace>LuckDraw</RootNamespace>
 	</PropertyGroup>
-
-	<ItemGroup>
-	  <Compile Remove="Resources - 复制\**" />
-	  <EmbeddedResource Remove="Resources - 复制\**" />
-	  <None Remove="Resources - 复制\**" />
-	  <Page Remove="Resources - 复制\**" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <None Remove="favicon.ico" />
-	  <None Remove="Resources\favicon.ico" />
-	  <None Remove="Resources\favicon.png" />
-	  <None Remove="Resources\SplashScreen.png" />
-	</ItemGroup>
 
 	<ItemGroup>
 	  <Resource Include="favicon.ico" />
@@ -48,5 +35,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
+
+  <Import Project="..\..\Shared\Shared.projitems" Label="Shared" />
 
 </Project>

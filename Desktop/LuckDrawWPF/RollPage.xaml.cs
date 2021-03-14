@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace LuckDrawWPF
+namespace LuckDraw
 {
     /// <summary>
     /// RollPage.xaml 的交互逻辑
@@ -53,7 +53,7 @@ namespace LuckDrawWPF
             }
         }
 
-        private int endNumber = LuckDrawWPF.App.numberOfPeople;
+        private int endNumber = LuckDraw.App.numberOfPeople;
 
         public int EndNumber
         {

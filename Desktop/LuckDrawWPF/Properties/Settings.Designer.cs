@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LuckDrawWPF.Properties {
+namespace LuckDraw.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -61,7 +61,7 @@ namespace LuckDrawWPF.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1.6.7")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1.7.0")]
         public string currentVersion {
             get {
                 return ((string)(this["currentVersion"]));

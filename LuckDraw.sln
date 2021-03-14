@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuckDrawWPF", "Desktop\Luck
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Shared\Shared.projitems*{1c6b7ee7-0cd0-433a-8bed-f9ab851260fb}*SharedItemsImports = 5
+		Shared\Shared.projitems*{2f804bc1-01e6-49f4-9947-dc43639ba034}*SharedItemsImports = 4
 		Shared\Shared.projitems*{4cd6416b-7ef9-43ad-b7a5-917e2ebbfa2d}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

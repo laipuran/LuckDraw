@@ -5,7 +5,7 @@ using System.Windows;
 using System.Windows.Controls;
 using Windows.UI.Notifications;
 
-namespace LuckDrawWPF
+namespace LuckDraw
 {
     /// <summary>
     /// LuckDrawPage.xaml 的交互逻辑
@@ -38,100 +38,29 @@ namespace LuckDrawWPF
 
             int number;
             int max = App.numberOfPeople;
-            try
+            Union union = Algorithm.Parser(NumberTextBox.Text, max);
+            if (union.number == 0)
             {
-                number = int.Parse(NumberTextBox.Text);
-                if (number <= 0)
-                {
-                    throw new MyEx("输入的数字不合法！");
-                }
-                if (number > max)
-                {
-                    throw new MyEx("输入的数字超过总人数！");
-                }
-            }
-            catch (Exception Ex)
-            {
-                ResultTextBlock.Text = Ex.Message;
+                ResultTextBlock.Text = union.message;
+
                 NumberTextBox.IsReadOnly = false;
                 GetNumberButton.IsEnabled = true;
                 return;
             }
-            number = int.Parse(NumberTextBox.Text);
 
-            int[] array = new int[number];
-            int[] check = new int[max];
-            Array.Clear(array, 0, number);
-            Array.Clear(check, 0, max);
+            number = union.number;
+            string output = Algorithm.Getter(number, max);
 
-            Random r = new Random();
-            for (int i = 0; i < number; i++)
-            {
-                int temp = r.Next(1, max + 1);
-                check[temp - 1]++;
-                Thread.Sleep(10);
-            }
-
-            bool chk = true;
-            while (chk == true)
-            {
-                for (int i = 0; i < max; i++)
-                {
-                    if (check[i] > 1)
-                    {
-                        check[i]--;
-                        int temp = r.Next(1, max + 1);
-                        check[temp - 1]++;
-                    }
-                }
-                int index = 0;
-                for (int i = 0; i < max; i++)
-                {
-                    if (check[i] == 1 || check[i] == 0)
-                    {
-                        if (check[i] == 1)
-                        {
-                            array[index] = i + 1;
-                            index++;
-                        }
-                        if (i == max - 1)
-                        {
-                            chk = false;
-                        }
-                    }
-                    else break;
-                }
-
-            }
-
-            for (int i = number - 1; i > 0; i--)
-            {
-                for (int j = 0; j < i; j++)
-                {
-                    if (array[j] > array[j + 1])
-                    {
-                        int temp;
-                        temp = array[j + 1];
-                        array[j + 1] = array[j];
-                        array[j] = temp;
-                    }
-                }
-            }
-
-            string output;
-            output = "被抽中的幸运同学：\n" + string.Join("\n", array);
             Properties.Settings.Default.numbersLastTime = output;
             ResultTextBlock.Text = output;
 
             if (App.doShowToasts)
             {
-                string notifications;
-                notifications = "被抽中的幸运同学： " + string.Join(" ", array);
-                sendNotifications(notifications);
+                sendNotifications(output);
             }
 
-            GetNumberButton.IsEnabled = true;
             NumberTextBox.IsReadOnly = false;
+            GetNumberButton.IsEnabled = true;
         }
     }
 }
