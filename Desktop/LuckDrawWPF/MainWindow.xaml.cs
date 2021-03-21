@@ -117,8 +117,10 @@ namespace LuckDraw
         }
         public void GetBingWallPaper()
         {
-            var client = new WebClient();
-            client.Encoding = Encoding.UTF8;
+            var client = new WebClient
+            {
+                Encoding = Encoding.UTF8
+            };
             var html = client.DownloadString("https://cn.bing.com/");
             var match = Regex.Match(html, "id=\"bgLink\".*?href=\"(.+?)\"");
             string url = string.Format("https://cn.bing.com{0}", match.Groups[1].Value);
@@ -133,10 +135,7 @@ namespace LuckDraw
                 filePath += "1";
                 client.DownloadFile(url, filePath);
             }
-            ImageBrush imageBrush = new ImageBrush();
-            imageBrush.ImageSource = new BitmapImage(new Uri(filePath));
-            imageBrush.Opacity = 0.3;
-            Grid.Background = imageBrush;
+            AcrylicImage.Source = new BitmapImage(new Uri(filePath));
         }
         protected override void OnClosing(CancelEventArgs e)
         {

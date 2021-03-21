@@ -53,8 +53,6 @@ namespace LuckDraw
             App.doShowToasts = (bool)localSettings.Values["doShowToasts"];
             FrameOfMainPage.Navigate(typeof(LuckDrawPage));
             TitleTextBlock.Text = "抽奖";
-
-            GetBingWallPaper();
         }
 
         public void GetBingWallPaper()
@@ -105,6 +103,11 @@ namespace LuckDraw
                 FrameOfMainPage.GoBack();
                 LuckDrawListBoxItem.IsSelected = true;
             }
+        }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            GetBingWallPaper();
+            base.OnNavigatedTo(e);
         }
     }
 }
