@@ -58,7 +58,7 @@ namespace LuckDraw
 
             ImageBrush imageBrush = new ImageBrush();
             imageBrush.ImageSource = new BitmapImage(new Uri(filePath));
-            MainPage.Background = imageBrush;
+            Background = imageBrush;
         }
         private void ListBoxOfMainPage_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
