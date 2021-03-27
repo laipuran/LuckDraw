@@ -8,11 +8,9 @@
     <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top">
         <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
             <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
-                <TextBlock Style="{StaticResource SettingsTextBlockStyle}" FontSize="18">抽取的总人数</TextBlock>
+                <TextBlock Style="{StaticResource SettingsTextBlockStyle}">抽取的总人数</TextBlock>
                 <TextBox Style="{StaticResource TextBoxStyle}" Margin="0,20,0,0" Name="NumberTextBox" Width="75" Height="30" TextChanged="NumberTextBox_TextChanged"></TextBox>
-                <TextBlock Margin="0,20,0,0" Style="{StaticResource SettingsTextBlockStyle}" FontSize="18">抽取完毕后是否弹出Toast提示：</TextBlock>
-                <ToggleButton Style="{StaticResource ToggleButtonStyle}" Margin="0,20,0,0" Click="ToastToggleButton_Click" Name="ToastToggleButton" Width="75" Height="30" IsChecked="False"></ToggleButton>
-                <Button Style="{StaticResource DefaultButtonStyle}" Margin="0,5,0,0" Width="75" Click="Button_Click">获取更新</Button>
+                <Button Style="{StaticResource DefaultButtonStyle}" Margin="0,20,0,0" Width="75" Click="Button_Click">获取更新</Button>
             </StackPanel>
         </ScrollViewer>
     </StackPanel>

@@ -17,13 +17,6 @@ namespace LuckDraw
             InitializeComponent();
 
             NumberTextBox.Text = App.numberOfPeople.ToString();
-            ToastToggleButton.IsChecked = App.doShowToasts;
-            if ((bool)ToastToggleButton.IsChecked)
-            {
-                ToastToggleButton.Content = "打开";
-            }
-            else
-                ToastToggleButton.Content = "关闭";
 
             Properties.Settings.Default.Save();
         }
@@ -66,48 +59,6 @@ namespace LuckDraw
             }
             return flag;
         }
-        private void NumberTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (NumberTextBox.Text != null)
-            {
-                try
-                {
-                    int number = int.Parse(NumberTextBox.Text);
-                    if (number < 0 || number > 100000000)
-                    {
-                        throw new LuckDrawPage.MyEx("输入的数字不合法！");
-                    }
-                }
-                catch (Exception Ex)
-                {
-                    MessageBox.Show(Ex.Message);
-                    NumberTextBox.Text = App.numberOfPeople.ToString();
-                    return;
-                }
-                App.numberOfPeople = int.Parse(NumberTextBox.Text);
-            }
-            else
-            {
-                NumberTextBox.Text = App.numberOfPeople.ToString();
-            }
-
-            Properties.Settings.Default.Save();
-        }
-
-        private void ToastToggleButton_Click(object sender, RoutedEventArgs e)
-        {
-            if ((bool)ToastToggleButton.IsChecked)
-            {
-                ToastToggleButton.Content = "打开";
-            }
-            else
-                ToastToggleButton.Content = "关闭";
-
-            App.doShowToasts = (bool)ToastToggleButton.IsChecked;
-
-            Properties.Settings.Default.Save();
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             bool flag = DownloadFile("version.txt", "version.txt");
@@ -135,6 +86,13 @@ namespace LuckDraw
                 MessageBox.Show("目前版本：v" + Properties.Settings.Default.currentVersion + "，无需更新！", "更新提示");
                 return;
             }
+        }
+
+        private void NumberTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (NumberTextBox.Text == string.Empty) return;
+            App.numberOfPeople = Algorithm.Parser(NumberTextBox.Text, 100000).number;
+            Properties.Settings.Default.Save();
         }
     }
 }

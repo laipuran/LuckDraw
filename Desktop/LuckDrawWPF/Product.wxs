@@ -1,9 +1,0 @@
-﻿<Shortcut Id="ApplicationStartMenuShortcut" Name="Wix Sample" Description="Wix Sample" Target="[INSTALLFOLDER]WixSample.exe" WorkingDirectory="INSTALLFOLDER">
-                    
-    <!--AUMID-->
-    <ShortcutProperty Key="System.AppUserModel.ID" Value="YourCompany.YourApp"/>
-    
-    <!--COM CLSID-->
-    <ShortcutProperty Key="System.AppUserModel.ToastActivatorCLSID" Value="{5C5BC8EA-4B17-7315-FF09-899091168E2C}"/>
-    
-</Shortcut>

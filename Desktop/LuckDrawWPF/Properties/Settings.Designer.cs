@@ -37,19 +37,7 @@ namespace LuckDraw.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool doShowToasts {
-            get {
-                return ((bool)(this["doShowToasts"]));
-            }
-            set {
-                this["doShowToasts"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("欢迎使用抽奖！\\n官方网站：https://laipuran.github.io/LuckDraw")]
         public string numbersLastTime {
             get {
                 return ((string)(this["numbersLastTime"]));

@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 
 namespace LuckDraw
@@ -106,9 +104,5 @@ namespace LuckDraw
     public class MyEx : Exception
     {
         public MyEx(string message) : base(message) { }
-    }
-    public interface INotifications
-    {
-
     }
 }

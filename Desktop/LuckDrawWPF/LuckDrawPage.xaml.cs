@@ -1,9 +1,7 @@
-﻿using Microsoft.Toolkit.Uwp.Notifications;
-using System;
+﻿using System;
 using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
-using Windows.UI.Notifications;
 
 namespace LuckDraw
 {
@@ -21,15 +19,6 @@ namespace LuckDraw
         public class MyEx : Exception
         {
             public MyEx(string message) : base(message) { }
-        }
-        public void sendNotifications(string notifications)
-        {
-            ToastContent toastContent = new ToastContentBuilder()
-       .AddToastActivationInfo("action=viewConversation&conversationId=5", ToastActivationType.Foreground)
-       .AddText(notifications)
-       .GetToastContent();
-            var toast = new ToastNotification(toastContent.GetXml());
-            DesktopNotificationManagerCompat.CreateToastNotifier().Show(toast);
         }
         private void GetNumberButton_Click(object sender, RoutedEventArgs e)
         {
@@ -53,11 +42,6 @@ namespace LuckDraw
 
             Properties.Settings.Default.numbersLastTime = output;
             ResultTextBlock.Text = output;
-
-            if (App.doShowToasts)
-            {
-                sendNotifications(output);
-            }
 
             NumberTextBox.IsReadOnly = false;
             GetNumberButton.IsEnabled = true;

@@ -1,11 +1,11 @@
-﻿using System;
-using Microsoft.Toolkit.Uwp.Notifications; // Notifications library
+﻿using Microsoft.Toolkit.Uwp.Notifications; // Notifications library
+using System;
+using Windows.Storage;
+using Windows.UI.Core;
+using Windows.UI.Notifications;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
-using Windows.UI.Core;
-using Windows.UI.Notifications;
-using Windows.Storage;
 
 // https://go.microsoft.com/fwlink/?LinkId=234238 上介绍了“空白页”项模板
 

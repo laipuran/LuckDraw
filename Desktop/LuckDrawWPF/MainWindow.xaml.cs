@@ -1,5 +1,4 @@
-﻿using Microsoft.Toolkit.Uwp.Notifications;
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.IO;
 using System.Net;
@@ -10,7 +9,6 @@ using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
-using Windows.UI.Notifications;
 
 namespace LuckDraw
 {
@@ -25,9 +23,6 @@ namespace LuckDraw
         {
             InitializeComponent();
 
-            DesktopNotificationManagerCompat.RegisterActivator<MyNotificationActivator>();
-            DesktopNotificationManagerCompat.RegisterAumidAndComServer<MyNotificationActivator>("PuranLai.LuckDraw");
-
             if (App.closeApp)
             {
                 Close();
@@ -35,7 +30,6 @@ namespace LuckDraw
             }
             GetBingWallPaper();
             App.numberOfPeople = Properties.Settings.Default.numberOfPeople;
-            App.doShowToasts = Properties.Settings.Default.doShowToasts;
 
             System.Security.Principal.WindowsIdentity identity = System.Security.Principal.WindowsIdentity.GetCurrent();
             System.Security.Principal.WindowsPrincipal principal = new System.Security.Principal.WindowsPrincipal(identity);
@@ -135,7 +129,11 @@ namespace LuckDraw
                 filePath += "1";
                 client.DownloadFile(url, filePath);
             }
-            AcrylicImage.Source = new BitmapImage(new Uri(filePath));
+            ImageBrush brush = new ImageBrush();
+            brush.ImageSource = new BitmapImage(new Uri(filePath));
+            brush.Opacity = 0.5;
+            brush.Stretch = Stretch.UniformToFill;
+            Background = brush;
         }
         protected override void OnClosing(CancelEventArgs e)
         {
@@ -148,11 +146,9 @@ namespace LuckDraw
         protected override void OnClosed(EventArgs e)
         {
             Properties.Settings.Default.numberOfPeople = App.numberOfPeople;
-            Properties.Settings.Default.doShowToasts = App.doShowToasts;
             Properties.Settings.Default.Save();
 
             App.FloatingWindow.Close();
-            DesktopNotificationManagerCompat.History.Clear();
 
             base.OnClosed(e);
         }
