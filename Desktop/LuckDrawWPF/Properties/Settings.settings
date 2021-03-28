@@ -5,11 +5,8 @@
     <Setting Name="numberOfPeople" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">55</Value>
     </Setting>
-    <Setting Name="doShowToasts" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
-    </Setting>
     <Setting Name="numbersLastTime" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">欢迎使用抽奖！\n官方网站：https://laipuran.github.io/LuckDraw</Value>
     </Setting>
     <Setting Name="currentVersion" Type="System.String" Scope="Application">
       <Value Profile="(Default)">1.7.0</Value>
