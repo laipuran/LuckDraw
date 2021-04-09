@@ -14,7 +14,7 @@ namespace LuckDrawLauncher
             string current = Directory.GetCurrentDirectory();
             Console.WriteLine("当前位置：" + current);
 
-            string url = "https://api.github.com/repos/laipuran/LuckDraw/commits";
+            string url = "https://api.github.com/repos/laipuran/LuckDraw/commits/master";
             string sha = GetCommit(url);
 
             FileStream stream = new FileStream(current + @"\sha", FileMode.OpenOrCreate);
@@ -23,10 +23,10 @@ namespace LuckDrawLauncher
             int r = stream.Read(Byte, 0, Byte.Length);
             string oldsha = System.Text.Encoding.UTF8.GetString(Byte);
             stream.Close();
+            Console.WriteLine("最新版本的sha是：" + sha);
 
             if (oldsha != sha)
             {
-                Console.WriteLine("最新版本的sha是：" + sha);
                 Console.WriteLine("老版本的sha为：" + oldsha);
                 Console.WriteLine("正在下载新版本……");
                 DownloadSource();
@@ -84,31 +84,20 @@ namespace LuckDrawLauncher
             p.StandardInput.WriteLine("cd LuckDraw");
             p.StandardInput.WriteLine("dotnet run");
             Console.WriteLine("运行命令执行完毕！");
+
+            Console.ReadKey();
         }
         public static string GetCommit(string url)
         {
             HttpWebRequest webRequest = WebRequest.Create(url) as HttpWebRequest;
-            if (webRequest != null)
-            {
-                webRequest.Method = "GET";
-                webRequest.UserAgent = "Anything";
-                webRequest.ServicePoint.Expect100Continue = false;
+            webRequest.Method = "GET";
+            webRequest.UserAgent = "Anything";
+            webRequest.ServicePoint.Expect100Continue = false;
 
-                try
-                {
-                    using (StreamReader responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream()))
-                    {
-                        string reader = responseReader.ReadToEnd();
-                        Root root = JsonConvert.DeserializeObject<Root>(reader);
-                        return root.sha;
-                    };
-                }
-                catch
-                {
-                    return "";
-                }
-            }
-            else return "";
+            StreamReader responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+            string reader = responseReader.ReadToEnd();
+            Root root = JsonConvert.DeserializeObject<Root>(reader);
+            return root.sha;
         }
         public static void DownloadSource()
         {

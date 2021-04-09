@@ -4,7 +4,8 @@ using System.Text;
 using System.Text.Json.Serialization;
 
 namespace LuckDrawLauncher
-{// Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse); 
+{
+    // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse); 
     public class Author
     {
         public string name { get; set; }
