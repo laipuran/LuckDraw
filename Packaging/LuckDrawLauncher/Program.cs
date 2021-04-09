@@ -60,7 +60,7 @@ namespace LuckDrawLauncher
 
                 stream = new FileStream(current + @"\sha", FileMode.Create);
                 Length = (int)stream.Length;
-                Byte = new byte[Length];
+                byte[] byteArray = System.Text.Encoding.Default.GetBytes(sha);
                 stream.Write(Byte, 0, Byte.Length);
                 stream.Close();
                 Console.WriteLine("写版本文件完毕！");
