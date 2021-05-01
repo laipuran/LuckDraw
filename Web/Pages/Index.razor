@@ -1,0 +1,24 @@
+﻿@page "/"
+
+<h1>Hello, Luck Draw!</h1>
+
+输入你想抽取的人数：
+<input id="Text1" type="text" placeholder="输入1，点击按钮试试看" @bind="numberInput"/>
+<button class="btn btn-primary" @onclick="GetNumberButton_Click">抽取</button>
+<br /><br />
+<p class="text-body" cols="50">@resultText</p>
+@code {
+    private string numberInput;
+    private string resultText;
+
+    private void GetNumberButton_Click()
+    {
+        Union union= Algorithm.Parser(numberInput, 55);
+        if (union.number != 0)
+        {
+            resultText = Algorithm.Getter(union.number, 55);
+            return;
+        }
+        resultText = union.message;
+    }
+}
