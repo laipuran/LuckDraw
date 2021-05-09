@@ -96,5 +96,6 @@ namespace LuckDraw
             base.OnNavigatedTo(e);
             NumberComboBox.Text = "1";
         }
+
     }
 }

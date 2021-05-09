@@ -4,89 +4,24 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.UI.Xaml.Controls"
     mc:Ignorable="d"
-    Background="{ThemeResource SystemControlAcrylicElementBrush}">
+    Background="{ThemeResource SystemControlChromeMediumAcrylicWindowMediumBrush}">
 
-    <Page.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="DictionaryRes.xaml"></ResourceDictionary>
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-    </Page.Resources>
-    
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition Height="1*"></RowDefinition>
-        </Grid.RowDefinitions>
+    <controls:NavigationView x:Name="NavView"
+                             Loaded="NavView_Loaded"
+                             BackRequested="NavView_BackRequested"
+                             SelectionChanged="NavView_SelectionChanged"
+                             ItemInvoked="NavView_ItemInvoked">
+        <controls:NavigationView.MenuItems>
+            <controls:NavigationViewItem Tag="home" Icon="Home" Content="抽奖"/>
+            <controls:NavigationViewItem Tag="roll" Content="滚轮">
+                <controls:NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xE12C;"></FontIcon>
+                </controls:NavigationViewItem.Icon>
+            </controls:NavigationViewItem>
+        </controls:NavigationView.MenuItems>
+        <Frame x:Name="ContentFrame" Margin="20,20,20,20" NavigationFailed="ContentFrame_NavigationFailed"></Frame>
+    </controls:NavigationView>
 
-        <RelativePanel>
-            <Button
-                Name="HamburgerButton"
-                RelativePanel.AlignLeftWithPanel="True"
-                Style="{StaticResource NavigationButtonStyle}"
-                Click="HamburgerButton_Click"
-                Content="&#xE700;"></Button>
-            <Button
-                Name="BackButton"
-                RelativePanel.RightOf="HamburgerButton"
-                Style="{StaticResource NavigationButtonStyle}"
-                Click="BackButton_Click"
-                Content="&#xF0D3;"
-                Visibility="Collapsed"></Button>
-            <TextBlock
-                Name="TitleTextBlock"
-                RelativePanel.RightOf="BackButton"
-                
-                FontSize="28"
-                FontWeight="Bold"
-                Margin="20,5,0,0"></TextBlock>
-            
-        </RelativePanel>
-
-        <SplitView
-            Grid.Row="1"
-            Name="SplitViewOfMainPage" 
-            DisplayMode="CompactOverlay"
-            OpenPaneLength="200" 
-            CompactPaneLength="56" 
-            HorizontalAlignment="Left">
-            <SplitView.Pane>
-                <ListBox 
-                    Name="ListBoxOfMainPage"
-                    SelectionMode="Single"
-                    HorizontalAlignment="Left"
-                    SelectionChanged="ListBoxOfMainPage_SelectionChanged">
-
-                    <ListBoxItem Name="LuckDrawListBoxItem">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Style="{StaticResource NavigationTextBlockStyle}">&#xE10F;</TextBlock>
-                            <TextBlock Style="{StaticResource PaneTextBlockStyle}">抽奖</TextBlock>
-                        </StackPanel>
-                    </ListBoxItem>
-
-                    <ListBoxItem Name="RollListBoxItem" Visibility="Collapsed">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Style="{StaticResource NavigationTextBlockStyle}">&#xE12C;</TextBlock>
-                            <TextBlock Style="{StaticResource PaneTextBlockStyle}">转轮</TextBlock>
-                        </StackPanel>
-                    </ListBoxItem>
-                    
-                    <ListBoxItem Name="SettingsListBoxItem">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Style="{StaticResource NavigationTextBlockStyle}">&#xE115;</TextBlock>
-                            <TextBlock Style="{StaticResource PaneTextBlockStyle}">设置</TextBlock>
-                        </StackPanel>
-                    </ListBoxItem>
-
-                </ListBox>
-            </SplitView.Pane>
-            <SplitView.Content>
-                    <Frame MinHeight="500" MinWidth="800" Name="FrameOfMainPage" Margin="20,20,0,0"></Frame>
-            </SplitView.Content>
-        </SplitView>
-
-
-    </Grid>
 </Page>

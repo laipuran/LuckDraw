@@ -1,5 +1,7 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Threading;
+using System.Threading.Tasks;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
@@ -11,46 +13,34 @@ namespace LuckDraw
     /// <summary>
     /// 可用于自身或导航至 Frame 内部的空白页。
     /// </summary>
-    public sealed partial class RollPage : Page
+    public partial class RollPage
     {
         public RollPage()
         {
-            this.InitializeComponent();
+            InitializeComponent();
         }
-
-        static public int getRand(int a, int b)
+        private bool isRolling = false;
+        private void GetNumberButton_Click(object sender, RoutedEventArgs e)
         {
-            Random r = new Random();
-            int num = r.Next(a, b);
-            return num;
+            isRolling = !isRolling;
+            if (isRolling)
+            {
+                GetNumberButton.Content = "停止";
+                Task.Run(Roll);
+            }
+            GetNumberButton.Content = "开始";
         }
-        private async void startRolling(object sender, RoutedEventArgs e)
+        private async void Roll()
         {
-            int max = App.numberOfPeople > 1 ? App.numberOfPeople : 55;
+            int max = App.numberOfPeople;
             Random r = new Random();
-            while (true)
+            while (isRolling)
             {
                 int num = r.Next(1, max + 1);
                 string number = num.ToString();
                 NumberTextBlock.Text = number;
-                await System.Threading.Tasks.Task.Delay(100);
+                await Task.Delay(100);
             }
-        }
-        private void GetNumberButton_Click(object sender, RoutedEventArgs e)
-        {
-            var thread1 = new Thread(() =>
-              {
-                  int max = App.numberOfPeople > 1 ? App.numberOfPeople : 55;
-                  Random r = new Random();
-                  int num = r.Next(1, max + 1);
-                  string number = num.ToString();
-                  NumberTextBlock.Text = number;
-                  Thread.Sleep(100);
-              });
-        }
-
-        private void StopButton_Click(object sender, RoutedEventArgs e)
-        {
         }
     }
 }

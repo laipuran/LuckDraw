@@ -18,9 +18,9 @@ namespace LuckDraw
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            App.numberOfPeople = int.Parse(NumberTextBox.Text);
+            Algorithm.Parser(NumberTextBox.Text, 10000);
             App.doShowToasts = ToastToggleSwitch.IsOn;
-            ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
             localSettings.Values["numberOfPeople"] = App.numberOfPeople;
             localSettings.Values["doShowToasts"] = App.doShowToasts;
         }
