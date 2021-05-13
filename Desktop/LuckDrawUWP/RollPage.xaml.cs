@@ -20,6 +20,8 @@ namespace LuckDraw
             InitializeComponent();
         }
         private bool isRolling = false;
+        int max = App.numberOfPeople;
+        Random r = new Random();
         private void GetNumberButton_Click(object sender, RoutedEventArgs e)
         {
             isRolling = !isRolling;
@@ -32,14 +34,11 @@ namespace LuckDraw
         }
         private async void Roll()
         {
-            int max = App.numberOfPeople;
-            Random r = new Random();
             while (isRolling)
             {
                 int num = r.Next(1, max + 1);
-                string number = num.ToString();
-                NumberTextBlock.Text = number;
-                await Task.Delay(100);
+                NumberTextBlock.Text = num.ToString();
+                await Task.Delay(500);
             }
         }
     }

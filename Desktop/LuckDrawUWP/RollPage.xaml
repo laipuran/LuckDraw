@@ -10,6 +10,6 @@
 
     <StackPanel Orientation="Vertical">
         <Button Style="{StaticResource ButtonRevealStyle}" Name="GetNumberButton" FontSize="18" Click="GetNumberButton_Click" Content="开始"></Button>
-        <TextBlock Name="NumberTextBlock" Text=""></TextBlock>
+        <TextBlock x:Name="NumberTextBlock"></TextBlock>
     </StackPanel>
 </Page>
