@@ -29,16 +29,19 @@ namespace LuckDraw
             {
                 GetNumberButton.Content = "停止";
                 Task.Run(Roll);
+                return;
             }
             GetNumberButton.Content = "开始";
+
         }
         private async void Roll()
         {
             while (isRolling)
             {
                 int num = r.Next(1, max + 1);
-                NumberTextBlock.Text = num.ToString();
-                await Task.Delay(500);
+                string number = num.ToString();
+                NumberTextBlock.Text = number;
+                await Task.Delay(100);
             }
         }
     }
