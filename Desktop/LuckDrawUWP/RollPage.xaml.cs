@@ -22,27 +22,19 @@ namespace LuckDraw
         private bool isRolling = false;
         int max = App.numberOfPeople;
         Random r = new Random();
-        private void GetNumberButton_Click(object sender, RoutedEventArgs e)
+        private async void GetNumberButton_Click(object sender, RoutedEventArgs e)
         {
             isRolling = !isRolling;
-            if (isRolling)
-            {
-                GetNumberButton.Content = "停止";
-                Task.Run(Roll);
-                return;
-            }
-            GetNumberButton.Content = "开始";
-
-        }
-        private async void Roll()
-        {
             while (isRolling)
             {
+                GetNumberButton.Content = "结束";
                 int num = r.Next(1, max + 1);
                 string number = num.ToString();
                 NumberTextBlock.Text = number;
                 await Task.Delay(100);
             }
+            GetNumberButton.Content = "开始";
+
         }
     }
 }
