@@ -1,6 +1,9 @@
 ﻿using System;
+using System.ComponentModel;
+using System.Threading;
 using System.Threading.Tasks;
 using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
 
 // https://go.microsoft.com/fwlink/?LinkId=234238 上介绍了“空白页”项模板
 // From Litrop: https://github.com/Litrop/roll

@@ -39,7 +39,7 @@ namespace LuckDraw
             }
             App.numberOfPeople = (int)localSettings.Values["numberOfPeople"];
             App.doShowToasts = (bool)localSettings.Values["doShowToasts"];
-
+            ContentFrame.Navigate(typeof(LuckDrawPage));
         }
         private double NavViewCompactModeThresholdWidth { get { return NavView.CompactModeThresholdWidth; } }
 
@@ -78,6 +78,7 @@ namespace LuckDraw
             // Because we use ItemInvoked to navigate, we need to call Navigate
             // here to load the home page.
             NavView_Navigate("home", new Windows.UI.Xaml.Media.Animation.EntranceNavigationTransitionInfo());
+
             // Listen to the window directly so the app responds
             // to accelerator keys regardless of which element has focus.
             Window.Current.CoreWindow.Dispatcher.AcceleratorKeyActivated +=
