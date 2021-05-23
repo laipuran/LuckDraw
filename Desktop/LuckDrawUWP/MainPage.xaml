@@ -4,24 +4,24 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:controls="using:Microsoft.UI.Xaml.Controls"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
     mc:Ignorable="d"
     Background="{ThemeResource SystemControlChromeMediumAcrylicWindowMediumBrush}">
 
-    <controls:NavigationView x:Name="NavView"
+    <muxc:NavigationView x:Name="NavView"
                              Loaded="NavView_Loaded"
                              BackRequested="NavView_BackRequested"
                              SelectionChanged="NavView_SelectionChanged"
                              ItemInvoked="NavView_ItemInvoked">
-        <controls:NavigationView.MenuItems>
-            <controls:NavigationViewItem Tag="home" Icon="Home" Content="抽奖"/>
-            <controls:NavigationViewItem Tag="roll" Content="滚轮">
-                <controls:NavigationViewItem.Icon>
+        <muxc:NavigationView.MenuItems>
+            <muxc:NavigationViewItem Tag="home" Icon="Home" Content="抽奖"/>
+            <muxc:NavigationViewItem Tag="roll" Content="滚轮">
+                <muxc:NavigationViewItem.Icon>
                     <FontIcon Glyph="&#xE12C;"></FontIcon>
-                </controls:NavigationViewItem.Icon>
-            </controls:NavigationViewItem>
-        </controls:NavigationView.MenuItems>
+                </muxc:NavigationViewItem.Icon>
+            </muxc:NavigationViewItem>
+        </muxc:NavigationView.MenuItems>
         <Frame x:Name="ContentFrame" Margin="20,20,20,20" NavigationFailed="ContentFrame_NavigationFailed"></Frame>
-    </controls:NavigationView>
+    </muxc:NavigationView>
 
 </Page>

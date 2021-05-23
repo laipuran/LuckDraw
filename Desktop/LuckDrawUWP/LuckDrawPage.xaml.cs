@@ -1,4 +1,5 @@
-﻿using Microsoft.Toolkit.Uwp.Notifications; // Notifications library
+﻿using Microsoft.Services.Store.Engagement;
+using Microsoft.Toolkit.Uwp.Notifications; // Notifications library
 using System;
 using Windows.Storage;
 using Windows.UI.Core;
@@ -61,6 +62,8 @@ namespace LuckDraw
         }
     private void GetNumber_Click(object sender, RoutedEventArgs e)
         {
+            StoreServicesCustomEventLogger logger = StoreServicesCustomEventLogger.GetDefault();
+            logger.Log("抽取");
             NumberComboBox.IsEnabled = false;
             GetNumberButton.IsEnabled = false;
 
