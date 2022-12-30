@@ -7,13 +7,13 @@
   IgnorableNamespaces="uap rescap">
 
   <Identity
-    Name="06b4f553-396d-429b-86cc-cc888dd3f864"
-    Publisher="CN=Laifuzhou"
-    Version="1.0.0.0" />
+    Name="31869PuranLai.LuckDraw"
+    Publisher="CN=7E1D7CD2-F295-49DB-BDCB-DDA4AF0952D2"
+    Version="0.0.1.0" />
 
   <Properties>
-    <DisplayName>LuckDraw.Package</DisplayName>
-    <PublisherDisplayName>Laifuzhou</PublisherDisplayName>
+    <DisplayName>Luck Draw</DisplayName>
+    <PublisherDisplayName>Puran Lai</PublisherDisplayName>
     <Logo>Images\StoreLogo.png</Logo>
   </Properties>
 
@@ -31,7 +31,7 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="LuckDraw.Package"
+        DisplayName="Luck Draw"
         Description="LuckDraw.Package"
         BackgroundColor="transparent"
         Square150x150Logo="Images\Square150x150Logo.png"
