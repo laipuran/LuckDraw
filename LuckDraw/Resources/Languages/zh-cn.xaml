@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:s="clr-namespace:System;assembly=netstandard">
+
+    <s:String x:Key="LuckDraw">抽奖</s:String>
+    <s:String x:Key="G">抽</s:String>
+    <s:String x:Key="Roll">滚轮</s:String>
+    <s:String x:Key="Settings">设置</s:String>
+    <s:String x:Key="Get">抽取</s:String>
+    <s:String x:Key="TipTextGet">选择或输入抽取的人数：</s:String>
+    <s:String x:Key="TipGot">被抽中的幸运观众：</s:String>
+</ResourceDictionary>
