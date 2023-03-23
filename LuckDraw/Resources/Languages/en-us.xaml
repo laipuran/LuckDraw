@@ -1,0 +1,15 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib">
+
+    <s:String x:Key="LuckDraw">Luck Draw</s:String>
+    <s:String x:Key="G">Get</s:String>
+    <s:String x:Key="Roll">Roll</s:String>
+    <s:String x:Key="Settings">Settings</s:String>
+    <s:String x:Key="Get">Get</s:String>
+    <s:String x:Key="TipTextGet">Choose or input number of people：</s:String>
+    <s:String x:Key="TipGot">The lucky student(s)：</s:String>
+    <s:String x:Key="Start">Start</s:String>
+    <s:String x:Key="Stop">Stop</s:String>
+    <s:String x:Key="TotalNumber">Total number：</s:String>
+    <s:String x:Key="Website">Our Website：https://laipuran.github.io/LuckDraw</s:String>
+</ResourceDictionary>

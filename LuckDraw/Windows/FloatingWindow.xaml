@@ -1,0 +1,57 @@
+﻿<Window x:Class="LuckDraw.Windows.FloatingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LuckDraw.Windows"
+        mc:Ignorable="d"
+        Title="LuckDraw" Height="100" Width="200"
+        Style="{StaticResource FloatingWindowStyle}"
+        Opacity="1" BorderThickness="5"
+        Topmost="True"
+        Background="Transparent"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown"
+        MouseRightButtonDown="Window_MouseRightButtonDown"
+        MouseEnter="Window_MouseEnter"
+        MouseLeave="Window_MouseLeave">
+    <Window.Resources>
+        <Style TargetType="{x:Type Border}">
+            <Setter Property="CornerRadius" Value="45"/>
+        </Style>
+        <ResourceDictionary x:Key="FloatingWindow">
+            <FontFamily x:Key="SmileySans">Resources/SmileySans.ttf#得意黑</FontFamily>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <StackPanel Orientation="Horizontal">                           <!--The Get Button-->
+        <Button Width="90"
+                Height="90"
+                Foreground="Black"
+                FontFamily="得意黑"
+                FontSize="50"
+                Background="#D0FFFFFF"
+                Opacity="1"
+                BorderThickness="5"
+                Click="Button_Click"
+                x:Name="GetButton"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Template="{StaticResource OverrideDefault}"
+                MouseLeftButtonDown="Window_MouseLeftButtonDown">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="50"/>
+                </Style>
+            </Button.Resources>
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="1,0">
+                    <GradientStop Color="#FF0090FF"/>
+                    <GradientStop Color="#FF00FF1B" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+            <StackPanel>
+                <TextBlock Text="{DynamicResource G}" Margin="0,5,0,0"/>
+            </StackPanel>
+        </Button>
+    </StackPanel>
+</Window>

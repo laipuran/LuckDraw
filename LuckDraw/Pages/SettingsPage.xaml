@@ -1,0 +1,40 @@
+﻿<Page x:Class="LuckDraw.Pages.SettingsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LuckDraw.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="SettingsPage">
+
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Style="{StaticResource ContentTextBlockStyle}"
+                       Text="{DynamicResource TotalNumber}"/>
+            <TextBox x:Name="TotalNumberTextBox"
+                     Style="{StaticResource ContentTextBoxStyle}"
+                     TextChanged="TotalNumberTextBox_TextChanged"/>
+        </StackPanel>
+        <Button Style="{StaticResource ContentButtonStyle}"
+                Template="{StaticResource OverrideDefault}"
+                Width="160" Margin="0,20,0,0"
+                Click="Button_Click">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Style="{StaticResource ContentTextBlockStyle}"
+                           FontFamily="Microsoft YaHei"
+                           Text="Language"/>
+                <TextBlock FontFamily="Segoe MDL2 Assets"
+                           Margin="20,0,0,0"
+                           FontSize="24"
+                           Text="&#xE12B;"/>
+            </StackPanel>
+        </Button>
+        <TextBlock Style="{StaticResource ContentTextBlockStyle}"
+                   Text="{DynamicResource Website}"
+                   MouseLeftButtonDown="TextBlock_MouseLeftButtonDown"
+                   Foreground="LightBlue"
+                   FontStyle="Oblique"
+                   Margin="0,20,0,0"/>
+    </StackPanel>
+</Page>
